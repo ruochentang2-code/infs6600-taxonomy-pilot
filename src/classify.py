@@ -8,6 +8,8 @@ import json
 import re
 from pathlib import Path
 
+from taxonomy_config import load_taxonomy
+
 
 def normalise(text: str) -> str:
     text = text.lower().replace("–", "-").replace("—", "-")
@@ -119,13 +121,17 @@ def write_csv(path: Path, evidence: list[dict]) -> None:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", type=Path, required=True)
-    parser.add_argument("--taxonomy", type=Path, required=True)
+    parser.add_argument(
+        "--taxonomy",
+        type=Path,
+        help="Optional JSON override. If omitted, the built-in two-category pilot is used.",
+    )
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--csv", type=Path, required=True)
     args = parser.parse_args()
 
     snapshot = json.loads(args.input.read_text(encoding="utf-8"))
-    taxonomy = json.loads(args.taxonomy.read_text(encoding="utf-8"))
+    taxonomy = load_taxonomy(args.taxonomy)
     result = classify(snapshot, taxonomy)
     args.output.parent.mkdir(parents=True, exist_ok=True)
     args.output.write_text(json.dumps(result, indent=2, ensure_ascii=False), encoding="utf-8")

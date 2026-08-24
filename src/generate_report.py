@@ -6,6 +6,8 @@ import argparse
 import json
 from pathlib import Path
 
+from taxonomy_config import load_taxonomy
+
 
 def esc(text: str) -> str:
     return text.replace("|", "\\|").replace("\n", " ")
@@ -14,11 +16,15 @@ def esc(text: str) -> str:
 def main() -> None:
     parser = argparse.ArgumentParser()
     parser.add_argument("--result", type=Path, required=True)
-    parser.add_argument("--taxonomy", type=Path, required=True)
+    parser.add_argument(
+        "--taxonomy",
+        type=Path,
+        help="Optional JSON override. If omitted, the built-in two-category pilot is used.",
+    )
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
     result = json.loads(args.result.read_text(encoding="utf-8"))
-    taxonomy = json.loads(args.taxonomy.read_text(encoding="utf-8"))
+    taxonomy = load_taxonomy(args.taxonomy)
     category_lookup = {row["id"]: row for row in taxonomy["categories"]}
 
     lines = [
