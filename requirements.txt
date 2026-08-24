@@ -1,4 +1,0 @@
-pandas>=2.2
-lxml>=5.0
-Pillow>=10.0
-
