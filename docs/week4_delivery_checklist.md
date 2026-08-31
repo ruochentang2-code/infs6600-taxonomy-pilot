@@ -16,10 +16,8 @@
 - [x] Updated INFS6600 mapping PDF
 - [x] Tests, README, changelog, and release manifest
 
-## External administrative action
+## Week 3 reference document
 
-- [ ] Send the signed-by-team Status Checking document to Corina
-- [ ] Obtain Corina's feedback and signature
-- [ ] Store the signed final copy in the project administration folder
-
-The repository cannot complete or imitate the client's signature.
+`CS-44_Status_Checking_1(week4).docx` records the previous Week 3 status and was
+used only as background when defining this Week 4 update. It creates no Week 4
+signature or administrative deliverable.
