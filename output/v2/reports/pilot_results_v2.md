@@ -145,8 +145,8 @@ Review guidance: Online materials alone are insufficient; require an explicit hy
 - The 3.0 and 5.0 thresholds are provisional and require client confirmation or sensitivity testing against reviewed labels.
 - Career readiness is set to 2.0 following a tentative tutor comment and remains marked provisional in the configuration.
 - Phrase matching does not understand negation, complex context, or semantic equivalence.
-- Precision, recall, and F1 should not be reported until a client-reviewed reference set exists.
-- This iteration validates INFS6600 only; additional units should be introduced as a small smoke-test batch before full-discipline scaling.
+- This Week 4 iteration reruns INFS6600 only; no additional-unit or discipline-wide analysis is included.
+- Landing-page, LLM/RAG, and formal model-evaluation work are outside this update.
 
 ## Visualisations
 

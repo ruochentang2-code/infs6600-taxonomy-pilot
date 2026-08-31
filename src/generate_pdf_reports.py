@@ -235,14 +235,17 @@ def create_algorithm_pdf(result: dict, taxonomy: dict, path: Path) -> None:
             STYLES["subtitle"],
         ),
         _callout(
-            "Core decision: categories are not mutually exclusive. Simulation and Case-Based Learning are separate, and every result retains its source evidence and matched rules.",
+            "Core decision: categories are not mutually exclusive. Simulation and Case-Based Learning are separate. Week 4 remains an INFS6600-only rerun; no wider unit analysis is included.",
             usable,
         ),
-        Paragraph("1. Tutor decisions implemented", STYLES["h1"]),
+        Paragraph("1. Tutor-directed changes", STYLES["h1"]),
         _bullet("Split Simulation from Case-Based Learning."),
         _bullet("Allow a unit and an evidence item to belong to more than one category."),
         _bullet("Expect INFS6600 in Work-Integrated and Applied, Project- and Problem-Based, and Case-Based Learning."),
-        _bullet("Add category-level total scoring and distinct evidence counts."),
+        _bullet("Add category-level total scoring."),
+        _bullet("Configure the remaining supplied taxonomy categories without analysing additional units."),
+        Paragraph("Supporting and suggested pilot adjustments", STYLES["h2"]),
+        _bullet("Count distinct evidence items rather than raw phrase occurrences."),
         _bullet("Retain overlapping industry/case evidence instead of forcing a single label."),
         Paragraph("2. Evidence unit and counting policy", STYLES["h1"]),
         Paragraph(_safe(taxonomy["counting_unit"]), STYLES["body"]),
@@ -282,10 +285,14 @@ def create_algorithm_pdf(result: dict, taxonomy: dict, path: Path) -> None:
         )
     story += [
         _table(weight_rows, [72 * mm, 28 * mm, 74 * mm]),
-        Paragraph("5. Decision thresholds and confidence", STYLES["h1"]),
-        _callout(
-            f"Positive >= {taxonomy['decision_thresholds']['positive']}; high confidence >= {taxonomy['decision_thresholds']['high_confidence']}. Status: {taxonomy['decision_thresholds']['status']}. These values remain configurable and are not represented as client-validated cut-offs.",
-            usable,
+        KeepTogether(
+            [
+                Paragraph("5. Decision thresholds and confidence", STYLES["h1"]),
+                _callout(
+                    f"Positive >= {taxonomy['decision_thresholds']['positive']}; high confidence >= {taxonomy['decision_thresholds']['high_confidence']}. Status: {taxonomy['decision_thresholds']['status']}. These values remain configurable and are not represented as client-validated cut-offs.",
+                    usable,
+                ),
+            ]
         ),
         Spacer(1, 4 * mm),
         KeepTogether(
@@ -321,7 +328,6 @@ def create_algorithm_pdf(result: dict, taxonomy: dict, path: Path) -> None:
         _bullet("Confirm whether the 3.0 positive and 5.0 high-confidence thresholds should remain."),
         _bullet("Confirm the tentative Career readiness weight of 2.0."),
         _bullet("Confirm whether administrative 'Case studies' labels should remain at review weight 2.0."),
-        _bullet("Decide whether cross-category normalisation is required before discipline-wide comparisons."),
         Paragraph("10. Audit trail", STYLES["h1"]),
         Paragraph(
             f"Taxonomy version: {_safe(result['taxonomy_version'])}<br/>Official source: {_safe(result['source_url'])}<br/>Retrieved: {_safe(result.get('retrieved_at', ''))}",
@@ -369,7 +375,7 @@ def create_mapping_pdf(
         _callout(
             "Positive categories: "
             + "; ".join(positives)
-            + ". Categories are not mutually exclusive; percentages and counts are not expected to sum to 100%.",
+            + ". Categories are not mutually exclusive; percentages and counts are not expected to sum to 100%. This report covers INFS6600 only.",
             usable,
         ),
         Paragraph("1. Category summary", STYLES["h1"]),

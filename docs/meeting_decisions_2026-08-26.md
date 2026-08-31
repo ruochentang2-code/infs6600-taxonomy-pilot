@@ -1,14 +1,22 @@
 # Client meeting decisions - 26 August 2026
 
-## Confirmed direction
+## Explicit tutor direction
 
-- Continue developing the rest of the taxonomy.
+- Continue configuring the rest of the taxonomy; this does not authorise a
+  wider unit-analysis rollout in Week 4.
 - Treat pedagogical categories as non-mutually exclusive.
 - Allow INFS6600 to appear in Work-Integrated and Applied, Project- and Problem-Based, and Case-Based Learning.
 - Separate Simulation from Case-Based Learning.
-- Count distinct evidence items rather than raw keyword frequency.
-- Keep source evidence and matched rules for auditability.
-- Add unit-category total score summaries and taxonomy distribution visualisations.
+- Apply the commented WIL weight adjustments.
+- Add a total scoring summary for the unit.
+
+## Tutor suggestions incorporated without expanding the pilot
+
+- Count distinct evidence items rather than raw keyword frequency. The meeting
+  noted that this was not the week's main priority, so it is treated as a
+  supporting counting correction only.
+- Explore taxonomy distribution visualisations. The release includes three
+  static INFS6600 figures, not a landing page or discipline-wide dashboard.
 
 ## Method changes incorporated in v2
 
@@ -16,6 +24,14 @@
 - Administrative case-study labels moved to the manual-review queue.
 - Thresholds retained as configurable and provisional.
 - Positive and review scores shown separately.
+
+## Explicitly outside this Week 4 update
+
+- Analysis of additional units
+- Discipline-wide UG/PG comparison
+- Landing-page development
+- LLM, RAG, or embedding work
+- Formal precision, recall, F1, or labelled-set evaluation
 
 ## Follow-up questions for the client
 

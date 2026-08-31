@@ -50,7 +50,7 @@
     },
     {
       "path": "output/v2/reports/pilot_results_v2.md",
-      "sha256": "d27a6380b3ec3d675b045f690167e7f186a14acde0f086b9930f345f8c172ce4"
+      "sha256": "2810d2bab925af868b15bda7ef36c4eb02998efe46e139e993808d930ecac61e"
     },
     {
       "path": "output/v2/reports/course_category_mapping_v2.md",
@@ -74,11 +74,11 @@
     },
     {
       "path": "output/pdf/02_Classification_Algorithm_Detailed_v2.pdf",
-      "sha256": "b50087d56801a314a6a6c156edf8c0da2c17e3333aa65b758c99511a2b8de8b0"
+      "sha256": "d225a5f7a9505a546308297fffce0b692e15a80492a460105b3de99b5aa49f26"
     },
     {
       "path": "output/pdf/05_INFS6600_Course_Category_Mapping_v2.pdf",
-      "sha256": "215ecdec8eed1fd9973dc3f68e890609fbe04f3e69095bbe6aedf7b923bf38c7"
+      "sha256": "6adc1cb822da3a837d4c7524c2fe5136948ecbaca9c95b541ced9239630955f5"
     }
   ]
 }

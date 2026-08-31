@@ -14,9 +14,9 @@ The v2 release implements the client meeting and document feedback received on 2
 | Practical teamwork: “Give 2” | Weight 2.0 | Configuration test |
 | Career readiness: “Maybe 2 here” | Weight 2.0 with provisional status | Configuration test plus outstanding-decision note |
 | Case/industry overlap needs review | Both categories may be positive; overlap notes are retained | INFS6600 AS06 supports WIL while its case label remains review-only |
-| Count distinct evidence, not raw occurrences | Deduplication remains at item-category level | One-rule-alternatives test |
+| Meeting suggestion: count distinct evidence, not raw occurrences | Deduplication remains at item-category level; treated as a supporting correction, not a new analysis stream | One-rule-alternatives test |
 | Add total scoring | Added classified score, review score, and total matched score | Summary JSON/CSV and charts |
-| Add taxonomy distribution diagrams | Added category count, category score, and source-section figures | Static visual QA and PDF inclusion |
+| Explore taxonomy distribution diagrams | Added three static INFS6600 figures only | Static visual QA and PDF inclusion |
 
 ## Important interpretation changes
 
@@ -28,3 +28,11 @@ The v2 release implements the client meeting and document feedback received on 2
 ## Configuration status
 
 The taxonomy is versioned as `2026-09-01-tutor-feedback-v2`. Thresholds and the tentative Career readiness weight remain explicitly provisional pending client confirmation.
+
+## Scope guard
+
+This release reruns INFS6600 only. The additional taxonomy categories are
+configured in response to the instruction to proceed with the rest of the
+taxonomy, but they are not described as client-validated. Additional units,
+discipline-wide comparisons, a landing page, LLM/RAG work, and formal model
+evaluation are outside this Week 4 update.

@@ -17,6 +17,15 @@ The v2 release:
 - adds automated regression tests for the tutor's expected INFS6600 allocation;
 - creates versioned CSV/JSON, Markdown, PNG, and PDF deliverables.
 
+### Week 4 scope boundary
+
+This release is limited to applying the tutor's comments to the existing
+INFS6600 pilot. The remaining taxonomy categories are configured because the
+tutor asked the team to proceed with the rest of the taxonomy, but they are not
+presented as client-validated classifications. No additional units,
+discipline-wide UG/PG analysis, landing page, LLM/RAG component, or formal
+model-evaluation study is included in this update.
+
 ## Current INFS6600 result
 
 The v2 pipeline positively allocates INFS6600 to the three categories identified by the tutor:
@@ -189,8 +198,7 @@ The regression suite verifies:
 - The parser depends on the current public outline structure.
 - The thresholds have not been client-validated.
 - The Career readiness weight of 2.0 follows a tentative tutor comment.
-- Precision, recall, and F1 require a client-reviewed reference set.
-- The current release validates INFS6600; additional units should first be introduced as a small smoke-test batch.
+- The current release reruns INFS6600 only; no additional-unit or discipline-wide analysis is included.
 
 See [`docs/client_decisions_required.md`](docs/client_decisions_required.md) for the unresolved questions and [`docs/week4_delivery_checklist.md`](docs/week4_delivery_checklist.md) for the delivery status.
 

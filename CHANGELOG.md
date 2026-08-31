@@ -36,3 +36,9 @@
 - High-confidence threshold 5.0.
 - Career readiness weight 2.0.
 - Treatment of administrative case labels pending further client confirmation.
+
+### Week 4 scope boundary
+
+- Reran INFS6600 only.
+- Did not analyse additional units or produce discipline-wide UG/PG results.
+- Did not implement a landing page, LLM/RAG component, or formal model-evaluation study.

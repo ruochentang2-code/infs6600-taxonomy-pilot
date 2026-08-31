@@ -75,8 +75,12 @@ def main() -> None:
 
     raw.parent.mkdir(parents=True, exist_ok=True)
     if args.snapshot:
-        shutil.copyfile(args.snapshot.resolve(), raw)
-        print(f"Copied snapshot to {raw}")
+        snapshot = args.snapshot.resolve()
+        if snapshot == raw:
+            print(f"Using existing snapshot at {raw}")
+        else:
+            shutil.copyfile(snapshot, raw)
+            print(f"Copied snapshot to {raw}")
     else:
         run(source_dir / "fetch_outline.py", "--url", args.url, "--output", raw)
 
