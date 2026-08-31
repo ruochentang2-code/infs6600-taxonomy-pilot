@@ -1,0 +1,853 @@
+{
+  "unit_code": "INFS6600",
+  "unit_title": "Business Information Systems Capstone",
+  "session": "Semester 2, 2026 [Normal evening] - Camperdown/Darlington, Sydney",
+  "source_url": "https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC",
+  "retrieved_at": "2026-08-31T16:10:06.515477+00:00",
+  "taxonomy_version": "2026-09-01-tutor-feedback-v2",
+  "counting_unit": "One distinct outline item (overview paragraph, learning outcome, assessment row, or weekly-schedule row) evaluated once per category.",
+  "decision_thresholds": {
+    "positive": 3.0,
+    "high_confidence": 5.0,
+    "status": "provisional_pending_client_confirmation"
+  },
+  "policies": {
+    "multi_label": true,
+    "categories_mutually_exclusive": false,
+    "deduplication": "item-category",
+    "rule_alternatives_count_once": true,
+    "administrative_labels_require_review": true,
+    "unit_category_total": "Sum of item scores classified positive for the category; review scores are reported separately."
+  },
+  "summary": [
+    {
+      "category_id": "work_integrated_applied",
+      "category": "Work-Integrated and Applied Learning",
+      "classification_status": "positive",
+      "belongs_to_category": true,
+      "evidence_item_count": 11,
+      "review_item_count": 1,
+      "classified_score_total": 48.5,
+      "review_score_total": 2.0,
+      "total_matched_score": 50.5,
+      "section_counts": {
+        "overview": 1,
+        "learning_outcome": 3,
+        "assessment": 4,
+        "weekly_schedule": 3
+      },
+      "review_section_counts": {
+        "weekly_schedule": 1
+      },
+      "overlap_notes": "May overlap with Project- and Problem-Based Learning, Case-Based Learning, Community Learning, and Entrepreneurial Learning.",
+      "review_guidance": "Check that professional or partner language describes an authentic learning task rather than a generic context statement."
+    },
+    {
+      "category_id": "simulation",
+      "category": "Simulation",
+      "classification_status": "no_match",
+      "belongs_to_category": false,
+      "evidence_item_count": 0,
+      "review_item_count": 0,
+      "classified_score_total": 0,
+      "review_score_total": 0,
+      "total_matched_score": 0,
+      "section_counts": {},
+      "review_section_counts": {},
+      "overlap_notes": "Separated from Case-Based Learning by tutor revision. A real-world scenario alone is not a simulation unless the activity recreates, mimics, or role-plays a setting or process.",
+      "review_guidance": "Do not inherit Simulation from a case-study label or from Case-Based Learning evidence."
+    },
+    {
+      "category_id": "case_based",
+      "category": "Case-Based Learning",
+      "classification_status": "positive",
+      "belongs_to_category": true,
+      "evidence_item_count": 1,
+      "review_item_count": 2,
+      "classified_score_total": 3.5,
+      "review_score_total": 4.0,
+      "total_matched_score": 7.5,
+      "section_counts": {
+        "learning_outcome": 1
+      },
+      "review_section_counts": {
+        "assessment": 2
+      },
+      "overlap_notes": "May overlap with Work-Integrated and Applied Learning and Project- and Problem-Based Learning. Industry context does not exclude a case-based classification.",
+      "review_guidance": "An administrative assessment type such as 'Case studies' is retained as a weak review signal and is not sufficient by itself for a positive classification."
+    },
+    {
+      "category_id": "project_problem_based",
+      "category": "Project- and Problem-Based Learning",
+      "classification_status": "positive",
+      "belongs_to_category": true,
+      "evidence_item_count": 4,
+      "review_item_count": 2,
+      "classified_score_total": 14.5,
+      "review_score_total": 4.0,
+      "total_matched_score": 18.5,
+      "section_counts": {
+        "learning_outcome": 1,
+        "weekly_schedule": 3
+      },
+      "review_section_counts": {
+        "weekly_schedule": 2
+      },
+      "overlap_notes": "May overlap with Work-Integrated and Applied Learning when projects involve clients or industry partners, and with Case-Based Learning when cases are used inside a project.",
+      "review_guidance": "Do not classify from the generic word 'project' alone; require a problem, challenge, immersion, investigation, or explicit project/problem-based method."
+    },
+    {
+      "category_id": "community_learning",
+      "category": "Community Learning",
+      "classification_status": "no_match",
+      "belongs_to_category": false,
+      "evidence_item_count": 0,
+      "review_item_count": 0,
+      "classified_score_total": 0,
+      "review_score_total": 0,
+      "total_matched_score": 0,
+      "section_counts": {},
+      "review_section_counts": {},
+      "overlap_notes": "May overlap with Work-Integrated and Applied Learning when the authentic partner is a community organisation.",
+      "review_guidance": "Require an explicit community, service-learning, field-study, or community-of-practice activity."
+    },
+    {
+      "category_id": "entrepreneurial_learning",
+      "category": "Entrepreneurial Learning",
+      "classification_status": "review_only",
+      "belongs_to_category": false,
+      "evidence_item_count": 0,
+      "review_item_count": 2,
+      "classified_score_total": 0,
+      "review_score_total": 4.0,
+      "total_matched_score": 4.0,
+      "section_counts": {},
+      "review_section_counts": {
+        "weekly_schedule": 2
+      },
+      "overlap_notes": "May overlap with Project- and Problem-Based Learning and Simulation when learners develop or simulate a venture.",
+      "review_guidance": "Generic ideation, pitching, or prototyping is a review signal unless explicitly connected to entrepreneurship, a startup, a product-development project, or a venture."
+    },
+    {
+      "category_id": "technology_mediated_learning",
+      "category": "Technology-Mediated Learning",
+      "classification_status": "no_match",
+      "belongs_to_category": false,
+      "evidence_item_count": 0,
+      "review_item_count": 0,
+      "classified_score_total": 0,
+      "review_score_total": 0,
+      "total_matched_score": 0,
+      "section_counts": {},
+      "review_section_counts": {},
+      "overlap_notes": "May overlap with Simulation, Hybrid Learning, or Entrepreneurial Learning. Merely studying digital technology is not evidence that learning is technology-mediated.",
+      "review_guidance": "Require the technology to be part of the learning method, not only the subject matter."
+    },
+    {
+      "category_id": "hybrid_learning",
+      "category": "Hybrid Learning",
+      "classification_status": "no_match",
+      "belongs_to_category": false,
+      "evidence_item_count": 0,
+      "review_item_count": 0,
+      "classified_score_total": 0,
+      "review_score_total": 0,
+      "total_matched_score": 0,
+      "section_counts": {},
+      "review_section_counts": {},
+      "overlap_notes": "May overlap with Technology-Mediated Learning, but requires an explicit combination of physical and online modes.",
+      "review_guidance": "Online materials alone are insufficient; require an explicit hybrid, blended, flipped, hyflex, or mixed-mode design."
+    }
+  ],
+  "evidence": [
+    {
+      "unit_code": "INFS6600",
+      "category_id": "work_integrated_applied",
+      "category": "Work-Integrated and Applied Learning",
+      "item_id": "OV01",
+      "section": "overview",
+      "label": "Overview paragraph 1",
+      "text": "This unit bridges the gap between theory and practice by integrating the knowledge and key skills developed across the Digital Business or Business Information Systems specialisation. It provides students with a practical teamwork experience to identify, analyse, and solve contemporary problems by exploring the socio-technical ecosystem in which a digital business operates. This experiential learning opportunity enhances students’ career-readiness by consolidating their professional skills and ability to apply the Business Information Systems knowledge in authentic situations.",
+      "score": 10.0,
+      "positive_threshold": 3.0,
+      "high_confidence_threshold": 5.0,
+      "threshold_status": "provisional_pending_client_confirmation",
+      "matched_rules": [
+        {
+          "rule": "authentic practice",
+          "matched_phrases": [
+            "authentic situations"
+          ],
+          "weight": 4.0,
+          "review_required": false,
+          "weight_status": "tutor_comment_give_4"
+        },
+        {
+          "rule": "theory-practice integration",
+          "matched_phrases": [
+            "theory and practice"
+          ],
+          "weight": 2.0,
+          "review_required": false,
+          "weight_status": "tutor_comment_give_2"
+        },
+        {
+          "rule": "practical teamwork",
+          "matched_phrases": [
+            "practical teamwork experience"
+          ],
+          "weight": 2.0,
+          "review_required": false,
+          "weight_status": "tutor_comment_give_2"
+        },
+        {
+          "rule": "career readiness",
+          "matched_phrases": [
+            "career-readiness",
+            "professional skills"
+          ],
+          "weight": 2.0,
+          "review_required": false,
+          "weight_status": "tutor_comment_maybe_2"
+        }
+      ],
+      "manual_review_required": false,
+      "source_url": "https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC",
+      "classification_status": "positive",
+      "confidence": "high"
+    },
+    {
+      "unit_code": "INFS6600",
+      "category_id": "work_integrated_applied",
+      "category": "Work-Integrated and Applied Learning",
+      "item_id": "LO01",
+      "section": "learning_outcome",
+      "label": "Learning outcome 1",
+      "text": "LO1. Apply advanced principles and theories related to digital business and information systems in the context of an actual business organisation",
+      "score": 4.0,
+      "positive_threshold": 3.0,
+      "high_confidence_threshold": 5.0,
+      "threshold_status": "provisional_pending_client_confirmation",
+      "matched_rules": [
+        {
+          "rule": "actual organisation or professional context",
+          "matched_phrases": [
+            "actual business organisation"
+          ],
+          "weight": 4.0,
+          "review_required": false,
+          "weight_status": "existing_high_weight"
+        }
+      ],
+      "manual_review_required": false,
+      "source_url": "https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC",
+      "classification_status": "positive",
+      "confidence": "moderate"
+    },
+    {
+      "unit_code": "INFS6600",
+      "category_id": "case_based",
+      "category": "Case-Based Learning",
+      "item_id": "LO02",
+      "section": "learning_outcome",
+      "label": "Learning outcome 2",
+      "text": "LO2. Analyse open-ended business scenarios and evaluate the implications of digital technologies for business",
+      "score": 3.5,
+      "positive_threshold": 3.0,
+      "high_confidence_threshold": 5.0,
+      "threshold_status": "provisional_pending_client_confirmation",
+      "matched_rules": [
+        {
+          "rule": "explicit scenario method",
+          "matched_phrases": [
+            "open-ended business scenarios"
+          ],
+          "weight": 3.5,
+          "review_required": false,
+          "weight_status": "configured"
+        }
+      ],
+      "manual_review_required": false,
+      "source_url": "https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC",
+      "classification_status": "positive",
+      "confidence": "moderate"
+    },
+    {
+      "unit_code": "INFS6600",
+      "category_id": "work_integrated_applied",
+      "category": "Work-Integrated and Applied Learning",
+      "item_id": "LO03",
+      "section": "learning_outcome",
+      "label": "Learning outcome 3",
+      "text": "LO3. Apply techniques for organisational and business process analyses to resolve an actual business problem",
+      "score": 4.0,
+      "positive_threshold": 3.0,
+      "high_confidence_threshold": 5.0,
+      "threshold_status": "provisional_pending_client_confirmation",
+      "matched_rules": [
+        {
+          "rule": "actual organisation or professional context",
+          "matched_phrases": [
+            "actual business problem"
+          ],
+          "weight": 4.0,
+          "review_required": false,
+          "weight_status": "existing_high_weight"
+        }
+      ],
+      "manual_review_required": false,
+      "source_url": "https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC",
+      "classification_status": "positive",
+      "confidence": "moderate"
+    },
+    {
+      "unit_code": "INFS6600",
+      "category_id": "project_problem_based",
+      "category": "Project- and Problem-Based Learning",
+      "item_id": "LO03",
+      "section": "learning_outcome",
+      "label": "Learning outcome 3",
+      "text": "LO3. Apply techniques for organisational and business process analyses to resolve an actual business problem",
+      "score": 4.0,
+      "positive_threshold": 3.0,
+      "high_confidence_threshold": 5.0,
+      "threshold_status": "provisional_pending_client_confirmation",
+      "matched_rules": [
+        {
+          "rule": "authentic problem or challenge",
+          "matched_phrases": [
+            "actual business problem"
+          ],
+          "weight": 4.0,
+          "review_required": false,
+          "weight_status": "configured"
+        }
+      ],
+      "manual_review_required": false,
+      "source_url": "https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC",
+      "classification_status": "positive",
+      "confidence": "moderate"
+    },
+    {
+      "unit_code": "INFS6600",
+      "category_id": "work_integrated_applied",
+      "category": "Work-Integrated and Applied Learning",
+      "item_id": "LO04",
+      "section": "learning_outcome",
+      "label": "Learning outcome 4",
+      "text": "LO4. Communicate in a professional and confident manner, both orally and in writing, with actual business professionals",
+      "score": 4.0,
+      "positive_threshold": 3.0,
+      "high_confidence_threshold": 5.0,
+      "threshold_status": "provisional_pending_client_confirmation",
+      "matched_rules": [
+        {
+          "rule": "actual organisation or professional context",
+          "matched_phrases": [
+            "actual business professionals"
+          ],
+          "weight": 4.0,
+          "review_required": false,
+          "weight_status": "existing_high_weight"
+        }
+      ],
+      "manual_review_required": false,
+      "source_url": "https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC",
+      "classification_status": "positive",
+      "confidence": "moderate"
+    },
+    {
+      "unit_code": "INFS6600",
+      "category_id": "work_integrated_applied",
+      "category": "Work-Integrated and Applied Learning",
+      "item_id": "AS06",
+      "section": "assessment",
+      "label": "Business Models Submission of partner's business, operating models, and IS architecture",
+      "text": "Type: Case studies. Description: Business Models Submission of partner's business, operating models, and IS architecture",
+      "score": 4.0,
+      "positive_threshold": 3.0,
+      "high_confidence_threshold": 5.0,
+      "threshold_status": "provisional_pending_client_confirmation",
+      "matched_rules": [
+        {
+          "rule": "industry or business partner",
+          "matched_phrases": [
+            "partner's business"
+          ],
+          "weight": 4.0,
+          "review_required": false,
+          "weight_status": "existing_high_weight"
+        }
+      ],
+      "manual_review_required": false,
+      "source_url": "https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC",
+      "classification_status": "positive",
+      "confidence": "moderate"
+    },
+    {
+      "unit_code": "INFS6600",
+      "category_id": "work_integrated_applied",
+      "category": "Work-Integrated and Applied Learning",
+      "item_id": "AS08",
+      "section": "assessment",
+      "label": "Pitch to Partner Slides submission before class Delivered during class time",
+      "text": "Type: Presentation. Description: Pitch to Partner Slides submission before class Delivered during class time",
+      "score": 4.0,
+      "positive_threshold": 3.0,
+      "high_confidence_threshold": 5.0,
+      "threshold_status": "provisional_pending_client_confirmation",
+      "matched_rules": [
+        {
+          "rule": "industry or business partner",
+          "matched_phrases": [
+            "pitch to partner"
+          ],
+          "weight": 4.0,
+          "review_required": false,
+          "weight_status": "existing_high_weight"
+        }
+      ],
+      "manual_review_required": false,
+      "source_url": "https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC",
+      "classification_status": "positive",
+      "confidence": "moderate"
+    },
+    {
+      "unit_code": "INFS6600",
+      "category_id": "work_integrated_applied",
+      "category": "Work-Integrated and Applied Learning",
+      "item_id": "AS10",
+      "section": "assessment",
+      "label": "Boardroom Presentation Slides submission before class Live presentation",
+      "text": "Type: Presentation. Description: Boardroom Presentation Slides submission before class Live presentation",
+      "score": 3.5,
+      "positive_threshold": 3.0,
+      "high_confidence_threshold": 5.0,
+      "threshold_status": "provisional_pending_client_confirmation",
+      "matched_rules": [
+        {
+          "rule": "professional presentation",
+          "matched_phrases": [
+            "boardroom presentation"
+          ],
+          "weight": 3.5,
+          "review_required": false,
+          "weight_status": "unchanged"
+        }
+      ],
+      "manual_review_required": false,
+      "source_url": "https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC",
+      "classification_status": "positive",
+      "confidence": "moderate"
+    },
+    {
+      "unit_code": "INFS6600",
+      "category_id": "work_integrated_applied",
+      "category": "Work-Integrated and Applied Learning",
+      "item_id": "AS11",
+      "section": "assessment",
+      "label": "Boardroom Presentation Q&A Q&A post boardroom presentation",
+      "text": "Type: Q&A following presentation, submission or placement. Description: Boardroom Presentation Q&A Q&A post boardroom presentation",
+      "score": 3.5,
+      "positive_threshold": 3.0,
+      "high_confidence_threshold": 5.0,
+      "threshold_status": "provisional_pending_client_confirmation",
+      "matched_rules": [
+        {
+          "rule": "professional presentation",
+          "matched_phrases": [
+            "boardroom presentation"
+          ],
+          "weight": 3.5,
+          "review_required": false,
+          "weight_status": "unchanged"
+        }
+      ],
+      "manual_review_required": false,
+      "source_url": "https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC",
+      "classification_status": "positive",
+      "confidence": "moderate"
+    },
+    {
+      "unit_code": "INFS6600",
+      "category_id": "project_problem_based",
+      "category": "Project- and Problem-Based Learning",
+      "item_id": "WK01",
+      "section": "weekly_schedule",
+      "label": "Week 01: Unit Introduction & Project Immersion",
+      "text": "Unit Introduction & Project Immersion. Learning activity: Seminar (3 hr)",
+      "score": 3.5,
+      "positive_threshold": 3.0,
+      "high_confidence_threshold": 5.0,
+      "threshold_status": "provisional_pending_client_confirmation",
+      "matched_rules": [
+        {
+          "rule": "project immersion",
+          "matched_phrases": [
+            "project immersion"
+          ],
+          "weight": 3.5,
+          "review_required": false,
+          "weight_status": "configured"
+        }
+      ],
+      "manual_review_required": false,
+      "source_url": "https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC",
+      "classification_status": "positive",
+      "confidence": "moderate"
+    },
+    {
+      "unit_code": "INFS6600",
+      "category_id": "work_integrated_applied",
+      "category": "Work-Integrated and Applied Learning",
+      "item_id": "WK02",
+      "section": "weekly_schedule",
+      "label": "Week 02: Partner Briefing & Group Collaboration",
+      "text": "Partner Briefing & Group Collaboration. Learning activity: Seminar (3 hr)",
+      "score": 4.0,
+      "positive_threshold": 3.0,
+      "high_confidence_threshold": 5.0,
+      "threshold_status": "provisional_pending_client_confirmation",
+      "matched_rules": [
+        {
+          "rule": "industry or business partner",
+          "matched_phrases": [
+            "partner briefing"
+          ],
+          "weight": 4.0,
+          "review_required": false,
+          "weight_status": "existing_high_weight"
+        }
+      ],
+      "manual_review_required": false,
+      "source_url": "https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC",
+      "classification_status": "positive",
+      "confidence": "moderate"
+    },
+    {
+      "unit_code": "INFS6600",
+      "category_id": "project_problem_based",
+      "category": "Project- and Problem-Based Learning",
+      "item_id": "WK03",
+      "section": "weekly_schedule",
+      "label": "Week 03: Problem & Opportunity Scoping",
+      "text": "Problem & Opportunity Scoping. Learning activity: Seminar (3 hr)",
+      "score": 3.5,
+      "positive_threshold": 3.0,
+      "high_confidence_threshold": 5.0,
+      "threshold_status": "provisional_pending_client_confirmation",
+      "matched_rules": [
+        {
+          "rule": "problem and opportunity scoping",
+          "matched_phrases": [
+            "problem & opportunity scoping"
+          ],
+          "weight": 3.5,
+          "review_required": false,
+          "weight_status": "configured"
+        }
+      ],
+      "manual_review_required": false,
+      "source_url": "https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC",
+      "classification_status": "positive",
+      "confidence": "moderate"
+    },
+    {
+      "unit_code": "INFS6600",
+      "category_id": "work_integrated_applied",
+      "category": "Work-Integrated and Applied Learning",
+      "item_id": "WK05",
+      "section": "weekly_schedule",
+      "label": "Week 05: Pitch to Partner",
+      "text": "Pitch to Partner. Learning activity: Seminar (3 hr)",
+      "score": 4.0,
+      "positive_threshold": 3.0,
+      "high_confidence_threshold": 5.0,
+      "threshold_status": "provisional_pending_client_confirmation",
+      "matched_rules": [
+        {
+          "rule": "industry or business partner",
+          "matched_phrases": [
+            "pitch to partner"
+          ],
+          "weight": 4.0,
+          "review_required": false,
+          "weight_status": "existing_high_weight"
+        }
+      ],
+      "manual_review_required": false,
+      "source_url": "https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC",
+      "classification_status": "positive",
+      "confidence": "moderate"
+    },
+    {
+      "unit_code": "INFS6600",
+      "category_id": "project_problem_based",
+      "category": "Project- and Problem-Based Learning",
+      "item_id": "WK09",
+      "section": "weekly_schedule",
+      "label": "Week 09: Prototype Validation",
+      "text": "Prototype Validation. Learning activity: Seminar (3 hr)",
+      "score": 3.5,
+      "positive_threshold": 3.0,
+      "high_confidence_threshold": 5.0,
+      "threshold_status": "provisional_pending_client_confirmation",
+      "matched_rules": [
+        {
+          "rule": "design and prototype method",
+          "matched_phrases": [
+            "prototype validation"
+          ],
+          "weight": 3.5,
+          "review_required": false,
+          "weight_status": "configured"
+        }
+      ],
+      "manual_review_required": false,
+      "source_url": "https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC",
+      "classification_status": "positive",
+      "confidence": "moderate"
+    },
+    {
+      "unit_code": "INFS6600",
+      "category_id": "work_integrated_applied",
+      "category": "Work-Integrated and Applied Learning",
+      "item_id": "WK12",
+      "section": "weekly_schedule",
+      "label": "Week 12: Boardroom Presentation",
+      "text": "Boardroom Presentation. Learning activity: Seminar (3 hr)",
+      "score": 3.5,
+      "positive_threshold": 3.0,
+      "high_confidence_threshold": 5.0,
+      "threshold_status": "provisional_pending_client_confirmation",
+      "matched_rules": [
+        {
+          "rule": "professional presentation",
+          "matched_phrases": [
+            "boardroom presentation"
+          ],
+          "weight": 3.5,
+          "review_required": false,
+          "weight_status": "unchanged"
+        }
+      ],
+      "manual_review_required": false,
+      "source_url": "https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC",
+      "classification_status": "positive",
+      "confidence": "moderate"
+    }
+  ],
+  "review_queue": [
+    {
+      "unit_code": "INFS6600",
+      "category_id": "case_based",
+      "category": "Case-Based Learning",
+      "item_id": "AS06",
+      "section": "assessment",
+      "label": "Business Models Submission of partner's business, operating models, and IS architecture",
+      "text": "Type: Case studies. Description: Business Models Submission of partner's business, operating models, and IS architecture",
+      "score": 2.0,
+      "positive_threshold": 3.0,
+      "high_confidence_threshold": 5.0,
+      "threshold_status": "provisional_pending_client_confirmation",
+      "matched_rules": [
+        {
+          "rule": "administrative case-studies label",
+          "matched_phrases": [
+            "type: case studies"
+          ],
+          "weight": 2.0,
+          "review_required": true,
+          "weight_status": "downgraded_from_strong_after_tutor_overlap_feedback"
+        }
+      ],
+      "manual_review_required": true,
+      "source_url": "https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC",
+      "classification_status": "review",
+      "confidence": "review"
+    },
+    {
+      "unit_code": "INFS6600",
+      "category_id": "case_based",
+      "category": "Case-Based Learning",
+      "item_id": "AS12",
+      "section": "assessment",
+      "label": "Group Report Written report",
+      "text": "Type: Case studies. Description: Group Report Written report",
+      "score": 2.0,
+      "positive_threshold": 3.0,
+      "high_confidence_threshold": 5.0,
+      "threshold_status": "provisional_pending_client_confirmation",
+      "matched_rules": [
+        {
+          "rule": "administrative case-studies label",
+          "matched_phrases": [
+            "type: case studies"
+          ],
+          "weight": 2.0,
+          "review_required": true,
+          "weight_status": "downgraded_from_strong_after_tutor_overlap_feedback"
+        }
+      ],
+      "manual_review_required": true,
+      "source_url": "https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC",
+      "classification_status": "review",
+      "confidence": "review"
+    },
+    {
+      "unit_code": "INFS6600",
+      "category_id": "work_integrated_applied",
+      "category": "Work-Integrated and Applied Learning",
+      "item_id": "WK01",
+      "section": "weekly_schedule",
+      "label": "Week 01: Unit Introduction & Project Immersion",
+      "text": "Unit Introduction & Project Immersion. Learning activity: Seminar (3 hr)",
+      "score": 2.0,
+      "positive_threshold": 3.0,
+      "high_confidence_threshold": 5.0,
+      "threshold_status": "provisional_pending_client_confirmation",
+      "matched_rules": [
+        {
+          "rule": "project immersion",
+          "matched_phrases": [
+            "project immersion"
+          ],
+          "weight": 2.0,
+          "review_required": false,
+          "weight_status": "unchanged"
+        }
+      ],
+      "manual_review_required": false,
+      "source_url": "https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC",
+      "classification_status": "review",
+      "confidence": "review"
+    },
+    {
+      "unit_code": "INFS6600",
+      "category_id": "project_problem_based",
+      "category": "Project- and Problem-Based Learning",
+      "item_id": "WK04",
+      "section": "weekly_schedule",
+      "label": "Week 04: Project Planning",
+      "text": "Project Planning. Learning activity: Seminar (3 hr)",
+      "score": 2.0,
+      "positive_threshold": 3.0,
+      "high_confidence_threshold": 5.0,
+      "threshold_status": "provisional_pending_client_confirmation",
+      "matched_rules": [
+        {
+          "rule": "generic project planning",
+          "matched_phrases": [
+            "project planning"
+          ],
+          "weight": 2.0,
+          "review_required": true,
+          "weight_status": "configured"
+        }
+      ],
+      "manual_review_required": true,
+      "source_url": "https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC",
+      "classification_status": "review",
+      "confidence": "review"
+    },
+    {
+      "unit_code": "INFS6600",
+      "category_id": "entrepreneurial_learning",
+      "category": "Entrepreneurial Learning",
+      "item_id": "WK07",
+      "section": "weekly_schedule",
+      "label": "Week 07: Ideation",
+      "text": "Ideation. Learning activity: Seminar (3 hr)",
+      "score": 2.0,
+      "positive_threshold": 3.0,
+      "high_confidence_threshold": 5.0,
+      "threshold_status": "provisional_pending_client_confirmation",
+      "matched_rules": [
+        {
+          "rule": "generic ideation or prototyping",
+          "matched_phrases": [
+            "ideation"
+          ],
+          "weight": 2.0,
+          "review_required": true,
+          "weight_status": "configured"
+        }
+      ],
+      "manual_review_required": true,
+      "source_url": "https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC",
+      "classification_status": "review",
+      "confidence": "review"
+    },
+    {
+      "unit_code": "INFS6600",
+      "category_id": "entrepreneurial_learning",
+      "category": "Entrepreneurial Learning",
+      "item_id": "WK08",
+      "section": "weekly_schedule",
+      "label": "Week 08: Prototyping",
+      "text": "Prototyping. Learning activity: Seminar (3 hr)",
+      "score": 2.0,
+      "positive_threshold": 3.0,
+      "high_confidence_threshold": 5.0,
+      "threshold_status": "provisional_pending_client_confirmation",
+      "matched_rules": [
+        {
+          "rule": "generic ideation or prototyping",
+          "matched_phrases": [
+            "prototyping"
+          ],
+          "weight": 2.0,
+          "review_required": true,
+          "weight_status": "configured"
+        }
+      ],
+      "manual_review_required": true,
+      "source_url": "https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC",
+      "classification_status": "review",
+      "confidence": "review"
+    },
+    {
+      "unit_code": "INFS6600",
+      "category_id": "project_problem_based",
+      "category": "Project- and Problem-Based Learning",
+      "item_id": "WK10",
+      "section": "weekly_schedule",
+      "label": "Week 10: Implementation Planning",
+      "text": "Implementation Planning. Learning activity: Seminar (3 hr)",
+      "score": 2.0,
+      "positive_threshold": 3.0,
+      "high_confidence_threshold": 5.0,
+      "threshold_status": "provisional_pending_client_confirmation",
+      "matched_rules": [
+        {
+          "rule": "generic project planning",
+          "matched_phrases": [
+            "implementation planning"
+          ],
+          "weight": 2.0,
+          "review_required": true,
+          "weight_status": "configured"
+        }
+      ],
+      "manual_review_required": true,
+      "source_url": "https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC",
+      "classification_status": "review",
+      "confidence": "review"
+    }
+  ],
+  "tutor_feedback_regression": {
+    "expected_positive_categories": [
+      "case_based",
+      "project_problem_based",
+      "work_integrated_applied"
+    ],
+    "observed_positive_categories": [
+      "case_based",
+      "project_problem_based",
+      "work_integrated_applied"
+    ],
+    "expected_categories_present": true,
+    "simulation_positive": false,
+    "note": "Simulation is evaluated independently. A true Simulation positive is not an error, but it must come from Simulation-specific evidence."
+  }
+}

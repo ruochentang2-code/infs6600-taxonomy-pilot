@@ -1,0 +1,9 @@
+﻿category_id,category,classification_status,belongs_to_category,evidence_item_count,review_item_count,classified_score_total,review_score_total,total_matched_score,section_counts,review_section_counts
+work_integrated_applied,Work-Integrated and Applied Learning,positive,True,11,1,48.5,2.0,50.5,"{""assessment"": 4, ""learning_outcome"": 3, ""overview"": 1, ""weekly_schedule"": 3}","{""weekly_schedule"": 1}"
+simulation,Simulation,no_match,False,0,0,0,0,0,{},{}
+case_based,Case-Based Learning,positive,True,1,2,3.5,4.0,7.5,"{""learning_outcome"": 1}","{""assessment"": 2}"
+project_problem_based,Project- and Problem-Based Learning,positive,True,4,2,14.5,4.0,18.5,"{""learning_outcome"": 1, ""weekly_schedule"": 3}","{""weekly_schedule"": 2}"
+community_learning,Community Learning,no_match,False,0,0,0,0,0,{},{}
+entrepreneurial_learning,Entrepreneurial Learning,review_only,False,0,2,0,4.0,4.0,{},"{""weekly_schedule"": 2}"
+technology_mediated_learning,Technology-Mediated Learning,no_match,False,0,0,0,0,0,{},{}
+hybrid_learning,Hybrid Learning,no_match,False,0,0,0,0,0,{},{}

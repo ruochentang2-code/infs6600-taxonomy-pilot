@@ -1,4 +1,4 @@
-"""Generate a concise, evidence-led Markdown pilot report."""
+"""Generate the evidence-led tutor-feedback v2 Markdown pilot report."""
 
 from __future__ import annotations
 
@@ -9,8 +9,12 @@ from pathlib import Path
 from taxonomy_config import load_taxonomy
 
 
-def esc(text: str) -> str:
-    return text.replace("|", "\\|").replace("\n", " ")
+def esc(text: object) -> str:
+    return str(text).replace("|", "\\|").replace("\n", " ")
+
+
+def _rule_text(row: dict) -> str:
+    return "; ".join(match["rule"] for match in row["matched_rules"])
 
 
 def main() -> None:
@@ -19,61 +23,96 @@ def main() -> None:
     parser.add_argument(
         "--taxonomy",
         type=Path,
-        help="Optional JSON override. If omitted, the built-in two-category pilot is used.",
+        help="Optional JSON override. If omitted, tutor-feedback taxonomy v2 is used.",
     )
     parser.add_argument("--output", type=Path, required=True)
     args = parser.parse_args()
     result = json.loads(args.result.read_text(encoding="utf-8"))
     taxonomy = load_taxonomy(args.taxonomy)
-    category_lookup = {row["id"]: row for row in taxonomy["categories"]}
 
+    positive_categories = [
+        row["category"] for row in result["summary"] if row["belongs_to_category"]
+    ]
+    thresholds = result["decision_thresholds"]
     lines = [
-        "# INFS6600 two-category taxonomy pilot",
+        "# INFS6600 taxonomy pilot v2",
         "",
-        f"**Unit:** {result['unit_code']} - {result['unit_title']}",
-        f"**Outline:** {result['session']}",
+        f"**Unit:** {result['unit_code']} - {result['unit_title']}  ",
+        f"**Outline:** {result['session']}  ",
+        f"**Taxonomy:** {result['taxonomy_version']}  ",
         f"**Official source:** {result['source_url']}",
         "",
-        "## Result",
+        "## Executive result",
         "",
-        "| Category | Evidence items | Interpretation |",
-        "|---|---:|---|",
+        "INFS6600 is positively classified into: "
+        + ", ".join(f"**{name}**" for name in positive_categories)
+        + ".",
+        "",
+        "This is a multi-label result. Categories are not mutually exclusive, and one evidence item may support more than one category.",
+        "",
+        "| Category | Status | Positive items | Review items | Classified score | Review score |",
+        "|---|---|---:|---:|---:|---:|",
     ]
     for summary in result["summary"]:
-        interpretation = (
-            "Strong, repeated evidence across the outline."
-            if summary["evidence_item_count"] >= 5
-            else "Limited, explicit evidence; manual confirmation recommended."
+        lines.append(
+            f"| {summary['category']} | {summary['classification_status']} | "
+            f"{summary['evidence_item_count']} | {summary['review_item_count']} | "
+            f"{summary['classified_score_total']} | {summary['review_score_total']} |"
         )
-        lines.append(f"| {summary['category']} | {summary['evidence_item_count']} | {interpretation} |")
 
     lines += [
         "",
-        "The counts are not raw keyword frequencies. One count means one distinct overview paragraph, learning outcome, assessment row or weekly-schedule row classified above the threshold.",
+        "## Tutor changes implemented",
         "",
-        "## Evidence",
+        "- Simulation and Case-Based Learning are separate categories.",
+        "- INFS6600 may appear in several categories; the classifier does not force a single winner.",
+        "- Authentic practice is weighted 4.0; theory-practice integration 2.0; practical teamwork 2.0; career readiness 2.0 (the last remains provisional because the tutor wrote 'Maybe 2').",
+        "- Administrative `Case studies` assessment labels are weak review signals with weight 2.0, rather than automatic positive evidence.",
+        "- Total classified score, review score, distinct evidence count, and source-section distribution are reported separately.",
         "",
-        "| Category | Section | Outline item | Score | Confidence | Matched rule |",
+        "## Positive evidence",
+        "",
+        "| Category | Section | Item | Score | Confidence | Matched rules |",
         "|---|---|---|---:|---|---|",
     ]
     for row in result["evidence"]:
-        rule_text = "; ".join(match["rule"] for match in row["matched_rules"])
         lines.append(
-            f"| {esc(row['category'])} | {row['section']} | {esc(row['label'])} | {row['score']} | {row['confidence']} | {esc(rule_text)} |"
+            f"| {esc(row['category'])} | {row['section']} | {esc(row['item_id'] + ' ' + row['label'])} | "
+            f"{row['score']} | {row['confidence']} | {esc(_rule_text(row))} |"
         )
 
     lines += [
         "",
-        "## Algorithm",
+        "## Manual-review queue",
         "",
-        "1. Fetch the latest Semester 2 official outline and split it into auditable items: overview paragraphs, learning outcomes, assessment rows and weekly-schedule rows.",
-        "2. Normalise case, whitespace and dash variants without removing the original evidence text.",
-        "3. Apply category-specific phrase rules derived from the supplied definitions and examples. Strong explicit phrases score 3.5-4.0; supporting phrases score 1.5-2.5.",
-        "4. Classify an item only when its category score reaches 3.0. This prevents isolated generic terms such as 'project', 'business' or 'presentation' from creating a positive result.",
-        "5. Deduplicate at item-category level and retain the matched rules, score, source section and official URL for audit.",
-        "6. Place sub-threshold matches in a review queue rather than counting them.",
+        "| Category | Section | Item | Score | Reason |",
+        "|---|---|---|---:|---|",
+    ]
+    for row in result["review_queue"]:
+        reason = (
+            "Review-only rule"
+            if all(match["review_required"] for match in row["matched_rules"])
+            else "Below positive threshold"
+        )
+        lines.append(
+            f"| {esc(row['category'])} | {row['section']} | {esc(row['item_id'] + ' ' + row['label'])} | "
+            f"{row['score']} | {reason}: {esc(_rule_text(row))} |"
+        )
+
+    lines += [
         "",
-        "## Category standards used",
+        "## Scoring and aggregation",
+        "",
+        "1. Split the public outline into distinct overview, learning-outcome, assessment, and weekly-schedule items.",
+        "2. Normalise case, whitespace, apostrophes, and dash variants while preserving the original evidence text.",
+        "3. Evaluate each item once against every category. Alternative phrases inside one rule contribute that rule's weight only once.",
+        "4. A positive item must reach the provisional positive threshold and must contain at least one non-review-only rule.",
+        "5. Deduplicate at item-category level. The same item may count once in several categories because the taxonomy is multi-label.",
+        "6. Sum positive item scores to obtain the classified unit-category total. Report review scores separately rather than mixing ambiguous labels into the positive total.",
+        "",
+        f"The current thresholds are positive >= {thresholds['positive']} and high confidence >= {thresholds['high_confidence']}. Their status is `{thresholds['status']}`; they remain configurable and are not presented as client-validated cut-offs.",
+        "",
+        "## Category standards",
         "",
     ]
     for category in taxonomy["categories"]:
@@ -82,20 +121,28 @@ def main() -> None:
             "",
             category["definition"],
             "",
-            f"Threshold: {category['threshold']}. Explicit evidence is required; contextual similarity alone is not counted in this two-day pilot.",
+            f"Overlap: {category.get('overlap_notes', 'None documented')}",
+            "",
+            f"Review guidance: {category.get('review_guidance', 'None documented')}",
             "",
         ]
 
     lines += [
-        "## Limitations and next step",
+        "## Limitations and decisions still required",
         "",
-        "This is a transparent baseline, not a final semantic classifier. The administrative assessment type 'Case studies' is counted as explicit case-based evidence, but should be confirmed with the client because the task description itself concerns a partner's business model. The next iteration should add client-reviewed labels and compare precision/recall against a small manually annotated set before adding embeddings or an LLM.",
+        "- The 3.0 and 5.0 thresholds are provisional and require client confirmation or sensitivity testing against reviewed labels.",
+        "- Career readiness is set to 2.0 following a tentative tutor comment and remains marked provisional in the configuration.",
+        "- Phrase matching does not understand negation, complex context, or semantic equivalence.",
+        "- Precision, recall, and F1 should not be reported until a client-reviewed reference set exists.",
+        "- This iteration validates INFS6600 only; additional units should be introduced as a small smoke-test batch before full-discipline scaling.",
         "",
         "## Visualisations",
         "",
-        "![Category evidence counts](../visualisations/category_summary.png)",
+        "![Positive and review evidence by category](../visualisations/category_summary.png)",
         "",
-        "![Evidence by source section](../visualisations/evidence_by_section.png)",
+        "![Classified and review scores by category](../visualisations/category_scores.png)",
+        "",
+        "![Positive evidence by source section](../visualisations/evidence_by_section.png)",
         "",
     ]
     args.output.parent.mkdir(parents=True, exist_ok=True)
@@ -105,4 +152,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

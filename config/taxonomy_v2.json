@@ -1,0 +1,284 @@
+{
+  "version": "2026-09-01-tutor-feedback-v2",
+  "title": "CS-44 Pedagogical Innovation Taxonomy v2",
+  "counting_unit": "One distinct outline item (overview paragraph, learning outcome, assessment row, or weekly-schedule row) evaluated once per category.",
+  "decision_thresholds": {
+    "positive": 3.0,
+    "high_confidence": 5.0,
+    "status": "provisional_pending_client_confirmation"
+  },
+  "policies": {
+    "multi_label": true,
+    "categories_mutually_exclusive": false,
+    "deduplication": "item-category",
+    "rule_alternatives_count_once": true,
+    "administrative_labels_require_review": true,
+    "unit_category_total": "Sum of item scores classified positive for the category; review scores are reported separately."
+  },
+  "categories": [
+    {
+      "id": "work_integrated_applied",
+      "name": "Work-Integrated and Applied Learning",
+      "definition": "An educational approach that explicitly merges theory with real-world practice and embeds authentic industry, workplace, or community-relevant work and tasks into a unit of study.",
+      "overlap_notes": "May overlap with Project- and Problem-Based Learning, Case-Based Learning, Community Learning, and Entrepreneurial Learning.",
+      "review_guidance": "Check that professional or partner language describes an authentic learning task rather than a generic context statement.",
+      "rules": [
+        {
+          "label": "industry or business partner",
+          "pattern": "industry partner|business partner|partner briefing|pitch to partner|partner's business|partner business",
+          "weight": 4.0,
+          "weight_status": "existing_high_weight"
+        },
+        {
+          "label": "actual organisation or professional context",
+          "pattern": "actual business organisation|actual business problem|actual business professionals",
+          "weight": 4.0,
+          "weight_status": "existing_high_weight"
+        },
+        {
+          "label": "authentic practice",
+          "pattern": "authentic situations|authentic problem|authentic industry|workplace project|industry project|consulting project|work-integrated learning",
+          "weight": 4.0,
+          "weight_status": "tutor_comment_give_4"
+        },
+        {
+          "label": "professional presentation",
+          "pattern": "boardroom presentation|project presentation",
+          "weight": 3.5,
+          "weight_status": "unchanged"
+        },
+        {
+          "label": "theory-practice integration",
+          "pattern": "theory and practice|theory with real-world practice",
+          "weight": 2.0,
+          "weight_status": "tutor_comment_give_2"
+        },
+        {
+          "label": "practical teamwork",
+          "pattern": "practical teamwork experience",
+          "weight": 2.0,
+          "weight_status": "tutor_comment_give_2"
+        },
+        {
+          "label": "career readiness",
+          "pattern": "career-readiness|career readiness|professional skills",
+          "weight": 2.0,
+          "weight_status": "tutor_comment_maybe_2"
+        },
+        {
+          "label": "project immersion",
+          "pattern": "project immersion",
+          "weight": 2.0,
+          "weight_status": "unchanged"
+        }
+      ]
+    },
+    {
+      "id": "simulation",
+      "name": "Simulation",
+      "definition": "An instructional method that recreates or mimics real-world scenarios, environments, or processes so learners can practise skills and make decisions safely.",
+      "overlap_notes": "Separated from Case-Based Learning by tutor revision. A real-world scenario alone is not a simulation unless the activity recreates, mimics, or role-plays a setting or process.",
+      "review_guidance": "Do not inherit Simulation from a case-study label or from Case-Based Learning evidence.",
+      "rules": [
+        {
+          "label": "explicit simulation",
+          "pattern": "business simulation|lab-based simulation|virtual simulation|simulation-based learning|simulated environment|simulated process",
+          "weight": 4.0
+        },
+        {
+          "label": "explicit role play",
+          "pattern": "role-play|role play",
+          "weight": 4.0
+        },
+        {
+          "label": "scenario simulation",
+          "pattern": "simulation scenario|scenario simulation|simulated scenario",
+          "weight": 3.5
+        }
+      ]
+    },
+    {
+      "id": "case_based",
+      "name": "Case-Based Learning",
+      "definition": "An active teaching method in which students use real-world scenarios and case studies to build critical-thinking and problem-solving skills.",
+      "overlap_notes": "May overlap with Work-Integrated and Applied Learning and Project- and Problem-Based Learning. Industry context does not exclude a case-based classification.",
+      "review_guidance": "An administrative assessment type such as 'Case studies' is retained as a weak review signal and is not sufficient by itself for a positive classification.",
+      "rules": [
+        {
+          "label": "explicit case method",
+          "pattern": "case study analysis|case study practice|case-based learning|case based learning",
+          "weight": 4.0
+        },
+        {
+          "label": "case activity",
+          "pattern": "case-based exam|case based exam|case competition|case discussion",
+          "weight": 4.0
+        },
+        {
+          "label": "explicit scenario method",
+          "pattern": "open-ended business scenarios|real-world scenarios|case scenario",
+          "weight": 3.5
+        },
+        {
+          "label": "administrative case-studies label",
+          "pattern": "type: case studies",
+          "weight": 2.0,
+          "review_required": true,
+          "weight_status": "downgraded_from_strong_after_tutor_overlap_feedback"
+        }
+      ]
+    },
+    {
+      "id": "project_problem_based",
+      "name": "Project- and Problem-Based Learning",
+      "definition": "Learning focused on real-world problems and challenges using problem-solving, decision-making, investigative, and self-directed learning skills.",
+      "overlap_notes": "May overlap with Work-Integrated and Applied Learning when projects involve clients or industry partners, and with Case-Based Learning when cases are used inside a project.",
+      "review_guidance": "Do not classify from the generic word 'project' alone; require a problem, challenge, immersion, investigation, or explicit project/problem-based method.",
+      "rules": [
+        {
+          "label": "explicit project or problem-based method",
+          "pattern": "project-based learning|project based learning|problem-based learning|problem based learning|challenge-based learning|challenge based learning",
+          "weight": 4.0
+        },
+        {
+          "label": "authentic problem or challenge",
+          "pattern": "actual business problem|real-world problem|real world problem|complex challenge",
+          "weight": 4.0
+        },
+        {
+          "label": "project immersion",
+          "pattern": "project immersion",
+          "weight": 3.5
+        },
+        {
+          "label": "problem and opportunity scoping",
+          "pattern": "problem & opportunity scoping|problem and opportunity scoping",
+          "weight": 3.5
+        },
+        {
+          "label": "design and prototype method",
+          "pattern": "design thinking|prototype validation|product development project",
+          "weight": 3.5
+        },
+        {
+          "label": "generic project planning",
+          "pattern": "project planning|implementation planning",
+          "weight": 2.0,
+          "review_required": true
+        }
+      ]
+    },
+    {
+      "id": "community_learning",
+      "name": "Community Learning",
+      "definition": "Learning undertaken together with or for communities, including service-learning, field studies, and professional communities of practice.",
+      "overlap_notes": "May overlap with Work-Integrated and Applied Learning when the authentic partner is a community organisation.",
+      "review_guidance": "Require an explicit community, service-learning, field-study, or community-of-practice activity.",
+      "rules": [
+        {
+          "label": "service or community-engaged learning",
+          "pattern": "service-learning|service learning|community-engaged learning|community engaged learning",
+          "weight": 4.0
+        },
+        {
+          "label": "community project or field study",
+          "pattern": "community project|social impact project|field study|field studies",
+          "weight": 3.5
+        },
+        {
+          "label": "community of practice",
+          "pattern": "community of practice|communities of practice",
+          "weight": 3.5
+        }
+      ]
+    },
+    {
+      "id": "entrepreneurial_learning",
+      "name": "Entrepreneurial Learning",
+      "definition": "Learning that develops the knowledge, skills, and mindset to recognise opportunities, turn ideas into action, and manage new ventures under uncertainty.",
+      "overlap_notes": "May overlap with Project- and Problem-Based Learning and Simulation when learners develop or simulate a venture.",
+      "review_guidance": "Generic ideation, pitching, or prototyping is a review signal unless explicitly connected to entrepreneurship, a startup, a product-development project, or a venture.",
+      "rules": [
+        {
+          "label": "explicit entrepreneurship or startup",
+          "pattern": "entrepreneurial learning|entrepreneurship|start-up|startup",
+          "weight": 4.0
+        },
+        {
+          "label": "new venture",
+          "pattern": "new venture|manage ventures|venture creation",
+          "weight": 4.0
+        },
+        {
+          "label": "product development project",
+          "pattern": "product development project|startup pitch|start-up pitch|pitch competition",
+          "weight": 3.5
+        },
+        {
+          "label": "generic ideation or prototyping",
+          "pattern": "ideation|prototyping",
+          "weight": 2.0,
+          "review_required": true
+        }
+      ]
+    },
+    {
+      "id": "technology_mediated_learning",
+      "name": "Technology-Mediated Learning",
+      "definition": "An instructional environment in which digital devices, networks, or specialised technologies mediate access to content and interaction during learning.",
+      "overlap_notes": "May overlap with Simulation, Hybrid Learning, or Entrepreneurial Learning. Merely studying digital technology is not evidence that learning is technology-mediated.",
+      "review_guidance": "Require the technology to be part of the learning method, not only the subject matter.",
+      "rules": [
+        {
+          "label": "immersive or virtual learning",
+          "pattern": "vr-based experiential learning|vr based experiential learning|ar-based experiential learning|ar based experiential learning|virtual simulation",
+          "weight": 4.0
+        },
+        {
+          "label": "AI-mediated or digital twin",
+          "pattern": "ai-mediated role-play|ai mediated role play|digital twin exercise|digital twin exercises",
+          "weight": 4.0
+        },
+        {
+          "label": "gamification or serious games",
+          "pattern": "gamification|serious game|serious games",
+          "weight": 4.0
+        },
+        {
+          "label": "immersive scenario training",
+          "pattern": "immersive scenario training|technology-mediated learning|technology mediated learning",
+          "weight": 3.5
+        }
+      ]
+    },
+    {
+      "id": "hybrid_learning",
+      "name": "Hybrid Learning",
+      "definition": "An education model that mixes face-to-face classroom teaching with online digital instruction.",
+      "overlap_notes": "May overlap with Technology-Mediated Learning, but requires an explicit combination of physical and online modes.",
+      "review_guidance": "Online materials alone are insufficient; require an explicit hybrid, blended, flipped, hyflex, or mixed-mode design.",
+      "rules": [
+        {
+          "label": "explicit hybrid or blended mode",
+          "pattern": "hybrid learning|blended learning|hyflex",
+          "weight": 4.0
+        },
+        {
+          "label": "flipped classroom",
+          "pattern": "flipped classroom|flipped learning",
+          "weight": 4.0
+        },
+        {
+          "label": "mixed face-to-face and online",
+          "pattern": "face-to-face and online|face to face and online|mixed-mode learning|mixed mode learning",
+          "weight": 4.0
+        },
+        {
+          "label": "self-paced online modules",
+          "pattern": "self-paced online module|self paced online module|self-paced modules",
+          "weight": 3.5
+        }
+      ]
+    }
+  ]
+}

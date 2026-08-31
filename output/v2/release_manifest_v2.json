@@ -1,0 +1,84 @@
+{
+  "release": "tutor-feedback-v2",
+  "taxonomy_version": "2026-09-01-tutor-feedback-v2",
+  "source_url": "https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC",
+  "retrieved_at": "2026-08-31T16:10:06.515477+00:00",
+  "positive_categories": [
+    "Work-Integrated and Applied Learning",
+    "Case-Based Learning",
+    "Project- and Problem-Based Learning"
+  ],
+  "tutor_feedback_regression": {
+    "expected_positive_categories": [
+      "case_based",
+      "project_problem_based",
+      "work_integrated_applied"
+    ],
+    "observed_positive_categories": [
+      "case_based",
+      "project_problem_based",
+      "work_integrated_applied"
+    ],
+    "expected_categories_present": true,
+    "simulation_positive": false,
+    "note": "Simulation is evaluated independently. A true Simulation positive is not an error, but it must come from Simulation-specific evidence."
+  },
+  "files": [
+    {
+      "path": "output/v2/data/raw/infs6600_outline.json",
+      "sha256": "7192243dd7ae9e4b2e91b29e313b40c3475e32412674596e9ee5f54daf4101a2"
+    },
+    {
+      "path": "output/v2/data/processed/classification_results.json",
+      "sha256": "be5b3155a5eee7aced1849c96f1c3c39d31e1010d914d58ed574bab62088eeca"
+    },
+    {
+      "path": "output/v2/data/processed/classified_evidence.csv",
+      "sha256": "64fdf65e663667d4027c092574d8a062a8ee1d347e9e242c87273a84a5936547"
+    },
+    {
+      "path": "output/v2/data/processed/review_queue.csv",
+      "sha256": "57c28217342fcdda2be1cef80bdd596c590be06a7523dc1d3c983ddc54ded4d7"
+    },
+    {
+      "path": "output/v2/data/processed/unit_category_summary.csv",
+      "sha256": "5561b3511cf9c2f1da327bc408a640f306cb7cc50d13f6aa3801272ac76e504d"
+    },
+    {
+      "path": "output/v2/reports/infs6600_course_information.md",
+      "sha256": "10961b153921c8a74ad088546404e936c615a5c3de6b5acbae48992c1034a39e"
+    },
+    {
+      "path": "output/v2/reports/pilot_results_v2.md",
+      "sha256": "d27a6380b3ec3d675b045f690167e7f186a14acde0f086b9930f345f8c172ce4"
+    },
+    {
+      "path": "output/v2/reports/course_category_mapping_v2.md",
+      "sha256": "957d817a6086827f0f4fd0ec39859aef5e76c130423e3d2cdcdfcd994a9f5291"
+    },
+    {
+      "path": "output/v2/reports/course_category_mapping_v2.csv",
+      "sha256": "da5b8009db19a3673179af70cbfd85aad33d8fe55c42fa911b0067f2855bdf1b"
+    },
+    {
+      "path": "output/v2/visualisations/category_summary.png",
+      "sha256": "399ef2b22632109c1a2c62b308f7e56dbaee150018eba4659928c86552519a05"
+    },
+    {
+      "path": "output/v2/visualisations/category_scores.png",
+      "sha256": "bb66dc4fe04073d0e7537e9d3d88a1bcce8231c1003e76aa5113593168a710df"
+    },
+    {
+      "path": "output/v2/visualisations/evidence_by_section.png",
+      "sha256": "9030b619a478a4e9d6f61c1265808ee1ceb781c5581626794e4ba3e00d746800"
+    },
+    {
+      "path": "output/pdf/02_Classification_Algorithm_Detailed_v2.pdf",
+      "sha256": "b50087d56801a314a6a6c156edf8c0da2c17e3333aa65b758c99511a2b8de8b0"
+    },
+    {
+      "path": "output/pdf/05_INFS6600_Course_Category_Mapping_v2.pdf",
+      "sha256": "215ecdec8eed1fd9973dc3f68e890609fbe04f3e69095bbe6aedf7b923bf38c7"
+    }
+  ]
+}
