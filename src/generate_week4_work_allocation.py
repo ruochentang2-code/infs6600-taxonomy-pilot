@@ -33,7 +33,7 @@ GREEN = "2E7D32"
 MEMBERS = [
     {
         "number": "01",
-        "name": "Houming Chen",
+        "name": "Member 1",
         "stream": "Coordination, tutor-feedback traceability and scope control",
         "completed": [
             "Converted the meeting, email, PDF comments and scope-document changes into one acceptance checklist.",
@@ -49,7 +49,7 @@ MEMBERS = [
     },
     {
         "number": "02",
-        "name": "Haidi Sun",
+        "name": "Member 2",
         "stream": "Taxonomy definitions and versioned configuration",
         "completed": [
             "Configured all eight supplied taxonomy categories for the pilot.",
@@ -65,7 +65,7 @@ MEMBERS = [
     },
     {
         "number": "03",
-        "name": "Yulei He",
+        "name": "Member 3",
         "stream": "Multi-label, overlap and review policy",
         "completed": [
             "Defined categories as non-mutually-exclusive and removed any single-winner assumption.",
@@ -81,7 +81,7 @@ MEMBERS = [
     },
     {
         "number": "04",
-        "name": "Ruochen Tang",
+        "name": "Member 4",
         "stream": "INFS6600 source evidence and pilot rerun",
         "completed": [
             "Verified the INFS6600 2026 Semester 2 public-outline snapshot and official source URL.",
@@ -97,7 +97,7 @@ MEMBERS = [
     },
     {
         "number": "05",
-        "name": "Xiaopeng Ding",
+        "name": "Member 5",
         "stream": "Scoring method, WIL weights and confidence logic",
         "completed": [
             "Applied the tutor comments to the four WIL weights: 4.0, 2.0, 2.0 and provisional 2.0.",
@@ -113,7 +113,7 @@ MEMBERS = [
     },
     {
         "number": "06",
-        "name": "Huaicong Yu",
+        "name": "Member 6",
         "stream": "Evidence aggregation and course-category mapping",
         "completed": [
             "Counted distinct evidence items rather than raw keyword occurrences.",
@@ -129,7 +129,7 @@ MEMBERS = [
     },
     {
         "number": "07",
-        "name": "Jinfei Qiu",
+        "name": "Member 7",
         "stream": "Visualisation and report production",
         "completed": [
             "Created three INFS6600-only taxonomy figures for evidence counts, scores and source sections.",
@@ -145,7 +145,7 @@ MEMBERS = [
     },
     {
         "number": "08",
-        "name": "Yihang Zhao",
+        "name": "Member 8",
         "stream": "Quality assurance, release packaging and version control",
         "completed": [
             "Ran offline unit and tutor-feedback regression checks for the eight-category multi-label result.",
@@ -533,7 +533,7 @@ def add_final_page(document: Document) -> None:
     document.add_heading("Meeting run sheet and shared wording", level=1)
     add_callout(
         document,
-        "Recommended total speaking time: 8–10 minutes. Each member owns one 40–60 second update; Houming opens with scope and Yihang closes with verification and release status.",
+        "Recommended total speaking time: 8–10 minutes. Each member owns one 40–60 second update; Member 1 opens with scope and Member 8 closes with verification and release status.",
     )
 
     document.add_heading("Speaking order", level=2)
