@@ -193,7 +193,6 @@ def _footer(canvas, doc) -> None:
     canvas.line(doc.leftMargin, 15 * mm, width - doc.rightMargin, 15 * mm)
     canvas.setFont(FONT, 7.5)
     canvas.setFillColor(MUTED)
-    canvas.drawString(doc.leftMargin, 10 * mm, "CS-44 eight-member project team | INFS6600 taxonomy pilot v2")
     canvas.drawRightString(width - doc.rightMargin, 10 * mm, f"Page {doc.page}")
     canvas.restoreState()
 
@@ -225,26 +224,17 @@ def create_algorithm_pdf(result: dict, taxonomy: dict, path: Path) -> None:
         rightMargin=18 * mm,
         topMargin=18 * mm,
         bottomMargin=21 * mm,
-        title="Classification Algorithm v2",
-        author="CS-44 Project Team (8 members)",
+        title="Classification Algorithm",
+        author="",
     )
     story = [
-        Paragraph("Classification Algorithm v2", STYLES["title"]),
-        Paragraph(
-            "Transparent eight-category, multi-label baseline | Prepared by the eight-member CS-44 project team",
-            STYLES["subtitle"],
-        ),
-        _callout(
-            "The CS-44 project team completed the taxonomy configuration, scoring design, evidence review, quality assurance, and report production. Categories are not mutually exclusive. Simulation and Case-Based Learning are separate. Week 4 remains an INFS6600-only rerun.",
-            usable,
-        ),
-        Paragraph("1. Implemented Week 4 changes", STYLES["h1"]),
-        _bullet("Split Simulation from Case-Based Learning."),
+        Paragraph("Classification Algorithm", STYLES["title"]),
+        Paragraph("1. Classification settings", STYLES["h1"]),
+        _bullet("Evaluate all eight taxonomy categories independently."),
         _bullet("Allow a unit and an evidence item to belong to more than one category."),
-        _bullet("Expect INFS6600 in Work-Integrated and Applied, Project- and Problem-Based, and Case-Based Learning."),
-        _bullet("Add category-level total scoring."),
-        _bullet("Configure the remaining supplied taxonomy categories without analysing additional units."),
-        Paragraph("Supporting pilot refinements", STYLES["h2"]),
+        _bullet("Keep Simulation separate from Case-Based Learning."),
+        _bullet("Calculate category-level totals from distinct evidence items."),
+        Paragraph("Counting refinements", STYLES["h2"]),
         _bullet("Count distinct evidence items rather than raw phrase occurrences."),
         _bullet("Retain overlapping industry/case evidence instead of forcing a single label."),
         Paragraph("2. Evidence unit and counting policy", STYLES["h1"]),
@@ -253,7 +243,7 @@ def create_algorithm_pdf(result: dict, taxonomy: dict, path: Path) -> None:
             "Each outline item is evaluated once per category. A rule contributes its weight once even when several alternative phrases are present. Deduplication is at item-category level, so the same item can count once in several categories.",
             STYLES["body"],
         ),
-        Paragraph("3. Taxonomy v2", STYLES["h1"]),
+        Paragraph("3. Taxonomy categories", STYLES["h1"]),
     ]
     taxonomy_rows = [[_p("Category", "table_header"), _p("Definition", "table_header"), _p("Overlap / review rule", "table_header")]]
     for category in taxonomy["categories"]:
@@ -274,22 +264,21 @@ def create_algorithm_pdf(result: dict, taxonomy: dict, path: Path) -> None:
         for category in taxonomy["categories"]
         if category["id"] == "work_integrated_applied"
     )
-    weight_rows = [[_p("Rule group", "table_header"), _p("v2 weight", "table_header"), _p("Status", "table_header")]]
+    weight_rows = [[_p("Rule group", "table_header"), _p("Weight", "table_header")]]
     for rule in wil["rules"]:
         weight_rows.append(
             [
                 _p(rule["label"]),
                 _p(f"{float(rule['weight']):.1f}", "center"),
-                _p(rule.get("weight_status", "configured")),
             ]
         )
     story += [
-        _table(weight_rows, [72 * mm, 28 * mm, 74 * mm]),
+        _table(weight_rows, [120 * mm, 54 * mm]),
         KeepTogether(
             [
                 Paragraph("5. Decision thresholds and confidence", STYLES["h1"]),
                 _callout(
-                    f"Positive >= {taxonomy['decision_thresholds']['positive']}; high confidence >= {taxonomy['decision_thresholds']['high_confidence']}. Status: {taxonomy['decision_thresholds']['status']}. These values remain configurable and are not represented as empirically validated cut-offs.",
+                    f"Positive >= {taxonomy['decision_thresholds']['positive']}; high confidence >= {taxonomy['decision_thresholds']['high_confidence']}. These values remain configurable.",
                     usable,
                 ),
             ]
@@ -328,11 +317,6 @@ def create_algorithm_pdf(result: dict, taxonomy: dict, path: Path) -> None:
         _bullet("Confirm whether the 3.0 positive and 5.0 high-confidence thresholds should remain."),
         _bullet("Confirm the tentative Career readiness weight of 2.0."),
         _bullet("Confirm whether administrative 'Case studies' labels should remain at review weight 2.0."),
-        Paragraph("10. Audit trail", STYLES["h1"]),
-        Paragraph(
-            f"Taxonomy version: {_safe(result['taxonomy_version'])}<br/>Official source: {_safe(result['source_url'])}<br/>Retrieved: {_safe(result.get('retrieved_at', ''))}",
-            STYLES["body"],
-        ),
     ]
     path.parent.mkdir(parents=True, exist_ok=True)
     doc.build(story, onFirstPage=_footer, onLaterPages=_footer)
@@ -360,24 +344,11 @@ def create_mapping_pdf(
         rightMargin=17 * mm,
         topMargin=16 * mm,
         bottomMargin=21 * mm,
-        title="INFS6600 Course-Category Mapping v2",
-        author="CS-44 Project Team (8 members)",
+        title="INFS6600 Course-Category Mapping",
+        author="",
     )
-    positives = [
-        row["category"] for row in result["summary"] if row["belongs_to_category"]
-    ]
     story = [
-        Paragraph("INFS6600 Course-Category Mapping v2", STYLES["title"]),
-        Paragraph(
-            f"{_safe(result['unit_title'])} | {_safe(result['session'])} | Taxonomy {_safe(result['taxonomy_version'])} | Eight-member CS-44 team delivery",
-            STYLES["subtitle"],
-        ),
-        _callout(
-            "The eight-member CS-44 project team completed this mapping and its supporting evidence review. Positive categories: "
-            + "; ".join(positives)
-            + ". Categories are not mutually exclusive; percentages and counts are not expected to sum to 100%. This report covers INFS6600 only.",
-            usable,
-        ),
+        Paragraph("INFS6600 Course-Category Mapping", STYLES["title"]),
         Paragraph("1. Category summary", STYLES["h1"]),
     ]
     summary_rows = [[

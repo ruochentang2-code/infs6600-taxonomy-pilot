@@ -143,19 +143,6 @@ def _stacked_bar_chart(
             width=1,
         )
 
-    footer_y = 1215
-    draw.text(
-        (70, footer_y),
-        "Categories are not mutually exclusive. Review signals are reported separately from positive evidence.",
-        fill=MUTED,
-        font=font(20),
-    )
-    draw.text(
-        (70, footer_y + 38),
-        f"Source: official {result['unit_code']} {result['session']} unit outline.",
-        fill=MUTED,
-        font=font(18),
-    )
     output.parent.mkdir(parents=True, exist_ok=True)
     image.save(output, quality=95)
 
@@ -164,8 +151,8 @@ def category_chart(result: dict, output: Path) -> None:
     _stacked_bar_chart(
         result,
         output,
-        title="INFS6600 taxonomy pilot v2",
-        subtitle="Distinct evidence items by category",
+        title="Evidence item count",
+        subtitle="Positive evidence and review queue",
         positive_key="evidence_item_count",
         review_key="review_item_count",
         positive_legend="Positive evidence",
@@ -178,7 +165,7 @@ def score_chart(result: dict, output: Path) -> None:
     _stacked_bar_chart(
         result,
         output,
-        title="INFS6600 category score summary",
+        title="Category scores",
         subtitle="Classified score and separately retained review score",
         positive_key="classified_score_total",
         review_key="review_score_total",
@@ -207,8 +194,8 @@ def section_chart(result: dict, output: Path) -> None:
     _header(
         draw,
         width,
-        "Where positive evidence appears",
-        f"{result['unit_code']} {result['session']} - distinct item counts",
+        "Positive evidence by source section",
+        "Distinct item counts",
     )
 
     label_left = 70
@@ -268,19 +255,6 @@ def section_chart(result: dict, output: Path) -> None:
                 font=font(30, True),
             )
 
-    footer_y = 1130
-    draw.text(
-        (70, footer_y),
-        "Each cell counts distinct positive evidence items. Zero means no positive item was found in that section.",
-        fill=MUTED,
-        font=font(20),
-    )
-    draw.text(
-        (70, footer_y + 38),
-        "Categories are not mutually exclusive; the same outline item may appear once in more than one category.",
-        fill=MUTED,
-        font=font(20),
-    )
     output.parent.mkdir(parents=True, exist_ok=True)
     image.save(output, quality=95)
 
