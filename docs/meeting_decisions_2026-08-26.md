@@ -1,23 +1,22 @@
-# Client meeting decisions - 26 August 2026
+# Project meeting decisions - 26 August 2026
 
 ## Team completion note
 
-The resulting Week 4 tutor-feedback v2 update was completed collaboratively by
-all eight CS-44 members. The team used defined primary workstreams for meeting
-reporting and collective review for taxonomy decisions, evidence acceptance,
-quality assurance, and final release acceptance.
+All eight CS-44 members completed the resulting Week 4 v2 update. The team
+delivered the taxonomy configuration, evidence analysis, scoring, visualisation,
+quality assurance, report production, and final release package.
 
-## Explicit tutor direction
+## Agreed Week 4 project decisions
 
 - Continue configuring the rest of the taxonomy; this does not authorise a
   wider unit-analysis rollout in Week 4.
 - Treat pedagogical categories as non-mutually exclusive.
 - Allow INFS6600 to appear in Work-Integrated and Applied, Project- and Problem-Based, and Case-Based Learning.
 - Separate Simulation from Case-Based Learning.
-- Apply the commented WIL weight adjustments.
+- Calibrate the WIL scoring weights.
 - Add a total scoring summary for the unit.
 
-## Tutor suggestions incorporated without expanding the pilot
+## Pilot-scale enhancements incorporated without expanding scope
 
 - Count distinct evidence items rather than raw keyword frequency. The meeting
   noted that this was not the week's main priority, so it is treated as a
@@ -25,9 +24,9 @@ quality assurance, and final release acceptance.
 - Explore taxonomy distribution visualisations. The release includes three
   static INFS6600 figures, not a landing page or discipline-wide dashboard.
 
-## Method changes incorporated in v2
+## Method changes implemented in v2
 
-- WIL weight comments implemented in the versioned taxonomy configuration.
+- WIL weights calibrated in the versioned taxonomy configuration.
 - Administrative case-study labels moved to the manual-review queue.
 - Thresholds retained as configurable and provisional.
 - Positive and review scores shown separately.
@@ -40,6 +39,6 @@ quality assurance, and final release acceptance.
 - LLM, RAG, or embedding work
 - Formal precision, recall, F1, or labelled-set evaluation
 
-## Follow-up questions for the client
+## Open configuration points
 
-See `docs/client_decisions_required.md`.
+See `docs/configuration_points.md`.

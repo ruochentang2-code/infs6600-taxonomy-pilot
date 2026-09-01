@@ -5,7 +5,7 @@
 **Official source:** https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC
 **Retrieved:** 2026-08-31T16:10:06.515477+00:00
 
-**Delivery note:** This Week 4 source summary forms part of the tutor-feedback v2 release completed collaboratively by the eight-member CS-44 project team.
+**Delivery note:** The eight-member CS-44 project team completed this Week 4 source summary as part of the v2 release.
 
 ## Overview
 

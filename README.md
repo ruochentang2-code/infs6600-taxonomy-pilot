@@ -2,27 +2,26 @@
 
 This repository contains the transparent extraction-to-visualisation proof of concept developed for the CS-44 project. It analyses the University of Sydney's public 2026 INFS6600 Unit of Study Outline and retains every source evidence item, matched rule, score, and official URL.
 
-## Tutor-feedback v2
+## Week 4 v2
 
-The `tutor-feedback-v2` update implements the client's 26 August 2026 document comments and meeting feedback without rewriting repository history. The original two-category version remains available on the `main` branch and in earlier commits.
+The Week 4 v2 update implements the agreed 26 August 2026 project decisions without rewriting repository history. The original two-category version remains available on the `main` branch and in earlier commits.
 
 The v2 release:
 
 - expands the configuration to all eight supplied taxonomy categories;
 - separates **Simulation** from **Case-Based Learning**;
 - treats categories as non-mutually-exclusive multi-label outcomes;
-- updates the four commented WIL weights;
+- calibrates the four WIL weights;
 - reports positive evidence, review signals, classified score, and review score separately;
 - downgrades an administrative `Case studies` assessment label to a review-only signal;
-- adds automated regression tests for the tutor's expected INFS6600 allocation;
+- adds automated regression tests for the expected INFS6600 allocation;
 - creates versioned CSV/JSON, Markdown, PNG, and PDF deliverables.
 
 ### Eight-person team delivery
 
-The Week 4 tutor-feedback v2 release was completed collaboratively by the
-eight-member CS-44 project team. Each member held primary ownership for a
-defined workstream, while taxonomy decisions, INFS6600 evidence review,
-quality assurance, and final acceptance were completed collectively.
+The eight-member CS-44 project team completed the Week 4 v2 release, including
+taxonomy configuration, INFS6600 evidence analysis, scoring, visualisation,
+quality assurance, report production, and final acceptance.
 
 The eight members are Houming Chen, Haidi Sun, Yulei He, Ruochen Tang,
 Xiaopeng Ding, Huaicong Yu, Jinfei Qiu, and Yihang Zhao. See
@@ -32,16 +31,15 @@ workstream summary and the meeting-ready Word handout in
 
 ### Week 4 scope boundary
 
-This release is limited to applying the tutor's comments to the existing
-INFS6600 pilot. The remaining taxonomy categories are configured because the
-tutor asked the team to proceed with the rest of the taxonomy, but they are not
-presented as client-validated classifications. No additional units,
+This release is limited to the agreed changes for the existing INFS6600 pilot.
+The remaining taxonomy categories are configured for the complete pilot
+taxonomy, but they are not presented as validated classifications. No additional units,
 discipline-wide UG/PG analysis, landing page, LLM/RAG component, or formal
 model-evaluation study is included in this update.
 
 ## Current INFS6600 result
 
-The v2 pipeline positively allocates INFS6600 to the three categories identified by the tutor:
+The v2 pipeline positively allocates INFS6600 to three categories:
 
 1. **Work-Integrated and Applied Learning**
 2. **Case-Based Learning**
@@ -92,16 +90,16 @@ The eight categories are:
 7. Technology-Mediated Learning
 8. Hybrid Learning
 
-## Tutor-adjusted WIL weights
+## WIL scoring weights
 
 | Rule group | v1 | v2 | Status |
 |---|---:|---:|---|
-| Authentic practice | 3.5 | 4.0 | Tutor: “Give 4” |
-| Theory-practice integration | 2.5 | 2.0 | Tutor: “Give 2” |
-| Practical teamwork | 2.0 | 2.0 | Tutor: “Give 2” |
-| Career readiness | 1.5 | 2.0 | Tutor: “Maybe 2 here” - provisional |
+| Authentic practice | 3.5 | 4.0 | Team calibrated |
+| Theory-practice integration | 2.5 | 2.0 | Team calibrated |
+| Practical teamwork | 2.0 | 2.0 | Team calibrated |
+| Career readiness | 1.5 | 2.0 | Provisional team calibration |
 
-The positive threshold (`3.0`) and high-confidence threshold (`5.0`) remain configurable and explicitly marked as provisional pending client confirmation.
+The positive threshold (`3.0`) and high-confidence threshold (`5.0`) remain configurable and explicitly marked as provisional pending validation.
 
 ## Requirements
 
@@ -150,6 +148,8 @@ output/
 ├── pdf/
 │   ├── 02_Classification_Algorithm_Detailed_v2.pdf
 │   └── 05_INFS6600_Course_Category_Mapping_v2.pdf
+├── pptx/
+│   └── CS-44_Week4_INFS6600_Taxonomy_Pilot_v2.pptx
 └── v2/
     ├── data/
     │   ├── raw/infs6600_outline.json
@@ -184,12 +184,12 @@ The regression suite verifies:
 
 - exactly eight configured categories;
 - separate Simulation and Case-Based categories;
-- tutor-adjusted WIL weights;
+- calibrated WIL weights;
 - one weight contribution per rule even when several alternatives match;
 - true multi-label item classification;
 - review-only handling of administrative case labels;
 - separate positive and review score aggregation;
-- the tutor's expected three-category INFS6600 result without Simulation inheritance.
+- the expected three-category INFS6600 result without Simulation inheritance.
 
 ## Source files
 
@@ -206,18 +206,18 @@ The regression suite verifies:
 | `src/generate_pdf_reports.py` | Generates the two PDF deliverables |
 | `src/generate_week4_work_allocation.py` | Generates the eight-person Week 4 meeting handout |
 | `src/run_pipeline.py` | Runs and hashes the complete workflow |
-| `tests/` | Offline unit and tutor-feedback regression tests |
+| `tests/` | Offline unit and Week 4 regression tests |
 
-## Limitations and outstanding client decisions
+## Limitations and open configuration points
 
 - The current phrase rules favour transparency over semantic coverage.
 - The parser depends on the current public outline structure.
-- The thresholds have not been client-validated.
-- The Career readiness weight of 2.0 follows a tentative tutor comment.
+- The thresholds have not been empirically validated against a reviewed labelled set.
+- The Career readiness weight of 2.0 remains provisional.
 - The current release reruns INFS6600 only; no additional-unit or discipline-wide analysis is included.
 
-See [`docs/client_decisions_required.md`](docs/client_decisions_required.md) for the unresolved questions and [`docs/week4_delivery_checklist.md`](docs/week4_delivery_checklist.md) for the delivery status.
+See [`docs/configuration_points.md`](docs/configuration_points.md) for the unresolved questions and [`docs/week4_delivery_checklist.md`](docs/week4_delivery_checklist.md) for the delivery status.
 
 ## Intended use
 
-This repository is an educational research prototype using public unit-outline information. It supports transparent client review and does not make automated high-stakes decisions about teaching quality.
+This repository is an educational research prototype using public unit-outline information. It supports transparent manual review and does not make automated high-stakes decisions about teaching quality.

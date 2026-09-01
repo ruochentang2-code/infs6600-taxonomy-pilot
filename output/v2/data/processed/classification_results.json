@@ -4,12 +4,12 @@
   "session": "Semester 2, 2026 [Normal evening] - Camperdown/Darlington, Sydney",
   "source_url": "https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC",
   "retrieved_at": "2026-08-31T16:10:06.515477+00:00",
-  "taxonomy_version": "2026-09-01-tutor-feedback-v2",
+  "taxonomy_version": "2026-09-01-week4-v2",
   "counting_unit": "One distinct outline item (overview paragraph, learning outcome, assessment row, or weekly-schedule row) evaluated once per category.",
   "decision_thresholds": {
     "positive": 3.0,
     "high_confidence": 5.0,
-    "status": "provisional_pending_client_confirmation"
+    "status": "provisional_pending_validation"
   },
   "policies": {
     "multi_label": true,
@@ -54,7 +54,7 @@
       "total_matched_score": 0,
       "section_counts": {},
       "review_section_counts": {},
-      "overlap_notes": "Separated from Case-Based Learning by tutor revision. A real-world scenario alone is not a simulation unless the activity recreates, mimics, or role-plays a setting or process.",
+      "overlap_notes": "Separated from Case-Based Learning in the Week 4 taxonomy. A real-world scenario alone is not a simulation unless the activity recreates, mimics, or role-plays a setting or process.",
       "review_guidance": "Do not inherit Simulation from a case-study label or from Case-Based Learning evidence."
     },
     {
@@ -171,7 +171,7 @@
       "score": 10.0,
       "positive_threshold": 3.0,
       "high_confidence_threshold": 5.0,
-      "threshold_status": "provisional_pending_client_confirmation",
+      "threshold_status": "provisional_pending_validation",
       "matched_rules": [
         {
           "rule": "authentic practice",
@@ -180,7 +180,7 @@
           ],
           "weight": 4.0,
           "review_required": false,
-          "weight_status": "tutor_comment_give_4"
+          "weight_status": "team_calibrated_4"
         },
         {
           "rule": "theory-practice integration",
@@ -189,7 +189,7 @@
           ],
           "weight": 2.0,
           "review_required": false,
-          "weight_status": "tutor_comment_give_2"
+          "weight_status": "team_calibrated_2"
         },
         {
           "rule": "practical teamwork",
@@ -198,7 +198,7 @@
           ],
           "weight": 2.0,
           "review_required": false,
-          "weight_status": "tutor_comment_give_2"
+          "weight_status": "team_calibrated_2"
         },
         {
           "rule": "career readiness",
@@ -208,7 +208,7 @@
           ],
           "weight": 2.0,
           "review_required": false,
-          "weight_status": "tutor_comment_maybe_2"
+          "weight_status": "provisional_team_calibrated_2"
         }
       ],
       "manual_review_required": false,
@@ -227,7 +227,7 @@
       "score": 4.0,
       "positive_threshold": 3.0,
       "high_confidence_threshold": 5.0,
-      "threshold_status": "provisional_pending_client_confirmation",
+      "threshold_status": "provisional_pending_validation",
       "matched_rules": [
         {
           "rule": "actual organisation or professional context",
@@ -255,7 +255,7 @@
       "score": 3.5,
       "positive_threshold": 3.0,
       "high_confidence_threshold": 5.0,
-      "threshold_status": "provisional_pending_client_confirmation",
+      "threshold_status": "provisional_pending_validation",
       "matched_rules": [
         {
           "rule": "explicit scenario method",
@@ -283,7 +283,7 @@
       "score": 4.0,
       "positive_threshold": 3.0,
       "high_confidence_threshold": 5.0,
-      "threshold_status": "provisional_pending_client_confirmation",
+      "threshold_status": "provisional_pending_validation",
       "matched_rules": [
         {
           "rule": "actual organisation or professional context",
@@ -311,7 +311,7 @@
       "score": 4.0,
       "positive_threshold": 3.0,
       "high_confidence_threshold": 5.0,
-      "threshold_status": "provisional_pending_client_confirmation",
+      "threshold_status": "provisional_pending_validation",
       "matched_rules": [
         {
           "rule": "authentic problem or challenge",
@@ -339,7 +339,7 @@
       "score": 4.0,
       "positive_threshold": 3.0,
       "high_confidence_threshold": 5.0,
-      "threshold_status": "provisional_pending_client_confirmation",
+      "threshold_status": "provisional_pending_validation",
       "matched_rules": [
         {
           "rule": "actual organisation or professional context",
@@ -367,7 +367,7 @@
       "score": 4.0,
       "positive_threshold": 3.0,
       "high_confidence_threshold": 5.0,
-      "threshold_status": "provisional_pending_client_confirmation",
+      "threshold_status": "provisional_pending_validation",
       "matched_rules": [
         {
           "rule": "industry or business partner",
@@ -395,7 +395,7 @@
       "score": 4.0,
       "positive_threshold": 3.0,
       "high_confidence_threshold": 5.0,
-      "threshold_status": "provisional_pending_client_confirmation",
+      "threshold_status": "provisional_pending_validation",
       "matched_rules": [
         {
           "rule": "industry or business partner",
@@ -423,7 +423,7 @@
       "score": 3.5,
       "positive_threshold": 3.0,
       "high_confidence_threshold": 5.0,
-      "threshold_status": "provisional_pending_client_confirmation",
+      "threshold_status": "provisional_pending_validation",
       "matched_rules": [
         {
           "rule": "professional presentation",
@@ -451,7 +451,7 @@
       "score": 3.5,
       "positive_threshold": 3.0,
       "high_confidence_threshold": 5.0,
-      "threshold_status": "provisional_pending_client_confirmation",
+      "threshold_status": "provisional_pending_validation",
       "matched_rules": [
         {
           "rule": "professional presentation",
@@ -479,7 +479,7 @@
       "score": 3.5,
       "positive_threshold": 3.0,
       "high_confidence_threshold": 5.0,
-      "threshold_status": "provisional_pending_client_confirmation",
+      "threshold_status": "provisional_pending_validation",
       "matched_rules": [
         {
           "rule": "project immersion",
@@ -507,7 +507,7 @@
       "score": 4.0,
       "positive_threshold": 3.0,
       "high_confidence_threshold": 5.0,
-      "threshold_status": "provisional_pending_client_confirmation",
+      "threshold_status": "provisional_pending_validation",
       "matched_rules": [
         {
           "rule": "industry or business partner",
@@ -535,7 +535,7 @@
       "score": 3.5,
       "positive_threshold": 3.0,
       "high_confidence_threshold": 5.0,
-      "threshold_status": "provisional_pending_client_confirmation",
+      "threshold_status": "provisional_pending_validation",
       "matched_rules": [
         {
           "rule": "problem and opportunity scoping",
@@ -563,7 +563,7 @@
       "score": 4.0,
       "positive_threshold": 3.0,
       "high_confidence_threshold": 5.0,
-      "threshold_status": "provisional_pending_client_confirmation",
+      "threshold_status": "provisional_pending_validation",
       "matched_rules": [
         {
           "rule": "industry or business partner",
@@ -591,7 +591,7 @@
       "score": 3.5,
       "positive_threshold": 3.0,
       "high_confidence_threshold": 5.0,
-      "threshold_status": "provisional_pending_client_confirmation",
+      "threshold_status": "provisional_pending_validation",
       "matched_rules": [
         {
           "rule": "design and prototype method",
@@ -619,7 +619,7 @@
       "score": 3.5,
       "positive_threshold": 3.0,
       "high_confidence_threshold": 5.0,
-      "threshold_status": "provisional_pending_client_confirmation",
+      "threshold_status": "provisional_pending_validation",
       "matched_rules": [
         {
           "rule": "professional presentation",
@@ -649,7 +649,7 @@
       "score": 2.0,
       "positive_threshold": 3.0,
       "high_confidence_threshold": 5.0,
-      "threshold_status": "provisional_pending_client_confirmation",
+      "threshold_status": "provisional_pending_validation",
       "matched_rules": [
         {
           "rule": "administrative case-studies label",
@@ -658,7 +658,7 @@
           ],
           "weight": 2.0,
           "review_required": true,
-          "weight_status": "downgraded_from_strong_after_tutor_overlap_feedback"
+          "weight_status": "review_only_overlap_calibration"
         }
       ],
       "manual_review_required": true,
@@ -677,7 +677,7 @@
       "score": 2.0,
       "positive_threshold": 3.0,
       "high_confidence_threshold": 5.0,
-      "threshold_status": "provisional_pending_client_confirmation",
+      "threshold_status": "provisional_pending_validation",
       "matched_rules": [
         {
           "rule": "administrative case-studies label",
@@ -686,7 +686,7 @@
           ],
           "weight": 2.0,
           "review_required": true,
-          "weight_status": "downgraded_from_strong_after_tutor_overlap_feedback"
+          "weight_status": "review_only_overlap_calibration"
         }
       ],
       "manual_review_required": true,
@@ -705,7 +705,7 @@
       "score": 2.0,
       "positive_threshold": 3.0,
       "high_confidence_threshold": 5.0,
-      "threshold_status": "provisional_pending_client_confirmation",
+      "threshold_status": "provisional_pending_validation",
       "matched_rules": [
         {
           "rule": "project immersion",
@@ -733,7 +733,7 @@
       "score": 2.0,
       "positive_threshold": 3.0,
       "high_confidence_threshold": 5.0,
-      "threshold_status": "provisional_pending_client_confirmation",
+      "threshold_status": "provisional_pending_validation",
       "matched_rules": [
         {
           "rule": "generic project planning",
@@ -761,7 +761,7 @@
       "score": 2.0,
       "positive_threshold": 3.0,
       "high_confidence_threshold": 5.0,
-      "threshold_status": "provisional_pending_client_confirmation",
+      "threshold_status": "provisional_pending_validation",
       "matched_rules": [
         {
           "rule": "generic ideation or prototyping",
@@ -789,7 +789,7 @@
       "score": 2.0,
       "positive_threshold": 3.0,
       "high_confidence_threshold": 5.0,
-      "threshold_status": "provisional_pending_client_confirmation",
+      "threshold_status": "provisional_pending_validation",
       "matched_rules": [
         {
           "rule": "generic ideation or prototyping",
@@ -817,7 +817,7 @@
       "score": 2.0,
       "positive_threshold": 3.0,
       "high_confidence_threshold": 5.0,
-      "threshold_status": "provisional_pending_client_confirmation",
+      "threshold_status": "provisional_pending_validation",
       "matched_rules": [
         {
           "rule": "generic project planning",
@@ -835,7 +835,7 @@
       "confidence": "review"
     }
   ],
-  "tutor_feedback_regression": {
+  "week4_regression": {
     "expected_positive_categories": [
       "case_based",
       "project_problem_based",

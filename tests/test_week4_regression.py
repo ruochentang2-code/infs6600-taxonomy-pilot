@@ -12,7 +12,7 @@ from classify import classify  # noqa: E402
 from taxonomy_config import load_taxonomy  # noqa: E402
 
 
-class TutorFeedbackRegressionTests(unittest.TestCase):
+class Week4RegressionTests(unittest.TestCase):
     def test_expected_three_categories_without_simulation_inheritance(self) -> None:
         snapshot = {
             "unit_code": "INFS6600",
@@ -68,7 +68,7 @@ class TutorFeedbackRegressionTests(unittest.TestCase):
         )
         self.assertNotIn("simulation", positive)
         self.assertTrue(
-            result["tutor_feedback_regression"]["expected_categories_present"]
+            result["week4_regression"]["expected_categories_present"]
         )
 
 

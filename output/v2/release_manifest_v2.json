@@ -1,6 +1,6 @@
 {
-  "release": "tutor-feedback-v2",
-  "taxonomy_version": "2026-09-01-tutor-feedback-v2",
+  "release": "week4-v2",
+  "taxonomy_version": "2026-09-01-week4-v2",
   "source_url": "https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC",
   "retrieved_at": "2026-08-31T16:10:06.515477+00:00",
   "delivery_team": {
@@ -16,14 +16,14 @@
       "Jinfei Qiu",
       "Yihang Zhao"
     ],
-    "statement": "The Week 4 tutor-feedback v2 release was completed collaboratively by the eight-member CS-44 project team. Each member held primary ownership for a defined workstream, with collective review and final acceptance."
+    "statement": "The eight-member CS-44 project team completed the Week 4 v2 release, including taxonomy configuration, evidence review, quality assurance, report production, and final acceptance."
   },
   "positive_categories": [
     "Work-Integrated and Applied Learning",
     "Case-Based Learning",
     "Project- and Problem-Based Learning"
   ],
-  "tutor_feedback_regression": {
+  "week4_regression": {
     "expected_positive_categories": [
       "case_based",
       "project_problem_based",
@@ -45,7 +45,7 @@
     },
     {
       "path": "output/v2/data/processed/classification_results.json",
-      "sha256": "be5b3155a5eee7aced1849c96f1c3c39d31e1010d914d58ed574bab62088eeca"
+      "sha256": "764e5b283335bd0f5c9e4e0e0ce741299e867eaeffef1fd185d14aa6471e0c3a"
     },
     {
       "path": "output/v2/data/processed/classified_evidence.csv",
@@ -61,19 +61,19 @@
     },
     {
       "path": "output/v2/reports/infs6600_course_information.md",
-      "sha256": "5eabd6090503f9067e1404b97e8ac4a911887eee836821269ae1e4f81b20c4ac"
+      "sha256": "cb04c97f458790110a83e22c5cf82621cdca6d8090c8c9275f0598238f90e186"
     },
     {
       "path": "output/v2/reports/pilot_results_v2.md",
-      "sha256": "491d11245e1f222e61e63f119809e711045b6dc4aa5da4dfe2637573d2ca6366"
+      "sha256": "6288564e5daf5ac42ca09252d25d420ac2dee411bdabb3beefc2ac19935039cb"
     },
     {
       "path": "output/v2/reports/course_category_mapping_v2.md",
-      "sha256": "2200bcf36957450a16dd62b83a224e741d664b0915a01fcf41bf1e3d759bba60"
+      "sha256": "38c775c76a850df5f55f43941cc017897fe114daab90c53c0245868e3ecedbba"
     },
     {
       "path": "output/v2/reports/course_category_mapping_v2.csv",
-      "sha256": "da5b8009db19a3673179af70cbfd85aad33d8fe55c42fa911b0067f2855bdf1b"
+      "sha256": "12505f49a6ac7d15b9d90954c651e85e4d6c8cb47e3b22f701022eb10160bfa8"
     },
     {
       "path": "output/v2/visualisations/category_summary.png",
@@ -89,15 +89,19 @@
     },
     {
       "path": "output/docx/CS-44_Week4_Eight-Person_Work_Allocation.docx",
-      "sha256": "405ccdfeb71adae6547bce16519bcc1d64ffa1f6cc3b8192a6a72c9fd085f6a3"
+      "sha256": "615e3087ff29d5a00379b53d99a388fd9cf52a827f3b31e4adb4daddb6f7bb28"
+    },
+    {
+      "path": "output/pptx/CS-44_Week4_INFS6600_Taxonomy_Pilot_v2.pptx",
+      "sha256": "5032813533c3487f05907ed18a56a8f0dc9fe92a6abc906df2cc9400aa4eec51"
     },
     {
       "path": "output/pdf/02_Classification_Algorithm_Detailed_v2.pdf",
-      "sha256": "7fa4d8af64e00d1dd7354cc8979189380f59674a14937c2bc1eb70fdd277c6b9"
+      "sha256": "141a6e141e80b6d357180c6e7635b797ada677781ff2b4485b345d311a759194"
     },
     {
       "path": "output/pdf/05_INFS6600_Course_Category_Mapping_v2.pdf",
-      "sha256": "eae0403ca658b28beff6f1e412e5cd311162234a9438eedd767e8ceff4a86169"
+      "sha256": "24f252997d94d58025d2239403fc276bcefa70d1280379c2842fe1e41ccd2bee"
     }
   ]
 }

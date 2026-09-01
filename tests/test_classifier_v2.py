@@ -45,7 +45,7 @@ class TaxonomyV2Tests(unittest.TestCase):
         self.assertIn("case_based", self.categories)
         self.assertNotIn("simulation_case_based", self.categories)
 
-    def test_tutor_adjusted_wil_weights(self) -> None:
+    def test_calibrated_wil_weights(self) -> None:
         weights = {
             rule["label"]: float(rule["weight"])
             for rule in self.categories["work_integrated_applied"]["rules"]

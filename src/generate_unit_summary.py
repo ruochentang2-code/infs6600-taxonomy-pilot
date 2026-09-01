@@ -26,7 +26,7 @@ def main() -> None:
         f"**Official source:** {data['source_url']}",
         f"**Retrieved:** {data['retrieved_at']}",
         "",
-        "**Delivery note:** This Week 4 source summary forms part of the tutor-feedback v2 release completed collaboratively by the eight-member CS-44 project team.",
+        "**Delivery note:** The eight-member CS-44 project team completed this Week 4 source summary as part of the v2 release.",
         "",
         "## Overview",
         "",

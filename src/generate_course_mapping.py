@@ -11,9 +11,9 @@ from taxonomy_config import load_taxonomy
 
 
 TEAM_DELIVERY_STATEMENT = (
-    "The Week 4 tutor-feedback v2 release was completed collaboratively by the "
-    "eight-member CS-44 project team, with defined primary ownership and collective "
-    "review of taxonomy decisions, INFS6600 evidence, quality assurance, and final acceptance."
+    "The eight-member CS-44 project team completed the Week 4 v2 release, including "
+    "taxonomy configuration, INFS6600 evidence review, quality assurance, report "
+    "production, and final acceptance."
 )
 
 
@@ -96,7 +96,7 @@ def build_rows(result: dict, taxonomy: dict) -> list[dict]:
 def write_csv(path: Path, rows: list[dict]) -> None:
     path.parent.mkdir(parents=True, exist_ok=True)
     with path.open("w", newline="", encoding="utf-8-sig") as handle:
-        writer = csv.DictWriter(handle, fieldnames=list(rows[0]))
+        writer = csv.DictWriter(handle, fieldnames=list(rows[0]), lineterminator="\n")
         writer.writeheader()
         writer.writerows(rows)
 
@@ -106,8 +106,10 @@ def write_markdown(path: Path, rows: list[dict], result: dict) -> None:
     lines = [
         "# INFS6600 course-to-taxonomy mapping v2",
         "",
-        f"**Taxonomy version:** {result['taxonomy_version']}  ",
-        f"**Official source:** {result['source_url']}  ",
+        f"**Taxonomy version:** {result['taxonomy_version']}",
+        "",
+        f"**Official source:** {result['source_url']}",
+        "",
         "**Policy:** Categories are not mutually exclusive. Counts and category percentages must not be expected to sum to 100%.",
         "",
         "## Team delivery statement",
@@ -129,7 +131,7 @@ def write_markdown(path: Path, rows: list[dict], result: dict) -> None:
 
     lines += [
         "",
-        "## Tutor-feedback regression result",
+        "## Week 4 regression result",
         "",
         f"INFS6600 is positively allocated to **{', '.join(positive)}**.",
         "",

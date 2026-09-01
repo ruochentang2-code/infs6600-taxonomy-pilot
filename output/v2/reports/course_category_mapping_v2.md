@@ -1,12 +1,14 @@
 # INFS6600 course-to-taxonomy mapping v2
 
-**Taxonomy version:** 2026-09-01-tutor-feedback-v2  
-**Official source:** https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC  
+**Taxonomy version:** 2026-09-01-week4-v2
+
+**Official source:** https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC
+
 **Policy:** Categories are not mutually exclusive. Counts and category percentages must not be expected to sum to 100%.
 
 ## Team delivery statement
 
-The Week 4 tutor-feedback v2 release was completed collaboratively by the eight-member CS-44 project team, with defined primary ownership and collective review of taxonomy decisions, INFS6600 evidence, quality assurance, and final acceptance.
+The eight-member CS-44 project team completed the Week 4 v2 release, including taxonomy configuration, INFS6600 evidence review, quality assurance, report production, and final acceptance.
 
 ## Classification summary
 
@@ -21,7 +23,7 @@ The Week 4 tutor-feedback v2 release was completed collaboratively by the eight-
 | Technology-Mediated Learning | No evidence found | 0 | 0 | 0 | 0 | None |
 | Hybrid Learning | No evidence found | 0 | 0 | 0 | 0 | None |
 
-## Tutor-feedback regression result
+## Week 4 regression result
 
 INFS6600 is positively allocated to **Work-Integrated and Applied Learning, Case-Based Learning, Project- and Problem-Based Learning**.
 

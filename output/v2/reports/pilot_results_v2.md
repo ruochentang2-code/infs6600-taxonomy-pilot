@@ -1,13 +1,16 @@
 # INFS6600 taxonomy pilot v2
 
-**Unit:** INFS6600 - Business Information Systems Capstone  
-**Outline:** Semester 2, 2026 [Normal evening] - Camperdown/Darlington, Sydney  
-**Taxonomy:** 2026-09-01-tutor-feedback-v2  
+**Unit:** INFS6600 - Business Information Systems Capstone
+
+**Outline:** Semester 2, 2026 [Normal evening] - Camperdown/Darlington, Sydney
+
+**Taxonomy:** 2026-09-01-week4-v2
+
 **Official source:** https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC
 
 ## Team delivery statement
 
-The Week 4 tutor-feedback v2 release was completed collaboratively by the eight-member CS-44 project team. Each member held primary ownership for a defined workstream, while taxonomy decisions, INFS6600 evidence review, quality assurance, and final acceptance were completed collectively.
+The eight-member CS-44 project team completed the Week 4 v2 release, including taxonomy configuration, INFS6600 evidence review, quality assurance, report production, and final acceptance.
 
 ## Executive result
 
@@ -26,11 +29,11 @@ This is a multi-label result. Categories are not mutually exclusive, and one evi
 | Technology-Mediated Learning | no_match | 0 | 0 | 0 | 0 |
 | Hybrid Learning | no_match | 0 | 0 | 0 | 0 |
 
-## Tutor changes implemented
+## Week 4 changes implemented
 
 - Simulation and Case-Based Learning are separate categories.
 - INFS6600 may appear in several categories; the classifier does not force a single winner.
-- Authentic practice is weighted 4.0; theory-practice integration 2.0; practical teamwork 2.0; career readiness 2.0 (the last remains provisional because the tutor wrote 'Maybe 2').
+- Authentic practice is weighted 4.0; theory-practice integration 2.0; practical teamwork 2.0; career readiness 2.0, with the last weight retained as provisional.
 - Administrative `Case studies` assessment labels are weak review signals with weight 2.0, rather than automatic positive evidence.
 - Total classified score, review score, distinct evidence count, and source-section distribution are reported separately.
 
@@ -76,7 +79,7 @@ This is a multi-label result. Categories are not mutually exclusive, and one evi
 5. Deduplicate at item-category level. The same item may count once in several categories because the taxonomy is multi-label.
 6. Sum positive item scores to obtain the classified unit-category total. Report review scores separately rather than mixing ambiguous labels into the positive total.
 
-The current thresholds are positive >= 3.0 and high confidence >= 5.0. Their status is `provisional_pending_client_confirmation`; they remain configurable and are not presented as client-validated cut-offs.
+The current thresholds are positive >= 3.0 and high confidence >= 5.0. Their status is `provisional_pending_validation`; they remain configurable and are not presented as empirically validated cut-offs.
 
 ## Category standards
 
@@ -92,7 +95,7 @@ Review guidance: Check that professional or partner language describes an authen
 
 An instructional method that recreates or mimics real-world scenarios, environments, or processes so learners can practise skills and make decisions safely.
 
-Overlap: Separated from Case-Based Learning by tutor revision. A real-world scenario alone is not a simulation unless the activity recreates, mimics, or role-plays a setting or process.
+Overlap: Separated from Case-Based Learning in the Week 4 taxonomy. A real-world scenario alone is not a simulation unless the activity recreates, mimics, or role-plays a setting or process.
 
 Review guidance: Do not inherit Simulation from a case-study label or from Case-Based Learning evidence.
 
@@ -146,8 +149,8 @@ Review guidance: Online materials alone are insufficient; require an explicit hy
 
 ## Limitations and decisions still required
 
-- The 3.0 and 5.0 thresholds are provisional and require client confirmation or sensitivity testing against reviewed labels.
-- Career readiness is set to 2.0 following a tentative tutor comment and remains marked provisional in the configuration.
+- The 3.0 and 5.0 thresholds are provisional and require validation or sensitivity testing against reviewed labels.
+- Career readiness is set to 2.0 and remains marked provisional in the configuration.
 - Phrase matching does not understand negation, complex context, or semantic equivalence.
 - This Week 4 iteration reruns INFS6600 only; no additional-unit or discipline-wide analysis is included.
 - Landing-page, LLM/RAG, and formal model-evaluation work are outside this update.

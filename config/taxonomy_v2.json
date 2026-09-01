@@ -1,11 +1,11 @@
 {
-  "version": "2026-09-01-tutor-feedback-v2",
+  "version": "2026-09-01-week4-v2",
   "title": "CS-44 Pedagogical Innovation Taxonomy v2",
   "counting_unit": "One distinct outline item (overview paragraph, learning outcome, assessment row, or weekly-schedule row) evaluated once per category.",
   "decision_thresholds": {
     "positive": 3.0,
     "high_confidence": 5.0,
-    "status": "provisional_pending_client_confirmation"
+    "status": "provisional_pending_validation"
   },
   "policies": {
     "multi_label": true,
@@ -39,7 +39,7 @@
           "label": "authentic practice",
           "pattern": "authentic situations|authentic problem|authentic industry|workplace project|industry project|consulting project|work-integrated learning",
           "weight": 4.0,
-          "weight_status": "tutor_comment_give_4"
+          "weight_status": "team_calibrated_4"
         },
         {
           "label": "professional presentation",
@@ -51,19 +51,19 @@
           "label": "theory-practice integration",
           "pattern": "theory and practice|theory with real-world practice",
           "weight": 2.0,
-          "weight_status": "tutor_comment_give_2"
+          "weight_status": "team_calibrated_2"
         },
         {
           "label": "practical teamwork",
           "pattern": "practical teamwork experience",
           "weight": 2.0,
-          "weight_status": "tutor_comment_give_2"
+          "weight_status": "team_calibrated_2"
         },
         {
           "label": "career readiness",
           "pattern": "career-readiness|career readiness|professional skills",
           "weight": 2.0,
-          "weight_status": "tutor_comment_maybe_2"
+          "weight_status": "provisional_team_calibrated_2"
         },
         {
           "label": "project immersion",
@@ -77,7 +77,7 @@
       "id": "simulation",
       "name": "Simulation",
       "definition": "An instructional method that recreates or mimics real-world scenarios, environments, or processes so learners can practise skills and make decisions safely.",
-      "overlap_notes": "Separated from Case-Based Learning by tutor revision. A real-world scenario alone is not a simulation unless the activity recreates, mimics, or role-plays a setting or process.",
+      "overlap_notes": "Separated from Case-Based Learning in the Week 4 taxonomy. A real-world scenario alone is not a simulation unless the activity recreates, mimics, or role-plays a setting or process.",
       "review_guidance": "Do not inherit Simulation from a case-study label or from Case-Based Learning evidence.",
       "rules": [
         {
@@ -124,7 +124,7 @@
           "pattern": "type: case studies",
           "weight": 2.0,
           "review_required": true,
-          "weight_status": "downgraded_from_strong_after_tutor_overlap_feedback"
+          "weight_status": "review_only_overlap_calibration"
         }
       ]
     },

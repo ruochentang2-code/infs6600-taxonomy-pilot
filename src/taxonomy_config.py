@@ -1,4 +1,4 @@
-"""Load and validate the tutor-feedback v2 taxonomy configuration."""
+"""Load and validate the Week 4 v2 taxonomy configuration."""
 
 from __future__ import annotations
 

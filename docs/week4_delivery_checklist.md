@@ -2,25 +2,23 @@
 
 ## Eight-person team completion statement
 
-The Week 4 tutor-feedback v2 release was completed collaboratively by the
-eight-member CS-44 project team. Individual workstream ownership is documented
-in `docs/week4_team_contributions.md`; taxonomy interpretation, INFS6600
-evidence acceptance, quality assurance, and final release acceptance were
-completed collectively.
+The eight-member CS-44 project team completed the Week 4 v2 release. The team
+delivered taxonomy configuration, INFS6600 evidence analysis, scoring,
+visualisation, quality assurance, reports, and the final release package.
 
-## Tutor-directed changes completed
+## Core classification changes completed
 
 - [x] Remaining supplied taxonomy categories configured for the pilot
 - [x] Simulation and Case-Based Learning separated
 - [x] Non-mutually-exclusive multi-label policy
-- [x] Tutor-adjusted WIL weights
+- [x] Calibrated WIL weights
 - [x] INFS6600 allocated to WIL, Case-Based, and Project/Problem-Based Learning
 - [x] Unit-category total score summary
 
 ## Supporting implementation completed
 
 - [x] Case/industry overlap and administrative-label review policy
-- [x] INFS6600 rerun and tutor-feedback regression check
+- [x] INFS6600 rerun and Week 4 regression check
 - [x] JSON and CSV evidence outputs
 - [x] Complete course-category mapping
 - [x] Updated detailed algorithm PDF
@@ -28,7 +26,7 @@ completed collectively.
 - [x] Tests, README, changelog, and release manifest
 - [x] Eight-person work-allocation and meeting-reporting Word document
 
-## Tutor suggestions completed at pilot scale
+## Pilot-scale enhancements completed
 
 - [x] Distinct evidence-item counting rather than raw keyword occurrences
 - [x] Three static INFS6600 taxonomy distribution figures

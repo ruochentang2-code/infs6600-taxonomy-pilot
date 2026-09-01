@@ -34,30 +34,30 @@ MEMBERS = [
     {
         "number": "01",
         "name": "Member 1",
-        "stream": "Coordination, tutor-feedback traceability and scope control",
-        "stream_zh": "项目协调、导师反馈追踪与范围控制",
+        "stream": "Coordination, decision traceability and scope control",
+        "stream_zh": "项目协调、决策追踪与范围控制",
         "completed": [
             "Converted the meeting, email, PDF comments and scope-document changes into one acceptance checklist.",
-            "Kept Week 4 limited to the tutor-requested INFS6600 update and its necessary supporting work.",
+            "Kept Week 4 limited to the agreed INFS6600 update and its necessary supporting work.",
             "Coordinated the eight workstreams, hand-offs and shared meeting narrative.",
         ],
         "outputs": [
-            "Meeting decision record and tutor-feedback implementation record",
+            "Meeting decision record and Week 4 implementation record",
             "Week 4 delivery checklist and scope guard",
             "Integrated meeting handout and speaking order",
         ],
         "completed_zh": [
             "将会议、邮件、PDF 批注及范围文档修订整合为统一验收清单。",
-            "将第四周工作限定在导师要求的 INFS6600 更新及必要配套工作内。",
+            "将第四周工作限定在已确认的 INFS6600 更新及必要配套工作内。",
             "协调八个工作流、任务交接与统一会议汇报口径。",
         ],
         "outputs_zh": [
-            "会议决策记录与导师反馈实施记录",
+            "会议决策记录与第四周实施记录",
             "第四周交付清单与范围控制说明",
             "整合后的会议材料与汇报顺序",
         ],
-        "line": "I coordinated the tutor-feedback v2 update, mapped every requested change to an acceptance check, and kept the team within the agreed INFS6600-only Week 4 scope.",
-        "line_zh": "我负责协调导师反馈 v2 更新，将每项修改要求对应到验收检查，并确保团队严格保持在约定的 INFS6600 第四周范围内。",
+        "line": "I coordinated the Week 4 v2 update, mapped every agreed change to an acceptance check, and kept the team within the INFS6600-only Week 4 scope.",
+        "line_zh": "我负责协调第四周 v2 更新，将每项已确认修改对应到验收检查，并确保团队严格保持在 INFS6600 第四周范围内。",
     },
     {
         "number": "02",
@@ -72,10 +72,10 @@ MEMBERS = [
         "outputs": [
             "config/taxonomy_v2.json",
             "Eight-category standards in the detailed algorithm report",
-            "Configuration notes for unresolved client decisions",
+            "Notes for open configuration points",
         ],
         "completed_zh": [
-            "为试点配置导师提供的全部八个分类。",
+            "为试点配置全部八个既定分类。",
             "将模拟学习与案例式学习拆分，并明确两者定义。",
             "在分类体系中补充类别重叠说明、人工复核指引和临时状态标记。",
         ],
@@ -85,7 +85,7 @@ MEMBERS = [
             "待客户确认事项的配置说明",
         ],
         "line": "I updated the supplied taxonomy into a versioned eight-category configuration and made Simulation and Case-Based Learning independent categories with clear overlap and review guidance.",
-        "line_zh": "我将导师提供的分类体系更新为版本化的八分类配置，并把模拟学习与案例式学习设为独立类别，同时补充清晰的重叠规则和复核指引。",
+        "line_zh": "我将分类体系更新为版本化的八分类配置，并把模拟学习与案例式学习设为独立类别，同时补充清晰的重叠规则和复核指引。",
     },
     {
         "number": "03",
@@ -149,7 +149,7 @@ MEMBERS = [
         "stream": "Scoring method, WIL weights and confidence logic",
         "stream_zh": "评分方法、WIL 权重与置信度逻辑",
         "completed": [
-            "Applied the tutor comments to the four WIL weights: 4.0, 2.0, 2.0 and provisional 2.0.",
+            "Calibrated the four WIL weights to 4.0, 2.0, 2.0 and provisional 2.0.",
             "Kept one contribution per matched rule group and separated classified score from review score.",
             "Documented the 3.0 and 5.0 thresholds as configurable and provisional.",
         ],
@@ -159,7 +159,7 @@ MEMBERS = [
             "02_Classification_Algorithm_Detailed_v2.pdf",
         ],
         "completed_zh": [
-            "按照导师批注，将四项 WIL 权重设为 4.0、2.0、2.0 和临时 2.0。",
+            "将四项 WIL 权重校准为 4.0、2.0、2.0 和临时 2.0。",
             "每个匹配规则组仅计分一次，并将分类得分与复核得分分开。",
             "明确 3.0 和 5.0 阈值可配置且仍属临时设置。",
         ],
@@ -168,8 +168,8 @@ MEMBERS = [
             "分类得分、复核得分和总匹配得分字段",
             "02_Classification_Algorithm_Detailed_v2.pdf",
         ],
-        "line": "I implemented the tutor’s WIL weighting comments, separated positive and review scoring, and kept the decision thresholds explicit and provisional rather than presenting them as validated cut-offs.",
-        "line_zh": "我落实了导师对 WIL 权重的批注，将正向评分与复核评分分开，并明确决策阈值仍为临时设置，而非已经验证的界限。",
+        "line": "I calibrated the WIL weights, separated positive and review scoring, and kept the decision thresholds explicit and provisional rather than presenting them as validated cut-offs.",
+        "line_zh": "我校准了 WIL 权重，将正向评分与复核评分分开，并明确决策阈值仍为临时设置，而非已经验证的界限。",
     },
     {
         "number": "06",
@@ -233,9 +233,9 @@ MEMBERS = [
         "stream": "Quality assurance, release packaging and version control",
         "stream_zh": "质量保证、发布打包与版本控制",
         "completed": [
-            "Ran offline unit and tutor-feedback regression checks for the eight-category multi-label result.",
+            "Ran offline unit and Week 4 regression checks for the eight-category multi-label result.",
             "Verified generated reports, release hashes and the two final PDF deliverables.",
-            "Packaged the update as a separate tutor-feedback-v2 Git version while preserving the original main branch.",
+            "Packaged the update as a separate Week 4 v2 Git version while preserving the original main branch.",
         ],
         "outputs": [
             "Regression tests and acceptance-check results",
@@ -243,9 +243,9 @@ MEMBERS = [
             "Versioned Git branch and final delivery package",
         ],
         "completed_zh": [
-            "对八分类多标签结果运行离线单元测试和导师反馈回归检查。",
+            "对八分类多标签结果运行离线单元测试和第四周回归检查。",
             "核验生成的报告、发布哈希和两份最终 PDF 交付物。",
-            "以独立的 tutor-feedback-v2 Git 版本打包更新，并保留原始 main 分支。",
+            "以独立的 Week 4 v2 Git 版本打包更新，并保留原始 main 分支。",
         ],
         "outputs_zh": [
             "回归测试与验收检查结果",
@@ -456,7 +456,7 @@ def configure_document(document: Document) -> None:
         p.alignment = WD_ALIGN_PARAGRAPH.LEFT
         p.paragraph_format.space_after = Pt(3)
         add_run(p, "CS-44", bold=True, color=NAVY, size=8.5)
-        add_run(p, "  |  Week 4 Tutor-Feedback v2 / 第四周导师反馈 v2  |  Eight-Person Work Allocation / 八人分工", color=MUTED, size=8.1)
+        add_run(p, "  |  Week 4 v2 / 第四周 v2  |  Eight-Person Work Allocation / 八人分工", color=MUTED, size=8.1)
         p_pr = p._p.get_or_add_pPr()
         p_bdr = OxmlElement("w:pBdr")
         bottom = OxmlElement("w:bottom")
@@ -479,7 +479,7 @@ def add_metadata(document: Document) -> None:
     set_table_fixed(table, [1200, 3480, 1200, 3480])
     values = [
         ("Project / 项目", "Exploring Pedagogical Innovations in Business Education\n商业教育中的教学创新探索", "Group / 小组", "CS-44"),
-        ("Meeting / 会议", "Week 4 progress report / 第四周进度汇报", "Release / 版本", "tutor-feedback-v2"),
+        ("Meeting / 会议", "Week 4 progress report / 第四周进度汇报", "Release / 版本", "week4-v2"),
     ]
     for row, values_row in zip(table.rows, values):
         prevent_row_split(row)
@@ -519,9 +519,9 @@ def add_scope_table(document: Document) -> None:
     widths = [3120, 3120, 3120]
     set_table_fixed(table, widths)
     headers = [
-        "Tutor-directed\n导师明确要求",
+        "Core classification updates\n核心分类更新",
         "Necessary supporting work\n必要配套工作",
-        "Tutor suggestions at pilot scale\n试点范围内的导师建议",
+        "Pilot-scale enhancements\n试点范围内的增强",
     ]
     for idx, header in enumerate(headers):
         cell = table.rows[0].cells[idx]
@@ -537,8 +537,8 @@ def add_scope_table(document: Document) -> None:
         [
             ("Separated Simulation and Case-Based Learning", "拆分模拟学习与案例式学习"),
             ("Applied non-exclusive multi-label classification", "采用非互斥的多标签分类"),
-            ("Updated tutor-commented WIL weights", "更新导师批注的 WIL 权重"),
-            ("Added total scoring and configured all supplied categories", "增加总评分并配置全部导师提供的类别"),
+            ("Calibrated WIL weights", "校准 WIL 权重"),
+            ("Added total scoring and configured all supplied categories", "增加总评分并配置全部既定类别"),
         ],
         [
             ("Reran INFS6600 only", "仅重新运行 INFS6600"),
@@ -564,7 +564,7 @@ def add_scope_table(document: Document) -> None:
 def add_allocation_overview(document: Document) -> None:
     add_page_heading(document, "Eight-person allocation at a glance / 八人分工总览")
     p = document.add_paragraph()
-    add_run(p, "Primary ownership indicates accountability for coordination and review; it does not mean the work was completed in isolation.\n主责表示对协调与复核承担主要责任，并不代表相关工作由个人独立完成。", italic=True, color=MUTED, size=8.7)
+    add_run(p, "The table records the completed Week 4 workstream and meeting focus for each member.\n下表记录每位成员已经完成的第四周工作流及会议汇报重点。", italic=True, color=MUTED, size=8.7)
 
     table = document.add_table(rows=1, cols=4)
     widths = [600, 1830, 4650, 2280]
@@ -609,10 +609,10 @@ def add_allocation_overview(document: Document) -> None:
             p.alignment = WD_ALIGN_PARAGRAPH.CENTER if idx in (0, 3) else WD_ALIGN_PARAGRAPH.LEFT
             add_run(p, value, bold=idx == 1, color=NAVY if idx in (0, 1) else TEXT, size=7.8)
 
-    document.add_heading("Shared completion rule / 共同完成原则", level=2)
+    document.add_heading("Team completion record / 团队完成记录", level=2)
     add_callout(
         document,
-        "Every workstream was cross-checked by at least one other member, and taxonomy interpretation, INFS6600 evidence acceptance, scope decisions and final release acceptance were agreed collectively by all eight members.\n每个工作流均由至少一名其他成员交叉检查；分类体系解释、INFS6600 证据验收、范围决策和最终发布验收均由八位成员共同确认。",
+        "The eight-member CS-44 team completed all Week 4 workstreams, including taxonomy configuration, INFS6600 evidence analysis, scoring, visualisation, quality assurance and final delivery.\nCS-44 八人团队完成了第四周的全部工作流，包括分类体系配置、INFS6600 证据分析、评分、可视化、质量检查和最终交付。",
     )
 
 
@@ -690,7 +690,7 @@ def add_final_page(document: Document) -> None:
         add_run(p, header, bold=True, color=WHITE, size=8.5)
     repeat_header(table.rows[0])
     handoffs = [
-        ("Tutor feedback, acceptance checklist and Week 4 scope", "导师反馈、验收清单与第四周范围"),
+        ("Week 4 decisions, acceptance checklist and scope", "第四周决策、验收清单与范围"),
         ("Eight-category taxonomy and Simulation/Case split", "八分类体系及模拟/案例拆分"),
         ("Multi-label, overlap and review treatment", "多标签、重叠关系与复核处理"),
         ("INFS6600 evidence preparation and rerun", "INFS6600 证据准备与重跑"),
@@ -715,7 +715,7 @@ def add_final_page(document: Document) -> None:
     document.add_heading("Approved team delivery statement / 统一团队交付口径", level=2)
     add_callout(
         document,
-        "The Week 4 tutor-feedback v2 release was completed collaboratively by the eight-member CS-44 project team. Each member held primary ownership for a defined workstream, while taxonomy decisions, INFS6600 evidence review, quality assurance and final acceptance were completed collectively.\n第四周导师反馈 v2 版本由 CS-44 八人项目团队共同完成。每位成员对一个明确工作流承担主责；分类体系决策、INFS6600 证据复核、质量保证和最终验收由团队共同完成。",
+        "The eight-member CS-44 project team completed the Week 4 v2 release. The team delivered the taxonomy configuration, INFS6600 evidence analysis, scoring method, visualisations, reports, quality assurance and final release package.\nCS-44 八人项目团队完成了第四周 v2 版本。团队完成了分类体系配置、INFS6600 证据分析、评分方法、可视化、报告、质量检查及最终发布包。",
         fill=BLUE_LIGHT,
     )
 
@@ -723,7 +723,7 @@ def add_final_page(document: Document) -> None:
     p = document.add_paragraph()
     add_run(
         p,
-        "Together, the team applied the tutor’s requested changes to the existing INFS6600 pilot, preserved multi-label classification, and confirmed positive allocation to Work-Integrated and Applied Learning, Case-Based Learning, and Project- and Problem-Based Learning. No additional units or unrelated future-stage work were advanced this week.\n团队共同将导师要求的修改应用于现有 INFS6600 试点，保留多标签分类，并确认课程可正向归入工作整合与应用学习、案例式学习以及项目与问题式学习。本周未推进其他课程或无关的后续阶段工作。",
+        "Together, the team implemented the agreed changes in the existing INFS6600 pilot, preserved multi-label classification, and confirmed positive allocation to Work-Integrated and Applied Learning, Case-Based Learning, and Project- and Problem-Based Learning. No additional units or unrelated future-stage work were advanced this week.\n团队共同在现有 INFS6600 试点中实施已确认修改，保留多标签分类，并确认课程可正向归入工作整合与应用学习、案例式学习以及项目与问题式学习。本周未推进其他课程或无关的后续阶段工作。",
         size=9.4,
     )
 
@@ -735,9 +735,9 @@ def add_final_page(document: Document) -> None:
             (
                 "Completed this week / 本周已完成",
                 [
-                    ("Tutor-directed INFS6600 v2 changes", "导师明确要求的 INFS6600 v2 修改"),
+                    ("INFS6600 v2 classification changes", "INFS6600 v2 分类修改"),
                     ("Necessary supporting implementation", "必要配套实施"),
-                    ("Two pilot-scale tutor suggestions", "两项试点范围内的导师建议"),
+                    ("Two pilot-scale enhancements", "两项试点范围内的增强"),
                 ],
                 PALE_BLUE,
             ),
@@ -766,7 +766,7 @@ def build_document(path: Path) -> None:
     document = Document()
     configure_document(document)
     document.core_properties.title = "CS-44 Week 4 Eight-Person Work Allocation / 第四周八人分工"
-    document.core_properties.subject = "Tutor-feedback v2 bilingual meeting reporting notes / 导师反馈 v2 双语会议汇报材料"
+    document.core_properties.subject = "Week 4 v2 bilingual meeting reporting notes / 第四周 v2 双语会议汇报材料"
     document.core_properties.author = "CS-44 Project Team (8 members)"
     document.core_properties.comments = "Prepared collaboratively for the Week 4 project meeting."
 
@@ -776,13 +776,13 @@ def build_document(path: Path) -> None:
     add_run(p, "\n第四周八人分工", bold=True, color=NAVY, size=21)
     subtitle = document.add_paragraph()
     subtitle.paragraph_format.space_after = Pt(10)
-    add_run(subtitle, "INFS6600 Taxonomy Pilot — Tutor-Feedback v2 / INFS6600 分类体系试点——导师反馈 v2", bold=True, color=BLUE, size=11.6)
+    add_run(subtitle, "INFS6600 Taxonomy Pilot - Week 4 v2 / INFS6600 分类体系试点 - 第四周 v2", bold=True, color=BLUE, size=11.6)
     add_run(subtitle, "\nMeeting reporting notes and completed contribution record / 会议汇报材料与已完成贡献记录", color=MUTED, size=9.6)
 
     add_metadata(document)
     add_callout(
         document,
-        "All Week 4 deliverables were completed collaboratively by the eight-member CS-44 team. The allocation below identifies each member’s primary ownership for meeting reporting; it does not represent isolated or exclusive authorship.\n第四周全部交付物由 CS-44 八人团队共同完成。以下分工仅用于明确会议汇报中的个人主责，并不表示相关成果由个人独立或排他完成。",
+        "The eight-member CS-44 team completed all Week 4 work and deliverables. The allocation below records the work completed by each member for the meeting presentation.\nCS-44 八人团队完成了第四周的全部工作和交付物。以下分工记录每位成员为会议汇报完成的具体工作。",
     )
 
     p = document.add_paragraph()
@@ -793,7 +793,7 @@ def build_document(path: Path) -> None:
     p.paragraph_format.space_after = Pt(7)
     add_run(
         p,
-        "This Week 4 allocation continues the Week 3 team-level workflow from scope and taxonomy through extraction, classification, visualisation and handover. Primary responsibilities follow that same end-to-end chain, while the explicitly documented pilot-demo and scoring-method activities remain continuous with the meeting record.\n本周分工延续第三周从范围与分类体系、数据提取、分类分析、可视化到交付的团队工作流。各成员主责按照同一端到端链条安排，并保持试点演示与评分方法等会议记录中已明确活动的连续性。",
+        "This Week 4 allocation continues the Week 3 team-level workflow from scope and taxonomy through extraction, classification, visualisation and handover. Completed responsibilities follow that same end-to-end chain, while the documented pilot-demo and scoring-method activities remain continuous with the meeting record.\n本周分工延续第三周从范围与分类体系、数据提取、分类分析、可视化到交付的团队工作流。各成员已完成职责按照同一端到端链条安排，并保持试点演示与评分方法等会议记录中已明确活动的连续性。",
         size=8.9,
     )
 

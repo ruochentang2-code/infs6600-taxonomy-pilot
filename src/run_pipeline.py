@@ -1,4 +1,4 @@
-"""Run the tutor-feedback v2 extraction-to-delivery pipeline."""
+"""Run the Week 4 v2 extraction-to-delivery pipeline."""
 
 from __future__ import annotations
 
@@ -25,9 +25,9 @@ TEAM_MEMBERS = [
     "Yihang Zhao",
 ]
 TEAM_DELIVERY_STATEMENT = (
-    "The Week 4 tutor-feedback v2 release was completed collaboratively by the "
-    "eight-member CS-44 project team. Each member held primary ownership for a "
-    "defined workstream, with collective review and final acceptance."
+    "The eight-member CS-44 project team completed the Week 4 v2 release, "
+    "including taxonomy configuration, evidence review, quality assurance, "
+    "report production, and final acceptance."
 )
 
 
@@ -67,7 +67,7 @@ def main() -> None:
     parser.add_argument(
         "--taxonomy",
         type=Path,
-        help="Optional JSON override for the tutor-feedback v2 taxonomy.",
+        help="Optional JSON override for the Week 4 v2 taxonomy.",
     )
     parser.add_argument("--skip-pdf", action="store_true")
     args = parser.parse_args()
@@ -94,6 +94,12 @@ def main() -> None:
         / "output"
         / "docx"
         / "CS-44_Week4_Eight-Person_Work_Allocation.docx"
+    )
+    team_presentation_pptx = (
+        source_dir.parent
+        / "output"
+        / "pptx"
+        / "CS-44_Week4_INFS6600_Taxonomy_Pilot_v2.pptx"
     )
 
     run(
@@ -184,10 +190,11 @@ def main() -> None:
         visualisations / "category_scores.png",
         visualisations / "evidence_by_section.png",
         team_allocation_docx,
+        team_presentation_pptx,
         *pdf_files,
     ]
     manifest = {
-        "release": "tutor-feedback-v2",
+        "release": "week4-v2",
         "taxonomy_version": classification["taxonomy_version"],
         "source_url": classification["source_url"],
         "retrieved_at": classification.get("retrieved_at", ""),
@@ -202,7 +209,7 @@ def main() -> None:
             for row in classification["summary"]
             if row["belongs_to_category"]
         ],
-        "tutor_feedback_regression": classification["tutor_feedback_regression"],
+        "week4_regression": classification["week4_regression"],
         "files": [
             {
                 "path": str(path.relative_to(source_dir.parent)),
@@ -220,7 +227,7 @@ def main() -> None:
     print("\nPipeline complete")
     print(f"Output directory: {output_dir}")
     print(f"PDF directory: {pdf_output_dir if not args.skip_pdf else 'skipped'}")
-    print(f"Regression pass: {manifest['tutor_feedback_regression']['expected_categories_present']}")
+    print(f"Regression pass: {manifest['week4_regression']['expected_categories_present']}")
 
 
 if __name__ == "__main__":

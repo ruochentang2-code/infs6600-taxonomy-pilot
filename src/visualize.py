@@ -1,4 +1,4 @@
-"""Generate reproducible tutor-feedback v2 PNG charts with Pillow."""
+"""Generate reproducible Week 4 v2 PNG charts with Pillow."""
 
 from __future__ import annotations
 

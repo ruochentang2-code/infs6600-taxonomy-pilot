@@ -1,4 +1,4 @@
-"""Create the two reviewed PDF deliverables for the tutor-feedback v2 release."""
+"""Create the two reviewed PDF deliverables for the Week 4 v2 release."""
 
 from __future__ import annotations
 
@@ -225,26 +225,26 @@ def create_algorithm_pdf(result: dict, taxonomy: dict, path: Path) -> None:
         rightMargin=18 * mm,
         topMargin=18 * mm,
         bottomMargin=21 * mm,
-        title="Classification Algorithm: Tutor-Feedback v2",
+        title="Classification Algorithm v2",
         author="CS-44 Project Team (8 members)",
     )
     story = [
-        Paragraph("Classification Algorithm: Tutor-Feedback v2", STYLES["title"]),
+        Paragraph("Classification Algorithm v2", STYLES["title"]),
         Paragraph(
-            "Transparent eight-category, multi-label baseline | Prepared collaboratively by the eight-member CS-44 project team",
+            "Transparent eight-category, multi-label baseline | Prepared by the eight-member CS-44 project team",
             STYLES["subtitle"],
         ),
         _callout(
-            "Team delivery: eight members held defined primary workstreams and completed taxonomy decisions, evidence review, quality assurance, and final acceptance collectively. Core decision: categories are not mutually exclusive. Simulation and Case-Based Learning are separate. Week 4 remains an INFS6600-only rerun.",
+            "The CS-44 project team completed the taxonomy configuration, scoring design, evidence review, quality assurance, and report production. Categories are not mutually exclusive. Simulation and Case-Based Learning are separate. Week 4 remains an INFS6600-only rerun.",
             usable,
         ),
-        Paragraph("1. Tutor-directed changes", STYLES["h1"]),
+        Paragraph("1. Implemented Week 4 changes", STYLES["h1"]),
         _bullet("Split Simulation from Case-Based Learning."),
         _bullet("Allow a unit and an evidence item to belong to more than one category."),
         _bullet("Expect INFS6600 in Work-Integrated and Applied, Project- and Problem-Based, and Case-Based Learning."),
         _bullet("Add category-level total scoring."),
         _bullet("Configure the remaining supplied taxonomy categories without analysing additional units."),
-        Paragraph("Supporting and suggested pilot adjustments", STYLES["h2"]),
+        Paragraph("Supporting pilot refinements", STYLES["h2"]),
         _bullet("Count distinct evidence items rather than raw phrase occurrences."),
         _bullet("Retain overlapping industry/case evidence instead of forcing a single label."),
         Paragraph("2. Evidence unit and counting policy", STYLES["h1"]),
@@ -268,7 +268,7 @@ def create_algorithm_pdf(result: dict, taxonomy: dict, path: Path) -> None:
         )
     story += [_table(taxonomy_rows, [44 * mm, 67 * mm, 63 * mm])]
 
-    story += [Paragraph("4. Tutor-adjusted WIL weights", STYLES["h1"])]
+    story += [Paragraph("4. WIL scoring weights", STYLES["h1"])]
     wil = next(
         category
         for category in taxonomy["categories"]
@@ -289,7 +289,7 @@ def create_algorithm_pdf(result: dict, taxonomy: dict, path: Path) -> None:
             [
                 Paragraph("5. Decision thresholds and confidence", STYLES["h1"]),
                 _callout(
-                    f"Positive >= {taxonomy['decision_thresholds']['positive']}; high confidence >= {taxonomy['decision_thresholds']['high_confidence']}. Status: {taxonomy['decision_thresholds']['status']}. These values remain configurable and are not represented as client-validated cut-offs.",
+                    f"Positive >= {taxonomy['decision_thresholds']['positive']}; high confidence >= {taxonomy['decision_thresholds']['high_confidence']}. Status: {taxonomy['decision_thresholds']['status']}. These values remain configurable and are not represented as empirically validated cut-offs.",
                     usable,
                 ),
             ]
@@ -312,10 +312,10 @@ def create_algorithm_pdf(result: dict, taxonomy: dict, path: Path) -> None:
         ),
         Paragraph("8. INFS6600 regression checks", STYLES["h1"]),
     ]
-    observed = set(result["tutor_feedback_regression"]["observed_positive_categories"])
+    observed = set(result["week4_regression"]["observed_positive_categories"])
     checks = [
         ("Eight taxonomy categories loaded", len(taxonomy["categories"]) == 8),
-        ("Expected three INFS6600 categories present", result["tutor_feedback_regression"]["expected_categories_present"]),
+        ("Expected three INFS6600 categories present", result["week4_regression"]["expected_categories_present"]),
         ("Simulation evaluated independently and not positive", "simulation" not in observed),
         ("Administrative case labels remain review-only", all(row["category_id"] != "case_based" or row["score"] < 3.0 for row in result["review_queue"] if row["category_id"] == "case_based")),
         ("Thresholds labelled provisional", "provisional" in taxonomy["decision_thresholds"]["status"]),
@@ -324,7 +324,7 @@ def create_algorithm_pdf(result: dict, taxonomy: dict, path: Path) -> None:
     check_rows += [[_p(label), _p("PASS" if passed else "FAIL", "small_bold")] for label, passed in checks]
     story += [
         _table(check_rows, [140 * mm, 34 * mm]),
-        Paragraph("9. Open client decisions", STYLES["h1"]),
+        Paragraph("9. Open configuration points", STYLES["h1"]),
         _bullet("Confirm whether the 3.0 positive and 5.0 high-confidence thresholds should remain."),
         _bullet("Confirm the tentative Career readiness weight of 2.0."),
         _bullet("Confirm whether administrative 'Case studies' labels should remain at review weight 2.0."),
@@ -373,7 +373,7 @@ def create_mapping_pdf(
             STYLES["subtitle"],
         ),
         _callout(
-            "Completed collaboratively by the eight-member CS-44 project team. Positive categories: "
+            "The eight-member CS-44 project team completed this mapping and its supporting evidence review. Positive categories: "
             + "; ".join(positives)
             + ". Categories are not mutually exclusive; percentages and counts are not expected to sum to 100%. This report covers INFS6600 only.",
             usable,

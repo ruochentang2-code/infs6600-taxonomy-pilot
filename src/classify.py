@@ -169,7 +169,7 @@ def classify(snapshot: dict, taxonomy: dict) -> dict:
         "summary": summary,
         "evidence": evidence,
         "review_queue": review_queue,
-        "tutor_feedback_regression": regression,
+        "week4_regression": regression,
     }
 
 
@@ -238,7 +238,7 @@ def main() -> None:
     parser.add_argument(
         "--taxonomy",
         type=Path,
-        help="Optional JSON override. If omitted, tutor-feedback taxonomy v2 is used.",
+        help="Optional JSON override. If omitted, the Week 4 taxonomy v2 is used.",
     )
     parser.add_argument("--output", type=Path, required=True)
     parser.add_argument("--csv", type=Path, required=True)
