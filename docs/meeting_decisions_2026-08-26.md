@@ -1,5 +1,12 @@
 # Client meeting decisions - 26 August 2026
 
+## Team completion note
+
+The resulting Week 4 tutor-feedback v2 update was completed collaboratively by
+all eight CS-44 members. The team used defined primary workstreams for meeting
+reporting and collective review for taxonomy decisions, evidence acceptance,
+quality assurance, and final release acceptance.
+
 ## Explicit tutor direction
 
 - Continue configuring the rest of the taxonomy; this does not authorise a

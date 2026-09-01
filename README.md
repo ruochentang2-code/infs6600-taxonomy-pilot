@@ -17,6 +17,19 @@ The v2 release:
 - adds automated regression tests for the tutor's expected INFS6600 allocation;
 - creates versioned CSV/JSON, Markdown, PNG, and PDF deliverables.
 
+### Eight-person team delivery
+
+The Week 4 tutor-feedback v2 release was completed collaboratively by the
+eight-member CS-44 project team. Each member held primary ownership for a
+defined workstream, while taxonomy decisions, INFS6600 evidence review,
+quality assurance, and final acceptance were completed collectively.
+
+The eight members are Houming Chen, Haidi Sun, Yulei He, Ruochen Tang,
+Xiaopeng Ding, Huaicong Yu, Jinfei Qiu, and Yihang Zhao. See
+[`docs/week4_team_contributions.md`](docs/week4_team_contributions.md) for the
+workstream summary and the meeting-ready Word handout in
+[`output/docx/CS-44_Week4_Eight-Person_Work_Allocation.docx`](output/docx/CS-44_Week4_Eight-Person_Work_Allocation.docx).
+
 ### Week 4 scope boundary
 
 This release is limited to applying the tutor's comments to the existing
@@ -132,6 +145,8 @@ python src/run_pipeline.py \
 
 ```text
 output/
+├── docx/
+│   └── CS-44_Week4_Eight-Person_Work_Allocation.docx
 ├── pdf/
 │   ├── 02_Classification_Algorithm_Detailed_v2.pdf
 │   └── 05_INFS6600_Course_Category_Mapping_v2.pdf
@@ -189,6 +204,7 @@ The regression suite verifies:
 | `src/generate_report.py` | Produces the evidence-led Markdown report |
 | `src/visualize.py` | Generates the three v2 PNG figures |
 | `src/generate_pdf_reports.py` | Generates the two PDF deliverables |
+| `src/generate_week4_work_allocation.py` | Generates the eight-person Week 4 meeting handout |
 | `src/run_pipeline.py` | Runs and hashes the complete workflow |
 | `tests/` | Offline unit and tutor-feedback regression tests |
 

@@ -5,6 +5,10 @@
 **Taxonomy:** 2026-09-01-tutor-feedback-v2  
 **Official source:** https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC
 
+## Team delivery statement
+
+The Week 4 tutor-feedback v2 release was completed collaboratively by the eight-member CS-44 project team. Each member held primary ownership for a defined workstream, while taxonomy decisions, INFS6600 evidence review, quality assurance, and final acceptance were completed collectively.
+
 ## Executive result
 
 INFS6600 is positively classified into: **Work-Integrated and Applied Learning**, **Case-Based Learning**, **Project- and Problem-Based Learning**.

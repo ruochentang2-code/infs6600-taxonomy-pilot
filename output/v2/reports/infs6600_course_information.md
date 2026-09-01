@@ -5,6 +5,8 @@
 **Official source:** https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC
 **Retrieved:** 2026-08-31T16:10:06.515477+00:00
 
+**Delivery note:** This Week 4 source summary forms part of the tutor-feedback v2 release completed collaboratively by the eight-member CS-44 project team.
+
 ## Overview
 
 This unit bridges the gap between theory and practice by integrating the knowledge and key skills developed across the Digital Business or Business Information Systems specialisation. It provides students with a practical teamwork experience to identify, analyse, and solve contemporary problems by exploring the socio-technical ecosystem in which a digital business operates. This experiential learning opportunity enhances students’ career-readiness by consolidating their professional skills and ability to apply the Business Information Systems knowledge in authentic situations.

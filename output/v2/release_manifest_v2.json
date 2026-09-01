@@ -3,6 +3,21 @@
   "taxonomy_version": "2026-09-01-tutor-feedback-v2",
   "source_url": "https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC",
   "retrieved_at": "2026-08-31T16:10:06.515477+00:00",
+  "delivery_team": {
+    "group": "CS-44",
+    "member_count": 8,
+    "members": [
+      "Houming Chen",
+      "Haidi Sun",
+      "Yulei He",
+      "Ruochen Tang",
+      "Xiaopeng Ding",
+      "Huaicong Yu",
+      "Jinfei Qiu",
+      "Yihang Zhao"
+    ],
+    "statement": "The Week 4 tutor-feedback v2 release was completed collaboratively by the eight-member CS-44 project team. Each member held primary ownership for a defined workstream, with collective review and final acceptance."
+  },
   "positive_categories": [
     "Work-Integrated and Applied Learning",
     "Case-Based Learning",
@@ -46,15 +61,15 @@
     },
     {
       "path": "output/v2/reports/infs6600_course_information.md",
-      "sha256": "10961b153921c8a74ad088546404e936c615a5c3de6b5acbae48992c1034a39e"
+      "sha256": "5eabd6090503f9067e1404b97e8ac4a911887eee836821269ae1e4f81b20c4ac"
     },
     {
       "path": "output/v2/reports/pilot_results_v2.md",
-      "sha256": "2810d2bab925af868b15bda7ef36c4eb02998efe46e139e993808d930ecac61e"
+      "sha256": "491d11245e1f222e61e63f119809e711045b6dc4aa5da4dfe2637573d2ca6366"
     },
     {
       "path": "output/v2/reports/course_category_mapping_v2.md",
-      "sha256": "957d817a6086827f0f4fd0ec39859aef5e76c130423e3d2cdcdfcd994a9f5291"
+      "sha256": "2200bcf36957450a16dd62b83a224e741d664b0915a01fcf41bf1e3d759bba60"
     },
     {
       "path": "output/v2/reports/course_category_mapping_v2.csv",
@@ -73,12 +88,16 @@
       "sha256": "9030b619a478a4e9d6f61c1265808ee1ceb781c5581626794e4ba3e00d746800"
     },
     {
+      "path": "output/docx/CS-44_Week4_Eight-Person_Work_Allocation.docx",
+      "sha256": "4107112b832ac1df59418bb6fe1c004b6d6ac00f5e6ff71cc56dfa44927af0bc"
+    },
+    {
       "path": "output/pdf/02_Classification_Algorithm_Detailed_v2.pdf",
-      "sha256": "d225a5f7a9505a546308297fffce0b692e15a80492a460105b3de99b5aa49f26"
+      "sha256": "7fa4d8af64e00d1dd7354cc8979189380f59674a14937c2bc1eb70fdd277c6b9"
     },
     {
       "path": "output/pdf/05_INFS6600_Course_Category_Mapping_v2.pdf",
-      "sha256": "6adc1cb822da3a837d4c7524c2fe5136948ecbaca9c95b541ced9239630955f5"
+      "sha256": "eae0403ca658b28beff6f1e412e5cd311162234a9438eedd767e8ceff4a86169"
     }
   ]
 }

@@ -10,6 +10,13 @@ from pathlib import Path
 from taxonomy_config import load_taxonomy
 
 
+TEAM_DELIVERY_STATEMENT = (
+    "The Week 4 tutor-feedback v2 release was completed collaboratively by the "
+    "eight-member CS-44 project team, with defined primary ownership and collective "
+    "review of taxonomy decisions, INFS6600 evidence, quality assurance, and final acceptance."
+)
+
+
 def _level(unit_code: str) -> str:
     digits = "".join(character for character in unit_code if character.isdigit())
     return "Undergraduate" if digits and int(digits[0]) <= 3 else "Postgraduate"
@@ -102,6 +109,10 @@ def write_markdown(path: Path, rows: list[dict], result: dict) -> None:
         f"**Taxonomy version:** {result['taxonomy_version']}  ",
         f"**Official source:** {result['source_url']}  ",
         "**Policy:** Categories are not mutually exclusive. Counts and category percentages must not be expected to sum to 100%.",
+        "",
+        "## Team delivery statement",
+        "",
+        TEAM_DELIVERY_STATEMENT,
         "",
         "## Classification summary",
         "",

@@ -26,6 +26,8 @@ def main() -> None:
         f"**Official source:** {data['source_url']}",
         f"**Retrieved:** {data['retrieved_at']}",
         "",
+        "**Delivery note:** This Week 4 source summary forms part of the tutor-feedback v2 release completed collaboratively by the eight-member CS-44 project team.",
+        "",
         "## Overview",
         "",
     ]
@@ -72,4 +74,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

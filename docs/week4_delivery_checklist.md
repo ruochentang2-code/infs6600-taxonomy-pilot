@@ -1,5 +1,13 @@
 # Week 4 delivery checklist
 
+## Eight-person team completion statement
+
+The Week 4 tutor-feedback v2 release was completed collaboratively by the
+eight-member CS-44 project team. Individual workstream ownership is documented
+in `docs/week4_team_contributions.md`; taxonomy interpretation, INFS6600
+evidence acceptance, quality assurance, and final release acceptance were
+completed collectively.
+
 ## Tutor-directed changes completed
 
 - [x] Remaining supplied taxonomy categories configured for the pilot
@@ -18,6 +26,7 @@
 - [x] Updated detailed algorithm PDF
 - [x] Updated INFS6600 mapping PDF
 - [x] Tests, README, changelog, and release manifest
+- [x] Eight-person work-allocation and meeting-reporting Word document
 
 ## Tutor suggestions completed at pilot scale
 

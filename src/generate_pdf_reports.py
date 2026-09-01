@@ -193,7 +193,7 @@ def _footer(canvas, doc) -> None:
     canvas.line(doc.leftMargin, 15 * mm, width - doc.rightMargin, 15 * mm)
     canvas.setFont(FONT, 7.5)
     canvas.setFillColor(MUTED)
-    canvas.drawString(doc.leftMargin, 10 * mm, "CS-44 | INFS6600 taxonomy pilot v2")
+    canvas.drawString(doc.leftMargin, 10 * mm, "CS-44 eight-member project team | INFS6600 taxonomy pilot v2")
     canvas.drawRightString(width - doc.rightMargin, 10 * mm, f"Page {doc.page}")
     canvas.restoreState()
 
@@ -226,16 +226,16 @@ def create_algorithm_pdf(result: dict, taxonomy: dict, path: Path) -> None:
         topMargin=18 * mm,
         bottomMargin=21 * mm,
         title="Classification Algorithm: Tutor-Feedback v2",
-        author="CS-44 Project Team",
+        author="CS-44 Project Team (8 members)",
     )
     story = [
         Paragraph("Classification Algorithm: Tutor-Feedback v2", STYLES["title"]),
         Paragraph(
-            "Transparent eight-category, multi-label baseline | INFS6600 pilot",
+            "Transparent eight-category, multi-label baseline | Prepared collaboratively by the eight-member CS-44 project team",
             STYLES["subtitle"],
         ),
         _callout(
-            "Core decision: categories are not mutually exclusive. Simulation and Case-Based Learning are separate. Week 4 remains an INFS6600-only rerun; no wider unit analysis is included.",
+            "Team delivery: eight members held defined primary workstreams and completed taxonomy decisions, evidence review, quality assurance, and final acceptance collectively. Core decision: categories are not mutually exclusive. Simulation and Case-Based Learning are separate. Week 4 remains an INFS6600-only rerun.",
             usable,
         ),
         Paragraph("1. Tutor-directed changes", STYLES["h1"]),
@@ -361,7 +361,7 @@ def create_mapping_pdf(
         topMargin=16 * mm,
         bottomMargin=21 * mm,
         title="INFS6600 Course-Category Mapping v2",
-        author="CS-44 Project Team",
+        author="CS-44 Project Team (8 members)",
     )
     positives = [
         row["category"] for row in result["summary"] if row["belongs_to_category"]
@@ -369,11 +369,11 @@ def create_mapping_pdf(
     story = [
         Paragraph("INFS6600 Course-Category Mapping v2", STYLES["title"]),
         Paragraph(
-            f"{_safe(result['unit_title'])} | {_safe(result['session'])} | Taxonomy {_safe(result['taxonomy_version'])}",
+            f"{_safe(result['unit_title'])} | {_safe(result['session'])} | Taxonomy {_safe(result['taxonomy_version'])} | Eight-member CS-44 team delivery",
             STYLES["subtitle"],
         ),
         _callout(
-            "Positive categories: "
+            "Completed collaboratively by the eight-member CS-44 project team. Positive categories: "
             + "; ".join(positives)
             + ". Categories are not mutually exclusive; percentages and counts are not expected to sum to 100%. This report covers INFS6600 only.",
             usable,

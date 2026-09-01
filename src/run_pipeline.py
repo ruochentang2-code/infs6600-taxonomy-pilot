@@ -14,6 +14,23 @@ from fetch_outline import DEFAULT_URL
 from taxonomy_config import DEFAULT_TAXONOMY_PATH
 
 
+TEAM_MEMBERS = [
+    "Houming Chen",
+    "Haidi Sun",
+    "Yulei He",
+    "Ruochen Tang",
+    "Xiaopeng Ding",
+    "Huaicong Yu",
+    "Jinfei Qiu",
+    "Yihang Zhao",
+]
+TEAM_DELIVERY_STATEMENT = (
+    "The Week 4 tutor-feedback v2 release was completed collaboratively by the "
+    "eight-member CS-44 project team. Each member held primary ownership for a "
+    "defined workstream, with collective review and final acceptance."
+)
+
+
 def run(script: Path, *arguments: object) -> None:
     command = [sys.executable, str(script), *(str(value) for value in arguments)]
     subprocess.run(command, check=True)
@@ -72,6 +89,18 @@ def main() -> None:
     mapping_md = output_dir / "reports" / "course_category_mapping_v2.md"
     mapping_csv = output_dir / "reports" / "course_category_mapping_v2.csv"
     visualisations = output_dir / "visualisations"
+    team_allocation_docx = (
+        source_dir.parent
+        / "output"
+        / "docx"
+        / "CS-44_Week4_Eight-Person_Work_Allocation.docx"
+    )
+
+    run(
+        source_dir / "generate_week4_work_allocation.py",
+        "--output",
+        team_allocation_docx,
+    )
 
     raw.parent.mkdir(parents=True, exist_ok=True)
     if args.snapshot:
@@ -154,6 +183,7 @@ def main() -> None:
         visualisations / "category_summary.png",
         visualisations / "category_scores.png",
         visualisations / "evidence_by_section.png",
+        team_allocation_docx,
         *pdf_files,
     ]
     manifest = {
@@ -161,6 +191,12 @@ def main() -> None:
         "taxonomy_version": classification["taxonomy_version"],
         "source_url": classification["source_url"],
         "retrieved_at": classification.get("retrieved_at", ""),
+        "delivery_team": {
+            "group": "CS-44",
+            "member_count": len(TEAM_MEMBERS),
+            "members": TEAM_MEMBERS,
+            "statement": TEAM_DELIVERY_STATEMENT,
+        },
         "positive_categories": [
             row["category"]
             for row in classification["summary"]

@@ -4,6 +4,10 @@
 **Official source:** https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC  
 **Policy:** Categories are not mutually exclusive. Counts and category percentages must not be expected to sum to 100%.
 
+## Team delivery statement
+
+The Week 4 tutor-feedback v2 release was completed collaboratively by the eight-member CS-44 project team, with defined primary ownership and collective review of taxonomy decisions, INFS6600 evidence, quality assurance, and final acceptance.
+
 ## Classification summary
 
 | Category | Belongs? | Positive evidence | Review items | Classified score | Review score | Source sections |

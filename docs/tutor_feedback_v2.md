@@ -4,6 +4,14 @@
 
 The v2 release implements the client meeting and document feedback received on 26 August 2026.
 
+## Delivery ownership
+
+This release was completed collaboratively by the eight-member CS-44 project
+team: Houming Chen, Haidi Sun, Yulei He, Ruochen Tang, Xiaopeng Ding, Huaicong
+Yu, Jinfei Qiu, and Yihang Zhao. Each member held primary ownership for a
+defined workstream, while taxonomy decisions, INFS6600 evidence review,
+quality assurance, and final acceptance were completed collectively.
+
 | Tutor feedback | v2 implementation | Verification |
 |---|---|---|
 | Simulation and Case-Based Learning should be separated | Created independent `simulation` and `case_based` categories | Taxonomy validation and regression tests |
