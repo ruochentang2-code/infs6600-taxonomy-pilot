@@ -35,6 +35,7 @@ MEMBERS = [
         "number": "01",
         "name": "Member 1",
         "stream": "Coordination, tutor-feedback traceability and scope control",
+        "stream_zh": "项目协调、导师反馈追踪与范围控制",
         "completed": [
             "Converted the meeting, email, PDF comments and scope-document changes into one acceptance checklist.",
             "Kept Week 4 limited to the tutor-requested INFS6600 update and its necessary supporting work.",
@@ -45,12 +46,24 @@ MEMBERS = [
             "Week 4 delivery checklist and scope guard",
             "Integrated meeting handout and speaking order",
         ],
+        "completed_zh": [
+            "将会议、邮件、PDF 批注及范围文档修订整合为统一验收清单。",
+            "将第四周工作限定在导师要求的 INFS6600 更新及必要配套工作内。",
+            "协调八个工作流、任务交接与统一会议汇报口径。",
+        ],
+        "outputs_zh": [
+            "会议决策记录与导师反馈实施记录",
+            "第四周交付清单与范围控制说明",
+            "整合后的会议材料与汇报顺序",
+        ],
         "line": "I coordinated the tutor-feedback v2 update, mapped every requested change to an acceptance check, and kept the team within the agreed INFS6600-only Week 4 scope.",
+        "line_zh": "我负责协调导师反馈 v2 更新，将每项修改要求对应到验收检查，并确保团队严格保持在约定的 INFS6600 第四周范围内。",
     },
     {
         "number": "02",
         "name": "Member 2",
         "stream": "Taxonomy definitions and versioned configuration",
+        "stream_zh": "分类体系定义与版本化配置",
         "completed": [
             "Configured all eight supplied taxonomy categories for the pilot.",
             "Separated Simulation from Case-Based Learning and clarified their definitions.",
@@ -61,12 +74,24 @@ MEMBERS = [
             "Eight-category standards in the detailed algorithm report",
             "Configuration notes for unresolved client decisions",
         ],
+        "completed_zh": [
+            "为试点配置导师提供的全部八个分类。",
+            "将模拟学习与案例式学习拆分，并明确两者定义。",
+            "在分类体系中补充类别重叠说明、人工复核指引和临时状态标记。",
+        ],
+        "outputs_zh": [
+            "config/taxonomy_v2.json",
+            "详细算法报告中的八分类标准",
+            "待客户确认事项的配置说明",
+        ],
         "line": "I updated the supplied taxonomy into a versioned eight-category configuration and made Simulation and Case-Based Learning independent categories with clear overlap and review guidance.",
+        "line_zh": "我将导师提供的分类体系更新为版本化的八分类配置，并把模拟学习与案例式学习设为独立类别，同时补充清晰的重叠规则和复核指引。",
     },
     {
         "number": "03",
         "name": "Member 3",
         "stream": "Multi-label, overlap and review policy",
+        "stream_zh": "多标签、类别重叠与人工复核政策",
         "completed": [
             "Defined categories as non-mutually-exclusive and removed any single-winner assumption.",
             "Retained an evidence item once per category so genuine overlap remains visible.",
@@ -77,12 +102,24 @@ MEMBERS = [
             "Case/industry overlap interpretation",
             "Manual-review rules and review-queue criteria",
         ],
+        "completed_zh": [
+            "明确各分类并非互斥，并移除单一胜出类别的假设。",
+            "同一证据条目可在每个相关类别中计数一次，以保留真实重叠关系。",
+            "将行政标签“Case studies”转入人工复核，而非自动作为正向证据。",
+        ],
+        "outputs_zh": [
+            "多标签与“证据条目—类别”去重政策",
+            "案例与行业合作重叠关系解释",
+            "人工复核规则与复核队列标准",
+        ],
         "line": "I formalised the multi-label policy: a unit or evidence item can support several categories, while ambiguous administrative labels stay visible in the review queue instead of becoming automatic positives.",
+        "line_zh": "我正式确立了多标签政策：一个课程或证据条目可以支持多个类别，而含义不明确的行政标签会保留在复核队列中，不会自动成为正向结果。",
     },
     {
         "number": "04",
         "name": "Member 4",
         "stream": "INFS6600 source evidence and pilot rerun",
+        "stream_zh": "INFS6600 来源证据与试点重跑",
         "completed": [
             "Verified the INFS6600 2026 Semester 2 public-outline snapshot and official source URL.",
             "Maintained auditable evidence units across overview, learning outcomes, assessments and weekly schedule.",
@@ -93,12 +130,24 @@ MEMBERS = [
             "Classified-evidence and review-queue datasets",
             "Traceable evidence for the three positive categories",
         ],
+        "completed_zh": [
+            "核验 INFS6600 2026 年第二学期公开课程大纲快照及官方来源链接。",
+            "维护课程概述、学习成果、考核任务和每周安排中的可审计证据条目。",
+            "重新运行试点，并检查条目编号、来源章节和原始证据文本。",
+        ],
+        "outputs_zh": [
+            "版本化 INFS6600 来源快照与课程信息摘要",
+            "已分类证据与人工复核队列数据集",
+            "三个正向类别的可追溯证据",
+        ],
         "line": "I prepared and verified the INFS6600 evidence base, reran the pilot across all four outline sections, and ensured every result remained traceable to an item ID and the official source.",
+        "line_zh": "我准备并核验了 INFS6600 证据库，在课程大纲的四个部分重新运行试点，并确保每项结果均可追溯到条目编号和官方来源。",
     },
     {
         "number": "05",
         "name": "Member 5",
         "stream": "Scoring method, WIL weights and confidence logic",
+        "stream_zh": "评分方法、WIL 权重与置信度逻辑",
         "completed": [
             "Applied the tutor comments to the four WIL weights: 4.0, 2.0, 2.0 and provisional 2.0.",
             "Kept one contribution per matched rule group and separated classified score from review score.",
@@ -109,12 +158,24 @@ MEMBERS = [
             "Classified, review and total matched score fields",
             "02_Classification_Algorithm_Detailed_v2.pdf",
         ],
+        "completed_zh": [
+            "按照导师批注，将四项 WIL 权重设为 4.0、2.0、2.0 和临时 2.0。",
+            "每个匹配规则组仅计分一次，并将分类得分与复核得分分开。",
+            "明确 3.0 和 5.0 阈值可配置且仍属临时设置。",
+        ],
+        "outputs_zh": [
+            "更新后的加权短语评分配置与逻辑",
+            "分类得分、复核得分和总匹配得分字段",
+            "02_Classification_Algorithm_Detailed_v2.pdf",
+        ],
         "line": "I implemented the tutor’s WIL weighting comments, separated positive and review scoring, and kept the decision thresholds explicit and provisional rather than presenting them as validated cut-offs.",
+        "line_zh": "我落实了导师对 WIL 权重的批注，将正向评分与复核评分分开，并明确决策阈值仍为临时设置，而非已经验证的界限。",
     },
     {
         "number": "06",
         "name": "Member 6",
         "stream": "Evidence aggregation and course-category mapping",
+        "stream_zh": "证据汇总与课程—类别映射",
         "completed": [
             "Counted distinct evidence items rather than raw keyword occurrences.",
             "Aggregated positive items, review items, classified score, review score and section counts by category.",
@@ -125,12 +186,24 @@ MEMBERS = [
             "Course-category mapping in Markdown and CSV",
             "Verified WIL, Case-Based and Project/Problem-Based positive result",
         ],
+        "completed_zh": [
+            "统计不同证据条目，而不是原始关键词出现次数。",
+            "按类别汇总正向条目、复核条目、分类得分、复核得分和来源章节数量。",
+            "生成完整八分类映射，同时保留 INFS6600 的三个正向类别结果。",
+        ],
+        "outputs_zh": [
+            "classification_results.json 与 unit_category_summary.csv",
+            "Markdown 和 CSV 格式的课程—类别映射",
+            "经核验的 WIL、案例式学习和项目/问题式学习正向结果",
+        ],
         "line": "I built the category-level aggregation and mapping outputs, using distinct evidence-item counts and separate score totals so the three INFS6600 allocations can be audited clearly.",
+        "line_zh": "我构建了类别级汇总和映射输出，采用不同证据条目数量及分离的得分合计，使 INFS6600 的三个分类结果能够被清晰审计。",
     },
     {
         "number": "07",
         "name": "Member 7",
         "stream": "Visualisation and report production",
+        "stream_zh": "可视化与报告制作",
         "completed": [
             "Created three INFS6600-only taxonomy figures for evidence counts, scores and source sections.",
             "Integrated total scoring, review signals and multi-label interpretation into the pilot report.",
@@ -141,12 +214,24 @@ MEMBERS = [
             "pilot_results_v2.md",
             "05_INFS6600_Course_Category_Mapping_v2.pdf",
         ],
+        "completed_zh": [
+            "为证据数量、类别得分和来源章节制作三张仅针对 INFS6600 的分类图。",
+            "将总评分、复核信号和多标签解释整合进试点报告。",
+            "制作更新后的课程—类别映射报告，供会议审阅。",
+        ],
+        "outputs_zh": [
+            "三张版本化 PNG 图表",
+            "pilot_results_v2.md",
+            "05_INFS6600_Course_Category_Mapping_v2.pdf",
+        ],
         "line": "I turned the updated results into the three requested pilot-scale figures and the mapping report, showing evidence counts, total scores and where the evidence appears in the unit outline.",
+        "line_zh": "我将更新结果制作成三张试点规模图表和映射报告，展示证据数量、总得分以及证据在课程大纲中的分布位置。",
     },
     {
         "number": "08",
         "name": "Member 8",
         "stream": "Quality assurance, release packaging and version control",
+        "stream_zh": "质量保证、发布打包与版本控制",
         "completed": [
             "Ran offline unit and tutor-feedback regression checks for the eight-category multi-label result.",
             "Verified generated reports, release hashes and the two final PDF deliverables.",
@@ -157,7 +242,18 @@ MEMBERS = [
             "SHA-256 release manifest, README and changelog",
             "Versioned Git branch and final delivery package",
         ],
+        "completed_zh": [
+            "对八分类多标签结果运行离线单元测试和导师反馈回归检查。",
+            "核验生成的报告、发布哈希和两份最终 PDF 交付物。",
+            "以独立的 tutor-feedback-v2 Git 版本打包更新，并保留原始 main 分支。",
+        ],
+        "outputs_zh": [
+            "回归测试与验收检查结果",
+            "SHA-256 发布清单、README 和更新日志",
+            "版本化 Git 分支与最终交付包",
+        ],
         "line": "I completed release QA and version packaging, confirmed the expected three-category result and kept this Week 4 update separate so the original repository version remains intact.",
+        "line_zh": "我完成了发布质量检查和版本打包，确认预期的三个正向类别结果，并将本次第四周更新作为独立版本，确保原始仓库版本保持完整。",
     },
 ]
 
@@ -245,11 +341,29 @@ def set_cell_border(cell, color=MID_GREY, size="6", **edges) -> None:
             element.set(qn(f"w:{key}"), str(value))
 
 
+DOCUMENT_FONT = "Hiragino Sans GB"
+
+
+def set_run_font(run, font_name: str = DOCUMENT_FONT) -> None:
+    """Set every OOXML font slot so Word and LibreOffice both render CJK text."""
+    run.font.name = font_name
+    fonts = run._element.get_or_add_rPr().get_or_add_rFonts()
+    for slot in ("w:ascii", "w:hAnsi", "w:eastAsia", "w:cs"):
+        fonts.set(qn(slot), font_name)
+
+
+def set_style_font(style, font_name: str = DOCUMENT_FONT) -> None:
+    style.font.name = font_name
+    fonts = style._element.get_or_add_rPr().get_or_add_rFonts()
+    for slot in ("w:ascii", "w:hAnsi", "w:eastAsia", "w:cs"):
+        fonts.set(qn(slot), font_name)
+
+
 def add_run(paragraph, text: str, *, bold=False, color=TEXT, size=None, italic=False):
     run = paragraph.add_run(text)
     run.bold = bold
     run.italic = italic
-    run.font.name = "Calibri"
+    set_run_font(run)
     run.font.color.rgb = RGBColor.from_string(color)
     if size:
         run.font.size = Pt(size)
@@ -269,6 +383,16 @@ def add_bullet(cell, text: str, *, compact=True) -> None:
     paragraph.paragraph_format.space_after = Pt(2 if compact else 4)
     paragraph.paragraph_format.line_spacing = 1.0
     add_run(paragraph, text, size=8.6)
+
+
+def add_bilingual_bullet(cell, english: str, chinese: str) -> None:
+    paragraph = cell.add_paragraph(style="List Bullet")
+    paragraph.paragraph_format.left_indent = Inches(0.18)
+    paragraph.paragraph_format.first_line_indent = Inches(-0.12)
+    paragraph.paragraph_format.space_after = Pt(3)
+    paragraph.paragraph_format.line_spacing = 1.0
+    add_run(paragraph, english, size=8.15)
+    add_run(paragraph, f"\n{chinese}", color=MUTED, size=8.15)
 
 
 def add_field(paragraph, field: str) -> None:
@@ -294,14 +418,14 @@ def configure_document(document: Document) -> None:
 
     styles = document.styles
     normal = styles["Normal"]
-    normal.font.name = "Calibri"
+    set_style_font(normal)
     normal.font.size = Pt(10)
     normal.font.color.rgb = RGBColor.from_string(TEXT)
     normal.paragraph_format.space_after = Pt(5)
     normal.paragraph_format.line_spacing = 1.08
 
     title = styles["Title"]
-    title.font.name = "Calibri"
+    set_style_font(title)
     title.font.size = Pt(25)
     title.font.bold = True
     title.font.color.rgb = RGBColor.from_string(NAVY)
@@ -313,7 +437,7 @@ def configure_document(document: Document) -> None:
         ("Heading 3", 11.5, BLUE_DARK, 8, 4),
     ):
         style = styles[style_name]
-        style.font.name = "Calibri"
+        set_style_font(style)
         style.font.size = Pt(size)
         style.font.bold = True
         style.font.color.rgb = RGBColor.from_string(color)
@@ -322,7 +446,7 @@ def configure_document(document: Document) -> None:
         style.paragraph_format.keep_with_next = True
 
     list_style = styles["List Bullet"]
-    list_style.font.name = "Calibri"
+    set_style_font(list_style)
     list_style.font.size = Pt(9)
     list_style.paragraph_format.space_after = Pt(3)
 
@@ -332,7 +456,7 @@ def configure_document(document: Document) -> None:
         p.alignment = WD_ALIGN_PARAGRAPH.LEFT
         p.paragraph_format.space_after = Pt(3)
         add_run(p, "CS-44", bold=True, color=NAVY, size=8.5)
-        add_run(p, "  |  Week 4 Tutor-Feedback v2  |  Eight-Person Work Allocation", color=MUTED, size=8.5)
+        add_run(p, "  |  Week 4 Tutor-Feedback v2 / 第四周导师反馈 v2  |  Eight-Person Work Allocation / 八人分工", color=MUTED, size=8.1)
         p_pr = p._p.get_or_add_pPr()
         p_bdr = OxmlElement("w:pBdr")
         bottom = OxmlElement("w:bottom")
@@ -346,7 +470,7 @@ def configure_document(document: Document) -> None:
         footer = sec.footer
         fp = footer.paragraphs[0]
         fp.alignment = WD_ALIGN_PARAGRAPH.CENTER
-        add_run(fp, "CS-44 Project Team (8 members)  •  1 September 2026  •  Page ", color=MUTED, size=8)
+        add_run(fp, "CS-44 Project Team / 项目团队（8人）  •  1 September 2026 / 2026年9月1日  •  Page / 页 ", color=MUTED, size=7.6)
         add_field(fp, "PAGE")
 
 
@@ -354,8 +478,8 @@ def add_metadata(document: Document) -> None:
     table = document.add_table(rows=2, cols=4)
     set_table_fixed(table, [1200, 3480, 1200, 3480])
     values = [
-        ("Project", "Exploring Pedagogical Innovations in Business Education", "Group", "CS-44"),
-        ("Meeting", "Week 4 progress report", "Release", "tutor-feedback-v2"),
+        ("Project / 项目", "Exploring Pedagogical Innovations in Business Education\n商业教育中的教学创新探索", "Group / 小组", "CS-44"),
+        ("Meeting / 会议", "Week 4 progress report / 第四周进度汇报", "Release / 版本", "tutor-feedback-v2"),
     ]
     for row, values_row in zip(table.rows, values):
         prevent_row_split(row)
@@ -371,6 +495,7 @@ def add_metadata(document: Document) -> None:
 
 def add_callout(document: Document, text: str, *, fill=BLUE_LIGHT, border=BLUE) -> None:
     table = document.add_table(rows=1, cols=1)
+    prevent_row_split(table.rows[0])
     set_table_fixed(table, [9360])
     cell = table.cell(0, 0)
     set_cell_shading(cell, fill)
@@ -381,12 +506,23 @@ def add_callout(document: Document, text: str, *, fill=BLUE_LIGHT, border=BLUE) 
     add_run(p, text, bold=True, color=NAVY, size=10)
 
 
+def add_page_heading(document: Document, text: str, *, level: int = 1):
+    """Start a new page without inserting a standalone break paragraph."""
+    heading = document.add_heading(text, level=level)
+    heading.paragraph_format.page_break_before = True
+    return heading
+
+
 def add_scope_table(document: Document) -> None:
-    document.add_heading("Completed Week 4 scope", level=1)
+    document.add_heading("Completed Week 4 scope / 第四周已完成范围", level=1)
     table = document.add_table(rows=1, cols=3)
     widths = [3120, 3120, 3120]
     set_table_fixed(table, widths)
-    headers = ["Tutor-directed", "Necessary supporting work", "Tutor suggestions at pilot scale"]
+    headers = [
+        "Tutor-directed\n导师明确要求",
+        "Necessary supporting work\n必要配套工作",
+        "Tutor suggestions at pilot scale\n试点范围内的导师建议",
+    ]
     for idx, header in enumerate(headers):
         cell = table.rows[0].cells[idx]
         clear_cell(cell)
@@ -399,21 +535,21 @@ def add_scope_table(document: Document) -> None:
     prevent_row_split(body)
     content = [
         [
-            "Separated Simulation and Case-Based Learning",
-            "Applied non-exclusive multi-label classification",
-            "Updated tutor-commented WIL weights",
-            "Added total scoring and configured all supplied categories",
+            ("Separated Simulation and Case-Based Learning", "拆分模拟学习与案例式学习"),
+            ("Applied non-exclusive multi-label classification", "采用非互斥的多标签分类"),
+            ("Updated tutor-commented WIL weights", "更新导师批注的 WIL 权重"),
+            ("Added total scoring and configured all supplied categories", "增加总评分并配置全部导师提供的类别"),
         ],
         [
-            "Reran INFS6600 only",
-            "Added overlap and review policy",
-            "Produced structured evidence and mapping outputs",
-            "Added regression tests, release notes and audit hashes",
+            ("Reran INFS6600 only", "仅重新运行 INFS6600"),
+            ("Added overlap and review policy", "增加类别重叠与人工复核政策"),
+            ("Produced structured evidence and mapping outputs", "生成结构化证据与映射输出"),
+            ("Added regression tests, release notes and audit hashes", "增加回归测试、发布说明与审计哈希"),
         ],
         [
-            "Counted distinct evidence items",
-            "Created three INFS6600 category-distribution figures",
-            "Kept both suggestions inside the existing pilot scope",
+            ("Counted distinct evidence items", "统计不同证据条目"),
+            ("Created three INFS6600 category-distribution figures", "制作三张 INFS6600 分类分布图"),
+            ("Kept both suggestions inside the existing pilot scope", "将两项建议严格限制在现有试点范围内"),
         ],
     ]
     for idx, lines in enumerate(content):
@@ -421,20 +557,19 @@ def add_scope_table(document: Document) -> None:
         clear_cell(cell)
         set_cell_shading(cell, PALE_BLUE if idx < 2 else PALE_GOLD)
         set_cell_border(cell)
-        for line in lines:
-            add_bullet(cell, line)
+        for english, chinese in lines:
+            add_bilingual_bullet(cell, english, chinese)
 
 
 def add_allocation_overview(document: Document) -> None:
-    document.add_page_break()
-    document.add_heading("Eight-person allocation at a glance", level=1)
+    add_page_heading(document, "Eight-person allocation at a glance / 八人分工总览")
     p = document.add_paragraph()
-    add_run(p, "Primary ownership indicates accountability for coordination and review; it does not mean the work was completed in isolation.", italic=True, color=MUTED, size=9)
+    add_run(p, "Primary ownership indicates accountability for coordination and review; it does not mean the work was completed in isolation.\n主责表示对协调与复核承担主要责任，并不代表相关工作由个人独立完成。", italic=True, color=MUTED, size=8.7)
 
     table = document.add_table(rows=1, cols=4)
     widths = [600, 1830, 4650, 2280]
     set_table_fixed(table, widths)
-    headers = ["#", "Member", "Primary workstream", "Meeting focus"]
+    headers = ["#", "Member / 成员", "Primary workstream / 主要工作流", "Meeting focus / 汇报重点"]
     for idx, header in enumerate(headers):
         cell = table.rows[0].cells[idx]
         clear_cell(cell)
@@ -446,32 +581,38 @@ def add_allocation_overview(document: Document) -> None:
     repeat_header(table.rows[0])
 
     focuses = [
-        "Scope and integration",
-        "Taxonomy changes",
-        "Overlap policy",
-        "Evidence rerun",
-        "Scoring changes",
-        "Results and mapping",
-        "Figures and reports",
-        "QA and release",
+        ("Scope and integration", "范围与整合"),
+        ("Taxonomy changes", "分类体系修改"),
+        ("Overlap policy", "重叠政策"),
+        ("Evidence rerun", "证据重跑"),
+        ("Scoring changes", "评分修改"),
+        ("Results and mapping", "结果与映射"),
+        ("Figures and reports", "图表与报告"),
+        ("QA and release", "质量检查与发布"),
     ]
     for member, focus in zip(MEMBERS, focuses):
         row = table.add_row()
         prevent_row_split(row)
         fill = WHITE if int(member["number"]) % 2 else GREY
-        for idx, value in enumerate((member["number"], member["name"], member["stream"], focus)):
+        values = (
+            member["number"],
+            member["name"],
+            f"{member['stream']}\n{member['stream_zh']}",
+            f"{focus[0]}\n{focus[1]}",
+        )
+        for idx, value in enumerate(values):
             cell = row.cells[idx]
             clear_cell(cell)
             set_cell_shading(cell, fill)
             set_cell_border(cell)
             p = cell.paragraphs[0]
             p.alignment = WD_ALIGN_PARAGRAPH.CENTER if idx in (0, 3) else WD_ALIGN_PARAGRAPH.LEFT
-            add_run(p, value, bold=idx == 1, color=NAVY if idx in (0, 1) else TEXT, size=8.4)
+            add_run(p, value, bold=idx == 1, color=NAVY if idx in (0, 1) else TEXT, size=7.8)
 
-    document.add_heading("Shared completion rule", level=2)
+    document.add_heading("Shared completion rule / 共同完成原则", level=2)
     add_callout(
         document,
-        "Every workstream was cross-checked by at least one other member, and taxonomy interpretation, INFS6600 evidence acceptance, scope decisions and final release acceptance were agreed collectively by all eight members.",
+        "Every workstream was cross-checked by at least one other member, and taxonomy interpretation, INFS6600 evidence acceptance, scope decisions and final release acceptance were agreed collectively by all eight members.\n每个工作流均由至少一名其他成员交叉检查；分类体系解释、INFS6600 证据验收、范围决策和最终发布验收均由八位成员共同确认。",
     )
 
 
@@ -486,11 +627,11 @@ def add_member_card(document: Document, member: dict) -> None:
     set_cell_border(merged, color=BLUE_DARK, size="8")
     p = merged.paragraphs[0]
     add_run(p, f"{member['number']}  {member['name']}", bold=True, color=WHITE, size=11)
-    add_run(p, f"  |  {member['stream']}", color=WHITE, size=9.5)
+    add_run(p, f"  |  {member['stream']} / {member['stream_zh']}", color=WHITE, size=8.8)
 
     body = table.add_row()
     prevent_row_split(body)
-    for idx, heading in enumerate(("Completed responsibilities", "Concrete deliverables")):
+    for idx, heading in enumerate(("Completed responsibilities / 已完成职责", "Concrete deliverables / 具体交付物")):
         cell = body.cells[idx]
         clear_cell(cell)
         set_cell_shading(cell, WHITE if idx == 0 else PALE_BLUE)
@@ -498,8 +639,9 @@ def add_member_card(document: Document, member: dict) -> None:
         p = cell.paragraphs[0]
         add_run(p, heading, bold=True, color=BLUE, size=8.8)
         items = member["completed"] if idx == 0 else member["outputs"]
-        for item in items:
-            add_bullet(cell, item)
+        items_zh = member["completed_zh"] if idx == 0 else member["outputs_zh"]
+        for english, chinese in zip(items, items_zh):
+            add_bilingual_bullet(cell, english, chinese)
 
     line_row = table.add_row()
     prevent_row_split(line_row)
@@ -509,38 +651,37 @@ def add_member_card(document: Document, member: dict) -> None:
     set_cell_border(line_cell, color=GOLD, size="6")
     p = line_cell.paragraphs[0]
     p.paragraph_format.space_after = Pt(0)
-    add_run(p, "Suggested meeting line: ", bold=True, color=NAVY, size=8.6)
-    add_run(p, f"“{member['line']}”", italic=True, color=TEXT, size=8.6)
+    add_run(p, "Suggested meeting line / 建议汇报话术:\n", bold=True, color=NAVY, size=8.4)
+    add_run(p, f"“{member['line']}”\n", italic=True, color=TEXT, size=8.25)
+    add_run(p, f"“{member['line_zh']}”", color=MUTED, size=8.25)
 
     spacer = document.add_paragraph()
     spacer.paragraph_format.space_after = Pt(2)
 
 
 def add_member_pages(document: Document) -> None:
-    document.add_page_break()
-    document.add_heading("Individual completed contributions — members 1–4", level=1)
-    for member in MEMBERS[:4]:
-        add_member_card(document, member)
-
-    document.add_page_break()
-    document.add_heading("Individual completed contributions — members 5–8", level=1)
-    for member in MEMBERS[4:]:
-        add_member_card(document, member)
+    for start in range(0, len(MEMBERS), 2):
+        end = start + 2
+        add_page_heading(
+            document,
+            f"Completed contributions — Members {start + 1}–{end} / 成员 {start + 1}–{end} 已完成工作",
+        )
+        for member in MEMBERS[start:end]:
+            add_member_card(document, member)
 
 
 def add_final_page(document: Document) -> None:
-    document.add_page_break()
-    document.add_heading("Meeting run sheet and shared wording", level=1)
+    add_page_heading(document, "Meeting run sheet and shared wording / 会议流程与统一口径")
     add_callout(
         document,
-        "Recommended total speaking time: 8–10 minutes. Each member owns one 40–60 second update; Member 1 opens with scope and Member 8 closes with verification and release status.",
+        "Recommended total speaking time: 8–10 minutes. Each member owns one 40–60 second update; Member 1 opens with scope and Member 8 closes with verification and release status.\n建议总汇报时间为 8–10 分钟。每位成员负责 40–60 秒；Member 1 以范围说明开场，Member 8 以验证与发布状态收尾。",
     )
 
-    document.add_heading("Speaking order", level=2)
+    document.add_heading("Speaking order / 汇报顺序", level=2)
     table = document.add_table(rows=1, cols=3)
     widths = [900, 2550, 5910]
     set_table_fixed(table, widths)
-    for idx, header in enumerate(("Order", "Speaker", "One-sentence hand-off")):
+    for idx, header in enumerate(("Order / 顺序", "Speaker / 汇报人", "One-sentence hand-off / 一句话衔接")):
         cell = table.rows[0].cells[idx]
         clear_cell(cell)
         set_cell_shading(cell, NAVY)
@@ -549,56 +690,64 @@ def add_final_page(document: Document) -> None:
         add_run(p, header, bold=True, color=WHITE, size=8.5)
     repeat_header(table.rows[0])
     handoffs = [
-        "Tutor feedback, acceptance checklist and Week 4 scope",
-        "Eight-category taxonomy and Simulation/Case split",
-        "Multi-label, overlap and review treatment",
-        "INFS6600 evidence preparation and rerun",
-        "Weights, scoring and provisional thresholds",
-        "Distinct counts, totals and category mapping",
-        "Pilot-scale figures and reports",
-        "Tests, release manifest, PDFs and versioned Git delivery",
+        ("Tutor feedback, acceptance checklist and Week 4 scope", "导师反馈、验收清单与第四周范围"),
+        ("Eight-category taxonomy and Simulation/Case split", "八分类体系及模拟/案例拆分"),
+        ("Multi-label, overlap and review treatment", "多标签、重叠关系与复核处理"),
+        ("INFS6600 evidence preparation and rerun", "INFS6600 证据准备与重跑"),
+        ("Weights, scoring and provisional thresholds", "权重、评分与临时阈值"),
+        ("Distinct counts, totals and category mapping", "不同证据计数、总分与类别映射"),
+        ("Pilot-scale figures and reports", "试点规模图表与报告"),
+        ("Tests, release manifest, PDFs and versioned Git delivery", "测试、发布清单、PDF 与版本化 Git 交付"),
     ]
     for idx, (member, handoff) in enumerate(zip(MEMBERS, handoffs), start=1):
         row = table.add_row()
         prevent_row_split(row)
         fill = WHITE if idx % 2 else GREY
-        for col, value in enumerate((str(idx), member["name"], handoff)):
+        for col, value in enumerate((str(idx), member["name"], f"{handoff[0]}\n{handoff[1]}")):
             cell = row.cells[col]
             clear_cell(cell)
             set_cell_shading(cell, fill)
             set_cell_border(cell)
             p = cell.paragraphs[0]
             p.alignment = WD_ALIGN_PARAGRAPH.CENTER if col == 0 else WD_ALIGN_PARAGRAPH.LEFT
-            add_run(p, value, bold=col == 1, color=NAVY if col == 1 else TEXT, size=8.5)
+            add_run(p, value, bold=col == 1, color=NAVY if col == 1 else TEXT, size=8.1)
 
-    document.add_heading("Approved team delivery statement", level=2)
+    document.add_heading("Approved team delivery statement / 统一团队交付口径", level=2)
     add_callout(
         document,
-        "The Week 4 tutor-feedback v2 release was completed collaboratively by the eight-member CS-44 project team. Each member held primary ownership for a defined workstream, while taxonomy decisions, INFS6600 evidence review, quality assurance and final acceptance were completed collectively.",
+        "The Week 4 tutor-feedback v2 release was completed collaboratively by the eight-member CS-44 project team. Each member held primary ownership for a defined workstream, while taxonomy decisions, INFS6600 evidence review, quality assurance and final acceptance were completed collectively.\n第四周导师反馈 v2 版本由 CS-44 八人项目团队共同完成。每位成员对一个明确工作流承担主责；分类体系决策、INFS6600 证据复核、质量保证和最终验收由团队共同完成。",
         fill=BLUE_LIGHT,
     )
 
-    document.add_heading("Closing result statement", level=2)
+    document.add_heading("Closing result statement / 总结口径", level=2)
     p = document.add_paragraph()
     add_run(
         p,
-        "Together, the team applied the tutor’s requested changes to the existing INFS6600 pilot, preserved multi-label classification, and confirmed positive allocation to Work-Integrated and Applied Learning, Case-Based Learning, and Project- and Problem-Based Learning. No additional units or unrelated future-stage work were advanced this week.",
+        "Together, the team applied the tutor’s requested changes to the existing INFS6600 pilot, preserved multi-label classification, and confirmed positive allocation to Work-Integrated and Applied Learning, Case-Based Learning, and Project- and Problem-Based Learning. No additional units or unrelated future-stage work were advanced this week.\n团队共同将导师要求的修改应用于现有 INFS6600 试点，保留多标签分类，并确认课程可正向归入工作整合与应用学习、案例式学习以及项目与问题式学习。本周未推进其他课程或无关的后续阶段工作。",
         size=9.4,
     )
 
-    document.add_heading("Scope guard for questions", level=2)
+    document.add_heading("Scope guard for questions / 提问时的范围口径", level=2)
     guard = document.add_table(rows=1, cols=2)
     set_table_fixed(guard, [4680, 4680])
     for idx, (title, items, fill) in enumerate(
         (
             (
-                "Completed this week",
-                ["Tutor-directed INFS6600 v2 changes", "Necessary supporting implementation", "Two pilot-scale tutor suggestions"],
+                "Completed this week / 本周已完成",
+                [
+                    ("Tutor-directed INFS6600 v2 changes", "导师明确要求的 INFS6600 v2 修改"),
+                    ("Necessary supporting implementation", "必要配套实施"),
+                    ("Two pilot-scale tutor suggestions", "两项试点范围内的导师建议"),
+                ],
                 PALE_BLUE,
             ),
             (
-                "Not advanced this week",
-                ["Additional units or UG/PG comparison", "Landing page or LLM/RAG work", "Formal precision/recall/F1 evaluation"],
+                "Not advanced this week / 本周未推进",
+                [
+                    ("Additional units or UG/PG comparison", "其他课程或本科/研究生比较"),
+                    ("Landing page or LLM/RAG work", "落地页或 LLM/RAG 工作"),
+                    ("Formal precision/recall/F1 evaluation", "正式的精确率/召回率/F1 评估"),
+                ],
                 GREY,
             ),
         )
@@ -609,42 +758,43 @@ def add_final_page(document: Document) -> None:
         set_cell_border(cell)
         p = cell.paragraphs[0]
         add_run(p, title, bold=True, color=NAVY, size=9)
-        for item in items:
-            add_bullet(cell, item)
+        for english, chinese in items:
+            add_bilingual_bullet(cell, english, chinese)
 
 
 def build_document(path: Path) -> None:
     document = Document()
     configure_document(document)
-    document.core_properties.title = "CS-44 Week 4 Eight-Person Work Allocation"
-    document.core_properties.subject = "Tutor-feedback v2 meeting reporting notes"
+    document.core_properties.title = "CS-44 Week 4 Eight-Person Work Allocation / 第四周八人分工"
+    document.core_properties.subject = "Tutor-feedback v2 bilingual meeting reporting notes / 导师反馈 v2 双语会议汇报材料"
     document.core_properties.author = "CS-44 Project Team (8 members)"
     document.core_properties.comments = "Prepared collaboratively for the Week 4 project meeting."
 
     p = document.add_paragraph(style="Title")
     p.alignment = WD_ALIGN_PARAGRAPH.LEFT
-    add_run(p, "Week 4 Eight-Person Work Allocation", bold=True, color=NAVY, size=25)
+    add_run(p, "Week 4 Eight-Person Work Allocation", bold=True, color=NAVY, size=24)
+    add_run(p, "\n第四周八人分工", bold=True, color=NAVY, size=21)
     subtitle = document.add_paragraph()
     subtitle.paragraph_format.space_after = Pt(10)
-    add_run(subtitle, "INFS6600 Taxonomy Pilot — Tutor-Feedback v2", bold=True, color=BLUE, size=13)
-    add_run(subtitle, "\nMeeting reporting notes and completed contribution record", color=MUTED, size=10)
+    add_run(subtitle, "INFS6600 Taxonomy Pilot — Tutor-Feedback v2 / INFS6600 分类体系试点——导师反馈 v2", bold=True, color=BLUE, size=11.6)
+    add_run(subtitle, "\nMeeting reporting notes and completed contribution record / 会议汇报材料与已完成贡献记录", color=MUTED, size=9.6)
 
     add_metadata(document)
     add_callout(
         document,
-        "All Week 4 deliverables were completed collaboratively by the eight-member CS-44 team. The allocation below identifies each member’s primary ownership for meeting reporting; it does not represent isolated or exclusive authorship.",
+        "All Week 4 deliverables were completed collaboratively by the eight-member CS-44 team. The allocation below identifies each member’s primary ownership for meeting reporting; it does not represent isolated or exclusive authorship.\n第四周全部交付物由 CS-44 八人团队共同完成。以下分工仅用于明确会议汇报中的个人主责，并不表示相关成果由个人独立或排他完成。",
     )
 
     p = document.add_paragraph()
     p.paragraph_format.space_before = Pt(8)
     p.paragraph_format.space_after = Pt(3)
-    add_run(p, "Week 3 continuity basis", bold=True, color=NAVY, size=10)
+    add_run(p, "Week 3 continuity basis / 与第三周工作的连续性", bold=True, color=NAVY, size=10)
     p = document.add_paragraph()
     p.paragraph_format.space_after = Pt(7)
     add_run(
         p,
-        "This Week 4 allocation continues the Week 3 team-level workflow from scope and taxonomy through extraction, classification, visualisation and handover. Primary responsibilities follow that same end-to-end chain, while the explicitly documented pilot-demo and scoring-method activities remain continuous with the meeting record.",
-        size=9.2,
+        "This Week 4 allocation continues the Week 3 team-level workflow from scope and taxonomy through extraction, classification, visualisation and handover. Primary responsibilities follow that same end-to-end chain, while the explicitly documented pilot-demo and scoring-method activities remain continuous with the meeting record.\n本周分工延续第三周从范围与分类体系、数据提取、分类分析、可视化到交付的团队工作流。各成员主责按照同一端到端链条安排，并保持试点演示与评分方法等会议记录中已明确活动的连续性。",
+        size=8.9,
     )
 
     add_scope_table(document)
