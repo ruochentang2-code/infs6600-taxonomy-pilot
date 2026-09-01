@@ -60,14 +60,27 @@ def extract(url: str) -> dict:
     ]
     session = session_candidates[0] if session_candidates else ""
 
-    all_paragraphs = [clean(node.text_content()) for node in root.xpath("//p")]
-    overview = []
-    for text in all_paragraphs:
-        if (
-            text.startswith("This unit bridges the gap")
-            or text.startswith("This experiential learning opportunity")
-        ) and text not in overview:
-            overview.append(text)
+    def content_after_heading(label: str, allowed_tags: set[str]) -> list[str]:
+        headings = root.xpath(
+            "//*[self::h2 or self::h3][normalize-space()=$label]", label=label
+        )
+        if not headings:
+            return []
+        values = []
+        for node in headings[0].xpath("following::*"):
+            if node.tag in {"h2", "h3"}:
+                # Responsive markup can duplicate the same heading; ignore that duplicate.
+                heading_text = clean(node.text_content())
+                if not heading_text or heading_text == label:
+                    continue
+                break
+            if node.tag in allowed_tags:
+                value = clean(node.text_content())
+                if value and value not in values:
+                    values.append(value)
+        return values
+
+    overview = content_after_heading("Overview", {"p"})
 
     learning_outcomes = []
     for node in root.xpath("//li"):
@@ -75,18 +88,17 @@ def extract(url: str) -> dict:
         if re.match(r"^LO\d+\.", text) and text not in learning_outcomes:
             learning_outcomes.append(text)
 
-    details_table = tables[0]
+    details_table = next((table for table in tables if len(table.columns) == 2), tables[0])
     details = {
         clean(row.iloc[0]): clean(row.iloc[1])
         for _, row in details_table.iterrows()
         if len(row) >= 2 and clean(row.iloc[0])
     }
-    staff_table = tables[1]
-    teaching_staff = {
-        clean(row.iloc[0]): clean(row.iloc[1])
-        for _, row in staff_table.iterrows()
-        if len(row) >= 2 and clean(row.iloc[0])
-    }
+    teaching_staff = {}
+    for table in tables:
+        for _, row in table.iterrows():
+            if len(row) >= 2 and clean(row.iloc[0]) in {"Coordinator", "Lecturer", "Tutor"}:
+                teaching_staff[clean(row.iloc[0])] = clean(row.iloc[1])
 
     assessment_table = find_table(tables, {"Type", "Description", "Weight"})
     assessments = []
@@ -104,6 +116,8 @@ def extract(url: str) -> dict:
                 "length": clean(row.get("Length")),
             }
         )
+
+    assessment_summary = content_after_heading("Assessment summary", {"p", "li"})
 
     schedule_table = find_table(tables, {"WK", "Topic", "Learning activity"})
     schedule = []
@@ -146,6 +160,15 @@ def extract(url: str) -> dict:
                 "metadata": assessment,
             }
         )
+    for index, text in enumerate(assessment_summary, 1):
+        items.append(
+            {
+                "item_id": f"AD{index:02d}",
+                "section": "assessment_description",
+                "label": f"Assessment description {index}",
+                "text": text,
+            }
+        )
     for index, week in enumerate(schedule, 1):
         items.append(
             {
@@ -168,6 +191,7 @@ def extract(url: str) -> dict:
         "overview": overview,
         "learning_outcomes": learning_outcomes,
         "assessments": assessments,
+        "assessment_summary": assessment_summary,
         "weekly_schedule": schedule,
         "items": items,
     }
