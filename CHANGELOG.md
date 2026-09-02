@@ -1,5 +1,15 @@
 # Changelog
 
+## 2026-09-02 - Week 4 scoring matrix v4
+
+### Changed
+
+- Increased table and heading font sizes for meeting-room readability.
+- Reduced the main scoring table from eleven columns to eight core columns.
+- Removed long category guidance, score-meaning, source, definition, and reason fields.
+- Removed the separate Sources sheet and kept five concise working sheets.
+- Preserved the v2 and v3 workbooks and all current classifier results.
+
 ## 2026-09-02 - Week 4 scoring matrix v3
 
 ### Added
