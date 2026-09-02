@@ -25,6 +25,7 @@ visualisation, quality assurance, reports, and the final release package.
 - [x] Updated INFS6600 mapping PDF
 - [x] Tests, README, changelog, and release manifest
 - [x] Eight-person work-allocation and meeting-reporting Word document
+- [x] Full eight-category v3 scoring matrix with weight basis, confirmation status, and scope-example coverage
 
 ## Pilot-scale enhancements completed
 

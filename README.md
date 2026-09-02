@@ -37,6 +37,16 @@ taxonomy, but they are not presented as validated classifications. No additional
 discipline-wide UG/PG analysis, landing page, LLM/RAG component, or formal
 model-evaluation study is included in this update.
 
+### Full taxonomy scoring matrix v3
+
+The meeting-ready workbook
+[`output/xlsx/06_Full_Taxonomy_Scoring_Matrix_v3.xlsx`](output/xlsx/06_Full_Taxonomy_Scoring_Matrix_v3.xlsx)
+lists the scoring for all eight categories. It separates reviewed WIL weights,
+current pilot rules, provisional working weights, and seven proposed scope-example
+rules. Proposed rows are visible for discussion but are not active in the current
+classifier, so the verified INFS6600 result remains unchanged. The v2 workbook is
+preserved beside it.
+
 ## Current INFS6600 result
 
 The v2 pipeline positively allocates INFS6600 to three categories:
@@ -150,6 +160,9 @@ output/
 │   └── 05_INFS6600_Course_Category_Mapping_v2.pdf
 ├── pptx/
 │   └── CS-44_Week4_INFS6600_Taxonomy_Pilot_v2.pptx
+├── xlsx/
+│   ├── 06_Full_Taxonomy_Scoring_Matrix_v2.xlsx
+│   └── 06_Full_Taxonomy_Scoring_Matrix_v3.xlsx
 └── v2/
     ├── data/
     │   ├── raw/infs6600_outline.json

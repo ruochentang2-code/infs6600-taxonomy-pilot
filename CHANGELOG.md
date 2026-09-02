@@ -1,5 +1,20 @@
 # Changelog
 
+## 2026-09-02 - Week 4 scoring matrix v3
+
+### Added
+
+- A versioned full taxonomy scoring workbook covering all eight categories.
+- Separate columns for weight status, scoring basis, and implementation status.
+- Seven proposed rules covering revised scope examples that were missing from the active phrase list.
+- A scope-coverage sheet and expanded open-configuration questions.
+
+### Clarified
+
+- Non-WIL weights are provisional working values pending wider calibration.
+- Proposed scope-example rules are not active in the current classifier.
+- The existing v2 workbook and verified INFS6600 result are preserved.
+
 ## 2026-09-01 - Week 4 v2
 
 ### Added
