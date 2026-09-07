@@ -1,0 +1,107 @@
+{
+  "release": "week4-v2",
+  "taxonomy_version": "2026-09-08-final-scoring-baseline",
+  "source_url": "https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC",
+  "retrieved_at": "2026-08-31T16:10:06.515477+00:00",
+  "delivery_team": {
+    "group": "CS-44",
+    "member_count": 8,
+    "members": [
+      "Houming Chen",
+      "Haidi Sun",
+      "Yulei He",
+      "Ruochen Tang",
+      "Xiaopeng Ding",
+      "Huaicong Yu",
+      "Jinfei Qiu",
+      "Yihang Zhao"
+    ],
+    "statement": "The eight-member CS-44 project team completed the Week 4 v2 release, including taxonomy configuration, evidence review, quality assurance, report production, and final acceptance."
+  },
+  "positive_categories": [
+    "Work-Integrated and Applied Learning",
+    "Case-Based Learning",
+    "Project- and Problem-Based Learning"
+  ],
+  "week4_regression": {
+    "expected_positive_categories": [
+      "case_based",
+      "project_problem_based",
+      "work_integrated_applied"
+    ],
+    "observed_positive_categories": [
+      "case_based",
+      "project_problem_based",
+      "work_integrated_applied"
+    ],
+    "expected_categories_present": true,
+    "simulation_positive": false,
+    "note": "Simulation is evaluated independently. A true Simulation positive is not an error, but it must come from Simulation-specific evidence."
+  },
+  "files": [
+    {
+      "path": "output/v2/data/raw/infs6600_outline.json",
+      "sha256": "7192243dd7ae9e4b2e91b29e313b40c3475e32412674596e9ee5f54daf4101a2"
+    },
+    {
+      "path": "output/v2/data/processed/classification_results.json",
+      "sha256": "a5d0992a67ae1b690bc5c330d90ebd42b78bace550f1ce17b514024ea69043ea"
+    },
+    {
+      "path": "output/v2/data/processed/classified_evidence.csv",
+      "sha256": "a2fca0d432af8d760038ee5ae0365b0acfba0c19b124664902079e0a4b7b594c"
+    },
+    {
+      "path": "output/v2/data/processed/review_queue.csv",
+      "sha256": "b4e921a691fdf4271a8434f251a53ad6e3fa37bee6cbdce04975e29c917ceacc"
+    },
+    {
+      "path": "output/v2/data/processed/unit_category_summary.csv",
+      "sha256": "0806473190f91f15c84ffcbc3b40ab8f8c054ccf2bab00c697d8c3a7bf28d26a"
+    },
+    {
+      "path": "output/v2/reports/infs6600_course_information.md",
+      "sha256": "cb04c97f458790110a83e22c5cf82621cdca6d8090c8c9275f0598238f90e186"
+    },
+    {
+      "path": "output/v2/reports/pilot_results_v2.md",
+      "sha256": "1290c623a1dee2a68b38a9558a46da777021830d9889d02f2274a1befdfebfff"
+    },
+    {
+      "path": "output/v2/reports/course_category_mapping_v2.md",
+      "sha256": "7569061ecca5de2232fe4c2862f1ad37e337544f53454f4530751a421cd4d992"
+    },
+    {
+      "path": "output/v2/reports/course_category_mapping_v2.csv",
+      "sha256": "73e8ee1c2337209cd0c65e3838c454835c443c8c7358ed27313b49035b1d48ca"
+    },
+    {
+      "path": "output/v2/visualisations/category_summary.png",
+      "sha256": "ecca13df325ba2b76fbedd29ff8acdd1819d7113a1ceb3deac779318405d5b62"
+    },
+    {
+      "path": "output/v2/visualisations/category_scores.png",
+      "sha256": "3989ab9fea1661e7d714e266f87bdf9eebd41d6cafb4d990a3de806687f18174"
+    },
+    {
+      "path": "output/v2/visualisations/evidence_by_section.png",
+      "sha256": "26dc472ca8f5b2143755ec428ef20f5bf14b6aa636082b7287a277e89d58e35f"
+    },
+    {
+      "path": "output/docx/CS-44_Week4_Eight-Person_Work_Allocation.docx",
+      "sha256": "615e3087ff29d5a00379b53d99a388fd9cf52a827f3b31e4adb4daddb6f7bb28"
+    },
+    {
+      "path": "output/pptx/CS-44_Week4_INFS6600_Taxonomy_Pilot_v2.pptx",
+      "sha256": "5032813533c3487f05907ed18a56a8f0dc9fe92a6abc906df2cc9400aa4eec51"
+    },
+    {
+      "path": "output/pdf/02_Classification_Algorithm_Detailed_v2.pdf",
+      "sha256": "47da016ee4bca041efc95dcf78c5d44a0d6a86c6fd928520d9633fbc7c2f5bbc"
+    },
+    {
+      "path": "output/pdf/05_INFS6600_Course_Category_Mapping_v2.pdf",
+      "sha256": "80176ce7473c87451296b1a5fbc1117766677a69f89f40155277cd78858ed825"
+    }
+  ]
+}

@@ -41,18 +41,26 @@ def write_csvs(output_dir: Path, result: dict) -> None:
     output_dir.mkdir(parents=True, exist_ok=True)
     evidence_fields = ["unit_code", "level", "category", "item_id", "section", "label", "score", "confidence", "text", "matched_rule_labels", "source_url"]
     with (output_dir / "classified_evidence.csv").open("w", newline="", encoding="utf-8-sig") as handle:
-        writer = csv.DictWriter(handle, fieldnames=evidence_fields); writer.writeheader()
+        writer = csv.DictWriter(
+            handle, fieldnames=evidence_fields, lineterminator="\n"
+        ); writer.writeheader()
         for unit in result["units"]:
             for row in unit["evidence"]:
                 writer.writerow({**{f: row.get(f, "") for f in evidence_fields}, "level": unit["level"], "matched_rule_labels": "; ".join(m["rule"] for m in row["matched_rules"])})
     mapping_fields = ["unit_code", "unit_title", "level", "session", "category", "evidence_item_count", "has_evidence", "source_url"]
     with (output_dir / "unit_category_mapping.csv").open("w", newline="", encoding="utf-8-sig") as handle:
-        writer = csv.DictWriter(handle, fieldnames=mapping_fields); writer.writeheader()
+        writer = csv.DictWriter(
+            handle, fieldnames=mapping_fields, lineterminator="\n"
+        ); writer.writeheader()
         for unit in result["units"]:
             for summary in unit["summary"]:
                 writer.writerow({"unit_code": unit["unit_code"], "unit_title": unit["unit_title"], "level": unit["level"], "session": unit["session"], "category": summary["category"], "evidence_item_count": summary["evidence_item_count"], "has_evidence": "Yes" if summary["evidence_item_count"] else "No", "source_url": unit["source_url"]})
     with (output_dir / "category_aggregate.csv").open("w", newline="", encoding="utf-8-sig") as handle:
-        writer = csv.DictWriter(handle, fieldnames=list(result["aggregate"][0])); writer.writeheader(); writer.writerows(result["aggregate"])
+        writer = csv.DictWriter(
+            handle,
+            fieldnames=list(result["aggregate"][0]),
+            lineterminator="\n",
+        ); writer.writeheader(); writer.writerows(result["aggregate"])
 
 
 def main() -> None:

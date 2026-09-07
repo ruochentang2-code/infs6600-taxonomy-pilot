@@ -1,0 +1,89 @@
+# Changelog
+
+## 2026-09-08 - Final scoring baseline
+
+### Changed
+
+- Updated practical teamwork from 2.0 to 2.5.
+- Updated the Case-Based explicit scenario method from 3.5 to 4.0.
+- Updated the administrative `Case studies` review signal from 2.0 to 2.5.
+- Updated generic ideation or prototyping from 2.0 to 3.0 while retaining review-only treatment.
+- Added `problem and opportunity` variants and `prototype` to the active phrase rules.
+- Regenerated the INFS6600 classification outputs and summaries with the current baseline.
+
+### Added
+
+- Final three-sheet scoring workbook covering all eight taxonomy categories.
+- Regression checks for the added phrases and the 3.0 review-only rule.
+
+## 2026-09-02 - Week 4 scoring matrix v4
+
+### Changed
+
+- Increased table and heading font sizes for meeting-room readability.
+- Reduced the main scoring table from eleven columns to eight core columns.
+- Removed long category guidance, score-meaning, source, definition, and reason fields.
+- Removed the separate Sources sheet and kept five concise working sheets.
+- Preserved the v2 and v3 workbooks and all current classifier results.
+
+## 2026-09-02 - Week 4 scoring matrix v3
+
+### Added
+
+- A versioned full taxonomy scoring workbook covering all eight categories.
+- Separate columns for weight status, scoring basis, and implementation status.
+- Seven proposed rules covering revised scope examples that were missing from the active phrase list.
+- A scope-coverage sheet and expanded open-configuration questions.
+
+### Clarified
+
+- Non-WIL weights are provisional working values pending wider calibration.
+- Proposed scope-example rules are not active in the current classifier.
+- The existing v2 workbook and verified INFS6600 result are preserved.
+
+## 2026-09-01 - Week 4 v2
+
+### Added
+
+- Eight-person Week 4 work-allocation Word handout with individual meeting lines.
+- English-only eight-slide Week 4 presentation deck for the project meeting.
+- Versioned team contribution record and an explicit eight-member delivery statement across narrative outputs.
+- Eight-category taxonomy configuration in `config/taxonomy_v2.json`.
+- Separate Simulation and Case-Based Learning categories.
+- Project- and Problem-Based, Community, Entrepreneurial, Technology-Mediated, and Hybrid rule sets.
+- Category overlap notes and review guidance.
+- Positive, review, and unit-category score summaries.
+- Review queue and category summary CSV exports.
+- Evidence-count, score, and source-section visualisations.
+- Two PDF deliverables, the meeting presentation, and a SHA-256 release manifest.
+- Offline unit tests and an INFS6600 Week 4 regression test.
+
+### Changed
+
+- Authentic practice weight: 3.5 to 4.0.
+- Theory-practice integration weight: 2.5 to 2.0.
+- Practical teamwork weight retained at 2.0.
+- Career readiness weight: 1.5 to provisional 2.0.
+- Administrative `Case studies` label: strong 4.0 evidence to review-only 2.0.
+- Classification output now distinguishes positive evidence from manual-review signals.
+- `run_pipeline.py` now supports offline snapshots and versioned PDF output.
+
+### Preserved
+
+- Complete eight-member contribution records and meeting reporting assignments.
+- Repository history and the original `main` branch.
+- Original v1 visualisations in `visualisations/`.
+- Source evidence, matched rules, item IDs, source sections, and official URL audit trail.
+
+### Still provisional
+
+- Positive threshold 3.0.
+- High-confidence threshold 5.0.
+- Career readiness weight 2.0.
+- Treatment of administrative case labels pending further validation.
+
+### Week 4 scope boundary
+
+- Reran INFS6600 only.
+- Did not analyse additional units or produce discipline-wide UG/PG results.
+- Did not implement a landing page, LLM/RAG component, or formal model-evaluation study.

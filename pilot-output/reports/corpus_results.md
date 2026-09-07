@@ -7,12 +7,13 @@ Fetched **26 of 27** requested public unit outlines.
 | Category | All units | UG units | PG units | Evidence items |
 |---|---:|---:|---:|---:|
 | Work-Integrated and Applied Learning | 13 | 4 | 9 | 35 |
-| Project- and Problem-Based Learning | 23 | 9 | 14 | 79 |
+| Simulation | 0 | 0 | 0 | 0 |
+| Case-Based Learning | 5 | 2 | 3 | 5 |
+| Project- and Problem-Based Learning | 9 | 3 | 6 | 22 |
 | Community Learning | 0 | 0 | 0 | 0 |
-| Entrepreneurial Learning | 2 | 0 | 2 | 4 |
+| Entrepreneurial Learning | 1 | 0 | 1 | 1 |
 | Technology-Mediated Learning | 0 | 0 | 0 | 0 |
 | Hybrid Learning | 0 | 0 | 0 | 0 |
-| Simulation and Case-Based Learning | 17 | 6 | 11 | 50 |
 
 A unit is counted once per category when at least one distinct outline item reaches that category's rule threshold. Evidence-item totals are reported separately.
 
