@@ -1,5 +1,21 @@
 # Changelog
 
+## 2026-09-08 - Final scoring baseline
+
+### Changed
+
+- Updated practical teamwork from 2.0 to 2.5.
+- Updated the Case-Based explicit scenario method from 3.5 to 4.0.
+- Updated the administrative `Case studies` review signal from 2.0 to 2.5.
+- Updated generic ideation or prototyping from 2.0 to 3.0 while retaining review-only treatment.
+- Added `problem and opportunity` variants and `prototype` to the active phrase rules.
+- Regenerated the INFS6600 classification outputs and summaries with the current baseline.
+
+### Added
+
+- Final three-sheet scoring workbook covering all eight taxonomy categories.
+- Regression checks for the added phrases and the 3.0 review-only rule.
+
 ## 2026-09-02 - Week 4 scoring matrix v4
 
 ### Changed

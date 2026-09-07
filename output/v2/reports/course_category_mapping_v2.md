@@ -1,6 +1,6 @@
 # INFS6600 course-to-taxonomy mapping v2
 
-**Taxonomy version:** 2026-09-01-week4-v2
+**Taxonomy version:** 2026-09-08-final-scoring-baseline
 
 **Official source:** https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC
 
@@ -14,12 +14,12 @@ The eight-member CS-44 project team completed the Week 4 v2 release, including t
 
 | Category | Belongs? | Positive evidence | Review items | Classified score | Review score | Source sections |
 |---|---|---:|---:|---:|---:|---|
-| Work-Integrated and Applied Learning | Yes | 11 | 1 | 48.5 | 2.0 | Overview=1; Learning outcomes=3; Assessments=4; Weekly schedule=3 |
+| Work-Integrated and Applied Learning | Yes | 11 | 1 | 49.0 | 2.0 | Overview=1; Learning outcomes=3; Assessments=4; Weekly schedule=3 |
 | Simulation | No evidence found | 0 | 0 | 0 | 0 | None |
-| Case-Based Learning | Yes | 1 | 2 | 3.5 | 4.0 | Learning outcomes=1 |
+| Case-Based Learning | Yes | 1 | 2 | 4.0 | 5.0 | Learning outcomes=1 |
 | Project- and Problem-Based Learning | Yes | 4 | 2 | 14.5 | 4.0 | Learning outcomes=1; Weekly schedule=3 |
 | Community Learning | No evidence found | 0 | 0 | 0 | 0 | None |
-| Entrepreneurial Learning | No - review signals only | 0 | 2 | 0 | 4.0 | None |
+| Entrepreneurial Learning | No - review signals only | 0 | 2 | 0 | 6.0 | None |
 | Technology-Mediated Learning | No evidence found | 0 | 0 | 0 | 0 | None |
 | Hybrid Learning | No evidence found | 0 | 0 | 0 | 0 | None |
 

@@ -4,7 +4,7 @@
 
 **Outline:** Semester 2, 2026 [Normal evening] - Camperdown/Darlington, Sydney
 
-**Taxonomy:** 2026-09-01-week4-v2
+**Taxonomy:** 2026-09-08-final-scoring-baseline
 
 **Official source:** https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC
 
@@ -20,12 +20,12 @@ This is a multi-label result. Categories are not mutually exclusive, and one evi
 
 | Category | Status | Positive items | Review items | Classified score | Review score |
 |---|---|---:|---:|---:|---:|
-| Work-Integrated and Applied Learning | positive | 11 | 1 | 48.5 | 2.0 |
+| Work-Integrated and Applied Learning | positive | 11 | 1 | 49.0 | 2.0 |
 | Simulation | no_match | 0 | 0 | 0 | 0 |
-| Case-Based Learning | positive | 1 | 2 | 3.5 | 4.0 |
+| Case-Based Learning | positive | 1 | 2 | 4.0 | 5.0 |
 | Project- and Problem-Based Learning | positive | 4 | 2 | 14.5 | 4.0 |
 | Community Learning | no_match | 0 | 0 | 0 | 0 |
-| Entrepreneurial Learning | review_only | 0 | 2 | 0 | 4.0 |
+| Entrepreneurial Learning | review_only | 0 | 2 | 0 | 6.0 |
 | Technology-Mediated Learning | no_match | 0 | 0 | 0 | 0 |
 | Hybrid Learning | no_match | 0 | 0 | 0 | 0 |
 
@@ -33,17 +33,17 @@ This is a multi-label result. Categories are not mutually exclusive, and one evi
 
 - Simulation and Case-Based Learning are separate categories.
 - INFS6600 may appear in several categories; the classifier does not force a single winner.
-- Authentic practice is weighted 4.0; theory-practice integration 2.0; practical teamwork 2.0; career readiness 2.0, with the last weight retained as provisional.
-- Administrative `Case studies` assessment labels are weak review signals with weight 2.0, rather than automatic positive evidence.
+- Authentic practice is weighted 4.0; theory-practice integration 2.0; practical teamwork 2.5; and career readiness 2.0.
+- Administrative `Case studies` assessment labels are weak review signals with weight 2.5, rather than automatic positive evidence.
 - Total classified score, review score, distinct evidence count, and source-section distribution are reported separately.
 
 ## Positive evidence
 
 | Category | Section | Item | Score | Confidence | Matched rules |
 |---|---|---|---:|---|---|
-| Work-Integrated and Applied Learning | overview | OV01 Overview paragraph 1 | 10.0 | high | authentic practice; theory-practice integration; practical teamwork; career readiness |
+| Work-Integrated and Applied Learning | overview | OV01 Overview paragraph 1 | 10.5 | high | authentic practice; theory-practice integration; practical teamwork; career readiness |
 | Work-Integrated and Applied Learning | learning_outcome | LO01 Learning outcome 1 | 4.0 | moderate | actual organisation or professional context |
-| Case-Based Learning | learning_outcome | LO02 Learning outcome 2 | 3.5 | moderate | explicit scenario method |
+| Case-Based Learning | learning_outcome | LO02 Learning outcome 2 | 4.0 | moderate | explicit scenario method |
 | Work-Integrated and Applied Learning | learning_outcome | LO03 Learning outcome 3 | 4.0 | moderate | actual organisation or professional context |
 | Project- and Problem-Based Learning | learning_outcome | LO03 Learning outcome 3 | 4.0 | moderate | authentic problem or challenge |
 | Work-Integrated and Applied Learning | learning_outcome | LO04 Learning outcome 4 | 4.0 | moderate | actual organisation or professional context |
@@ -62,12 +62,12 @@ This is a multi-label result. Categories are not mutually exclusive, and one evi
 
 | Category | Section | Item | Score | Reason |
 |---|---|---|---:|---|
-| Case-Based Learning | assessment | AS06 Business Models Submission of partner's business, operating models, and IS architecture | 2.0 | Review-only rule: administrative case-studies label |
-| Case-Based Learning | assessment | AS12 Group Report Written report | 2.0 | Review-only rule: administrative case-studies label |
+| Case-Based Learning | assessment | AS06 Business Models Submission of partner's business, operating models, and IS architecture | 2.5 | Review-only rule: administrative case-studies label |
+| Case-Based Learning | assessment | AS12 Group Report Written report | 2.5 | Review-only rule: administrative case-studies label |
 | Work-Integrated and Applied Learning | weekly_schedule | WK01 Week 01: Unit Introduction & Project Immersion | 2.0 | Below positive threshold: project immersion |
 | Project- and Problem-Based Learning | weekly_schedule | WK04 Week 04: Project Planning | 2.0 | Review-only rule: generic project planning |
-| Entrepreneurial Learning | weekly_schedule | WK07 Week 07: Ideation | 2.0 | Review-only rule: generic ideation or prototyping |
-| Entrepreneurial Learning | weekly_schedule | WK08 Week 08: Prototyping | 2.0 | Review-only rule: generic ideation or prototyping |
+| Entrepreneurial Learning | weekly_schedule | WK07 Week 07: Ideation | 3.0 | Review-only rule: generic ideation or prototyping |
+| Entrepreneurial Learning | weekly_schedule | WK08 Week 08: Prototyping | 3.0 | Review-only rule: generic ideation or prototyping |
 | Project- and Problem-Based Learning | weekly_schedule | WK10 Week 10: Implementation Planning | 2.0 | Review-only rule: generic project planning |
 
 ## Scoring and aggregation
@@ -95,7 +95,7 @@ Review guidance: Check that professional or partner language describes an authen
 
 An instructional method that recreates or mimics real-world scenarios, environments, or processes so learners can practise skills and make decisions safely.
 
-Overlap: Separated from Case-Based Learning in the Week 4 taxonomy. A real-world scenario alone is not a simulation unless the activity recreates, mimics, or role-plays a setting or process.
+Overlap: Simulation is evaluated separately from Case-Based Learning. A real-world scenario alone is not a simulation unless the activity recreates, mimics, or role-plays a setting or process.
 
 Review guidance: Do not inherit Simulation from a case-study label or from Case-Based Learning evidence.
 

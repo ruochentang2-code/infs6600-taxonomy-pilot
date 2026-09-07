@@ -37,14 +37,13 @@ taxonomy, but they are not presented as validated classifications. No additional
 discipline-wide UG/PG analysis, landing page, LLM/RAG component, or formal
 model-evaluation study is included in this update.
 
-### Full taxonomy scoring matrix v4
+### Final taxonomy scoring matrix
 
 The meeting-ready workbook
-[`output/xlsx/06_Full_Taxonomy_Scoring_Matrix_v4.xlsx`](output/xlsx/06_Full_Taxonomy_Scoring_Matrix_v4.xlsx)
-is the concise meeting version. It uses larger text and keeps only the scoring,
-status, basis, implementation, summary, and open-decision content needed for the
-discussion. Proposed rows remain separate from the active classifier, so the
-verified INFS6600 result is unchanged. The v2 and v3 workbooks are preserved.
+[`output/xlsx/06_Full_Taxonomy_Scoring_Matrix_v5_Final.xlsx`](output/xlsx/06_Full_Taxonomy_Scoring_Matrix_v5_Final.xlsx)
+contains the current reviewed scoring baseline. It integrates the latest four
+weight changes and two keyword additions while retaining the distinction between
+active and proposed rules. Earlier workbook versions remain preserved.
 
 ## Current INFS6600 result
 
@@ -56,12 +55,12 @@ The v2 pipeline positively allocates INFS6600 to three categories:
 
 | Category | Positive items | Review items | Classified score | Review score | Result |
 |---|---:|---:|---:|---:|---|
-| Work-Integrated and Applied Learning | 11 | 1 | 48.5 | 2.0 | Positive |
+| Work-Integrated and Applied Learning | 11 | 1 | 49.0 | 2.0 | Positive |
 | Simulation | 0 | 0 | 0.0 | 0.0 | No match |
-| Case-Based Learning | 1 | 2 | 3.5 | 4.0 | Positive + review items |
+| Case-Based Learning | 1 | 2 | 4.0 | 5.0 | Positive + review items |
 | Project- and Problem-Based Learning | 4 | 2 | 14.5 | 4.0 | Positive + review items |
 | Community Learning | 0 | 0 | 0.0 | 0.0 | No match |
-| Entrepreneurial Learning | 0 | 2 | 0.0 | 4.0 | Review only |
+| Entrepreneurial Learning | 0 | 2 | 0.0 | 6.0 | Review only |
 | Technology-Mediated Learning | 0 | 0 | 0.0 | 0.0 | No match |
 | Hybrid Learning | 0 | 0 | 0.0 | 0.0 | No match |
 
@@ -105,7 +104,7 @@ The eight categories are:
 |---|---:|---:|---|
 | Authentic practice | 3.5 | 4.0 | Team calibrated |
 | Theory-practice integration | 2.5 | 2.0 | Team calibrated |
-| Practical teamwork | 2.0 | 2.0 | Team calibrated |
+| Practical teamwork | 2.0 | 2.5 | Current reviewed baseline |
 | Career readiness | 1.5 | 2.0 | Provisional team calibration |
 
 The positive threshold (`3.0`) and high-confidence threshold (`5.0`) remain configurable and explicitly marked as provisional pending validation.

@@ -4,7 +4,7 @@
   "session": "Semester 2, 2026 [Normal evening] - Camperdown/Darlington, Sydney",
   "source_url": "https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC",
   "retrieved_at": "2026-08-31T16:10:06.515477+00:00",
-  "taxonomy_version": "2026-09-01-week4-v2",
+  "taxonomy_version": "2026-09-08-final-scoring-baseline",
   "counting_unit": "One distinct outline item (overview paragraph, learning outcome, assessment row, or weekly-schedule row) evaluated once per category.",
   "decision_thresholds": {
     "positive": 3.0,
@@ -27,9 +27,9 @@
       "belongs_to_category": true,
       "evidence_item_count": 11,
       "review_item_count": 1,
-      "classified_score_total": 48.5,
+      "classified_score_total": 49.0,
       "review_score_total": 2.0,
-      "total_matched_score": 50.5,
+      "total_matched_score": 51.0,
       "section_counts": {
         "overview": 1,
         "learning_outcome": 3,
@@ -54,7 +54,7 @@
       "total_matched_score": 0,
       "section_counts": {},
       "review_section_counts": {},
-      "overlap_notes": "Separated from Case-Based Learning in the Week 4 taxonomy. A real-world scenario alone is not a simulation unless the activity recreates, mimics, or role-plays a setting or process.",
+      "overlap_notes": "Simulation is evaluated separately from Case-Based Learning. A real-world scenario alone is not a simulation unless the activity recreates, mimics, or role-plays a setting or process.",
       "review_guidance": "Do not inherit Simulation from a case-study label or from Case-Based Learning evidence."
     },
     {
@@ -64,9 +64,9 @@
       "belongs_to_category": true,
       "evidence_item_count": 1,
       "review_item_count": 2,
-      "classified_score_total": 3.5,
-      "review_score_total": 4.0,
-      "total_matched_score": 7.5,
+      "classified_score_total": 4.0,
+      "review_score_total": 5.0,
+      "total_matched_score": 9.0,
       "section_counts": {
         "learning_outcome": 1
       },
@@ -119,8 +119,8 @@
       "evidence_item_count": 0,
       "review_item_count": 2,
       "classified_score_total": 0,
-      "review_score_total": 4.0,
-      "total_matched_score": 4.0,
+      "review_score_total": 6.0,
+      "total_matched_score": 6.0,
       "section_counts": {},
       "review_section_counts": {
         "weekly_schedule": 2
@@ -168,7 +168,7 @@
       "section": "overview",
       "label": "Overview paragraph 1",
       "text": "This unit bridges the gap between theory and practice by integrating the knowledge and key skills developed across the Digital Business or Business Information Systems specialisation. It provides students with a practical teamwork experience to identify, analyse, and solve contemporary problems by exploring the socio-technical ecosystem in which a digital business operates. This experiential learning opportunity enhances students’ career-readiness by consolidating their professional skills and ability to apply the Business Information Systems knowledge in authentic situations.",
-      "score": 10.0,
+      "score": 10.5,
       "positive_threshold": 3.0,
       "high_confidence_threshold": 5.0,
       "threshold_status": "provisional_pending_validation",
@@ -196,9 +196,9 @@
           "matched_phrases": [
             "practical teamwork experience"
           ],
-          "weight": 2.0,
+          "weight": 2.5,
           "review_required": false,
-          "weight_status": "team_calibrated_2"
+          "weight_status": "reviewed_baseline_2_5"
         },
         {
           "rule": "career readiness",
@@ -252,7 +252,7 @@
       "section": "learning_outcome",
       "label": "Learning outcome 2",
       "text": "LO2. Analyse open-ended business scenarios and evaluate the implications of digital technologies for business",
-      "score": 3.5,
+      "score": 4.0,
       "positive_threshold": 3.0,
       "high_confidence_threshold": 5.0,
       "threshold_status": "provisional_pending_validation",
@@ -262,9 +262,9 @@
           "matched_phrases": [
             "open-ended business scenarios"
           ],
-          "weight": 3.5,
+          "weight": 4.0,
           "review_required": false,
-          "weight_status": "configured"
+          "weight_status": "reviewed_baseline_4"
         }
       ],
       "manual_review_required": false,
@@ -540,7 +540,8 @@
         {
           "rule": "problem and opportunity scoping",
           "matched_phrases": [
-            "problem & opportunity scoping"
+            "problem & opportunity scoping",
+            "problem & opportunity"
           ],
           "weight": 3.5,
           "review_required": false,
@@ -596,7 +597,8 @@
         {
           "rule": "design and prototype method",
           "matched_phrases": [
-            "prototype validation"
+            "prototype validation",
+            "prototype"
           ],
           "weight": 3.5,
           "review_required": false,
@@ -646,7 +648,7 @@
       "section": "assessment",
       "label": "Business Models Submission of partner's business, operating models, and IS architecture",
       "text": "Type: Case studies. Description: Business Models Submission of partner's business, operating models, and IS architecture",
-      "score": 2.0,
+      "score": 2.5,
       "positive_threshold": 3.0,
       "high_confidence_threshold": 5.0,
       "threshold_status": "provisional_pending_validation",
@@ -656,9 +658,9 @@
           "matched_phrases": [
             "type: case studies"
           ],
-          "weight": 2.0,
+          "weight": 2.5,
           "review_required": true,
-          "weight_status": "review_only_overlap_calibration"
+          "weight_status": "reviewed_review_only_2_5"
         }
       ],
       "manual_review_required": true,
@@ -674,7 +676,7 @@
       "section": "assessment",
       "label": "Group Report Written report",
       "text": "Type: Case studies. Description: Group Report Written report",
-      "score": 2.0,
+      "score": 2.5,
       "positive_threshold": 3.0,
       "high_confidence_threshold": 5.0,
       "threshold_status": "provisional_pending_validation",
@@ -684,9 +686,9 @@
           "matched_phrases": [
             "type: case studies"
           ],
-          "weight": 2.0,
+          "weight": 2.5,
           "review_required": true,
-          "weight_status": "review_only_overlap_calibration"
+          "weight_status": "reviewed_review_only_2_5"
         }
       ],
       "manual_review_required": true,
@@ -758,7 +760,7 @@
       "section": "weekly_schedule",
       "label": "Week 07: Ideation",
       "text": "Ideation. Learning activity: Seminar (3 hr)",
-      "score": 2.0,
+      "score": 3.0,
       "positive_threshold": 3.0,
       "high_confidence_threshold": 5.0,
       "threshold_status": "provisional_pending_validation",
@@ -768,9 +770,9 @@
           "matched_phrases": [
             "ideation"
           ],
-          "weight": 2.0,
+          "weight": 3.0,
           "review_required": true,
-          "weight_status": "configured"
+          "weight_status": "reviewed_review_only_3"
         }
       ],
       "manual_review_required": true,
@@ -786,7 +788,7 @@
       "section": "weekly_schedule",
       "label": "Week 08: Prototyping",
       "text": "Prototyping. Learning activity: Seminar (3 hr)",
-      "score": 2.0,
+      "score": 3.0,
       "positive_threshold": 3.0,
       "high_confidence_threshold": 5.0,
       "threshold_status": "provisional_pending_validation",
@@ -796,9 +798,9 @@
           "matched_phrases": [
             "prototyping"
           ],
-          "weight": 2.0,
+          "weight": 3.0,
           "review_required": true,
-          "weight_status": "configured"
+          "weight_status": "reviewed_review_only_3"
         }
       ],
       "manual_review_required": true,

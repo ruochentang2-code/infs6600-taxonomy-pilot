@@ -52,7 +52,7 @@ class TaxonomyV2Tests(unittest.TestCase):
         }
         self.assertEqual(4.0, weights["authentic practice"])
         self.assertEqual(2.0, weights["theory-practice integration"])
-        self.assertEqual(2.0, weights["practical teamwork"])
+        self.assertEqual(2.5, weights["practical teamwork"])
         self.assertEqual(2.0, weights["career readiness"])
 
     def test_rule_alternatives_count_once(self) -> None:
@@ -97,7 +97,7 @@ class TaxonomyV2Tests(unittest.TestCase):
             row for row in result["review_queue"] if row["category_id"] == "case_based"
         ]
         self.assertEqual(1, len(reviews))
-        self.assertEqual(2.0, reviews[0]["score"])
+        self.assertEqual(2.5, reviews[0]["score"])
 
     def test_summary_reports_positive_and_review_scores_separately(self) -> None:
         result = classify(
@@ -112,9 +112,39 @@ class TaxonomyV2Tests(unittest.TestCase):
         )
         self.assertEqual(1, case_summary["evidence_item_count"])
         self.assertEqual(1, case_summary["review_item_count"])
-        self.assertEqual(3.5, case_summary["classified_score_total"])
-        self.assertEqual(2.0, case_summary["review_score_total"])
-        self.assertEqual(5.5, case_summary["total_matched_score"])
+        self.assertEqual(4.0, case_summary["classified_score_total"])
+        self.assertEqual(2.5, case_summary["review_score_total"])
+        self.assertEqual(6.5, case_summary["total_matched_score"])
+
+    def test_reviewed_keyword_additions(self) -> None:
+        project_category = self.categories["project_problem_based"]
+        score, matches = score_item(
+            "We identify the problem and opportunity before building a prototype.",
+            project_category,
+        )
+        self.assertEqual(7.0, score)
+        self.assertEqual(
+            {"problem and opportunity scoping", "design and prototype method"},
+            {match["rule"] for match in matches},
+        )
+
+    def test_generic_ideation_remains_review_only_at_three(self) -> None:
+        result = classify(
+            snapshot(item("LO03", "Students use ideation in class")),
+            self.taxonomy,
+        )
+        self.assertFalse(
+            any(
+                row["category_id"] == "entrepreneurial_learning"
+                for row in result["evidence"]
+            )
+        )
+        reviews = [
+            row for row in result["review_queue"]
+            if row["category_id"] == "entrepreneurial_learning"
+        ]
+        self.assertEqual(1, len(reviews))
+        self.assertEqual(3.0, reviews[0]["score"])
 
 
 if __name__ == "__main__":

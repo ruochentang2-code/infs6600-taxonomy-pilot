@@ -296,7 +296,7 @@ def create_algorithm_pdf(result: dict, taxonomy: dict, path: Path) -> None:
         ),
         Paragraph("7. Case-Based versus Simulation", STYLES["h1"]),
         Paragraph(
-            "Open-ended business scenarios support Case-Based Learning. A Simulation result requires simulation-specific evidence such as a recreated environment, simulation activity, or role play. The administrative assessment type 'Case studies' is assigned weight 2.0 and remains in the review queue unless stronger case-method evidence appears in the same item.",
+            "Open-ended business scenarios support Case-Based Learning. A Simulation result requires simulation-specific evidence such as a recreated environment, simulation activity, or role play. The administrative assessment type 'Case studies' is assigned weight 2.5 and remains in the review queue unless stronger case-method evidence appears in the same item.",
             STYLES["body"],
         ),
         Paragraph("8. INFS6600 regression checks", STYLES["h1"]),
@@ -316,7 +316,7 @@ def create_algorithm_pdf(result: dict, taxonomy: dict, path: Path) -> None:
         Paragraph("9. Open configuration points", STYLES["h1"]),
         _bullet("Confirm whether the 3.0 positive and 5.0 high-confidence thresholds should remain."),
         _bullet("Confirm the tentative Career readiness weight of 2.0."),
-        _bullet("Confirm whether administrative 'Case studies' labels should remain at review weight 2.0."),
+        _bullet("Administrative 'Case studies' labels remain review-only at weight 2.5."),
     ]
     path.parent.mkdir(parents=True, exist_ok=True)
     doc.build(story, onFirstPage=_footer, onLaterPages=_footer)

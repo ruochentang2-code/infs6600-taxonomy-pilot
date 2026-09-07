@@ -1,5 +1,5 @@
 {
-  "version": "2026-09-01-week4-v2",
+  "version": "2026-09-08-final-scoring-baseline",
   "title": "CS-44 Pedagogical Innovation Taxonomy v2",
   "counting_unit": "One distinct outline item (overview paragraph, learning outcome, assessment row, or weekly-schedule row) evaluated once per category.",
   "decision_thresholds": {
@@ -56,8 +56,8 @@
         {
           "label": "practical teamwork",
           "pattern": "practical teamwork experience",
-          "weight": 2.0,
-          "weight_status": "team_calibrated_2"
+          "weight": 2.5,
+          "weight_status": "reviewed_baseline_2_5"
         },
         {
           "label": "career readiness",
@@ -117,14 +117,15 @@
         {
           "label": "explicit scenario method",
           "pattern": "open-ended business scenarios|real-world scenarios|case scenario",
-          "weight": 3.5
+          "weight": 4.0,
+          "weight_status": "reviewed_baseline_4"
         },
         {
           "label": "administrative case-studies label",
           "pattern": "type: case studies",
-          "weight": 2.0,
+          "weight": 2.5,
           "review_required": true,
-          "weight_status": "review_only_overlap_calibration"
+          "weight_status": "reviewed_review_only_2_5"
         }
       ]
     },
@@ -152,12 +153,12 @@
         },
         {
           "label": "problem and opportunity scoping",
-          "pattern": "problem & opportunity scoping|problem and opportunity scoping",
+          "pattern": "problem & opportunity scoping|problem and opportunity scoping|problem & opportunity|problem and opportunity",
           "weight": 3.5
         },
         {
           "label": "design and prototype method",
-          "pattern": "design thinking|prototype validation|product development project",
+          "pattern": "design thinking|prototype validation|prototype|product development project",
           "weight": 3.5
         },
         {
@@ -217,8 +218,9 @@
         {
           "label": "generic ideation or prototyping",
           "pattern": "ideation|prototyping",
-          "weight": 2.0,
-          "review_required": true
+          "weight": 3.0,
+          "review_required": true,
+          "weight_status": "reviewed_review_only_3"
         }
       ]
     },

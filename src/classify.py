@@ -195,7 +195,7 @@ def write_evidence_csv(path: Path, rows: list[dict]) -> None:
         "source_url",
     ]
     with path.open("w", newline="", encoding="utf-8-sig") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fields)
+        writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
         writer.writeheader()
         for row in rows:
             payload = {field: row.get(field, "") for field in fields}
@@ -219,7 +219,7 @@ def write_summary_csv(path: Path, summary: list[dict]) -> None:
         "review_section_counts",
     ]
     with path.open("w", newline="", encoding="utf-8-sig") as handle:
-        writer = csv.DictWriter(handle, fieldnames=fields)
+        writer = csv.DictWriter(handle, fieldnames=fields, lineterminator="\n")
         writer.writeheader()
         for row in summary:
             payload = {field: row.get(field, "") for field in fields}
