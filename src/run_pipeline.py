@@ -29,6 +29,14 @@ def _sha256(path: Path) -> str:
     return digest.hexdigest()
 
 
+def _manifest_path(path: Path, project_root: Path) -> str:
+    """Return a stable path without requiring outputs to live in the repository."""
+    try:
+        return str(path.relative_to(project_root))
+    except ValueError:
+        return str(path)
+
+
 def run_corpus(args: argparse.Namespace, source_dir: Path) -> None:
     output_dir = args.output_dir.resolve()
     raw = output_dir / "data" / "raw" / "cs44_2026_infs_corpus.json"
@@ -147,7 +155,7 @@ def run_pilot(args: argparse.Namespace, source_dir: Path) -> None:
         "week4_regression": classification["week4_regression"],
         "files": [
             {
-                "path": str(path.relative_to(source_dir.parent)),
+                "path": _manifest_path(path, source_dir.parent),
                 "sha256": _sha256(path),
             }
             for path in release_files

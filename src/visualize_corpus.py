@@ -15,8 +15,9 @@ def short(name: str) -> str:
     return name.replace("Work-Integrated and Applied Learning", "Work-Integrated / Applied").replace("Simulation and Case-Based Learning", "Simulation / Case-Based").replace("Project- and Problem-Based Learning", "Project / Problem-Based").replace("Technology-Mediated Learning", "Technology-Mediated")
 
 def draw_chart(rows, output: Path, metric: str, title: str) -> None:
-    image=Image.new("RGB",(1700,1050),"white"); draw=ImageDraw.Draw(image); draw.rectangle((0,0,1700,115),fill="#102A43"); draw.text((65,34),title,fill="white",font=get_font(36,True))
     maximum=max([row[metric] for row in rows]+[1]); left,top,bar_h,gap=550,185,74,48
+    height=max(1050, top + len(rows) * (bar_h + gap) + 35)
+    image=Image.new("RGB",(1700,height),"white"); draw=ImageDraw.Draw(image); draw.rectangle((0,0,1700,115),fill="#102A43"); draw.text((65,34),title,fill="white",font=get_font(36,True))
     for i,row in enumerate(rows):
         y=top+i*(bar_h+gap); draw.text((60,y+17),short(row["category"]),fill="#102A43",font=get_font(24,True)); draw.rounded_rectangle((left,y,1570,y+bar_h),radius=14,fill="#EDF2F7"); filled=int(1020*row[metric]/maximum)
         if filled: draw.rounded_rectangle((left,y,left+filled,y+bar_h),radius=14,fill="#2A9D8F")
@@ -24,8 +25,9 @@ def draw_chart(rows, output: Path, metric: str, title: str) -> None:
     output.parent.mkdir(parents=True,exist_ok=True); image.save(output)
 
 def draw_comparison(rows, output: Path) -> None:
-    image=Image.new("RGB",(1800,1120),"white"); draw=ImageDraw.Draw(image); draw.rectangle((0,0,1800,115),fill="#102A43"); draw.text((65,34),"Units with evidence: UG compared with PG",fill="white",font=get_font(36,True))
     maximum=max([max(r["ug_units_with_evidence"],r["pg_units_with_evidence"]) for r in rows]+[1]); left,top,row_gap=590,175,132
+    height=max(1120, top + len(rows) * row_gap + 35)
+    image=Image.new("RGB",(1800,height),"white"); draw=ImageDraw.Draw(image); draw.rectangle((0,0,1800,115),fill="#102A43"); draw.text((65,34),"Units with evidence: UG compared with PG",fill="white",font=get_font(36,True))
     for i,row in enumerate(rows):
         y=top+i*row_gap; draw.text((55,y+30),short(row["category"]),fill="#102A43",font=get_font(23,True))
         for j,(key,color) in enumerate((("ug_units_with_evidence","#2A9D8F"),("pg_units_with_evidence","#2F6B9A"))):
