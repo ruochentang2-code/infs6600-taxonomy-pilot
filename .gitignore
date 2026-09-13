@@ -4,3 +4,8 @@ __pycache__/
 *.py[cod]
 .venv/
 tmp/
+
+# Local credentials
+.env
+.env.*
+!.env.example

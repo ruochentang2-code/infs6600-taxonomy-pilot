@@ -1,0 +1,16 @@
+.venv/
+__pycache__/
+*.py[cod]
+.env
+.env.*
+!.env.example
+.DS_Store
+backups/
+*.sock
+*.pid
+*.log
+# Saved reports below are versioned; new runs are generated locally.
+reports/batch-*/
+!reports/batch-1/
+!reports/batch-2/
+!reports/batch-3/

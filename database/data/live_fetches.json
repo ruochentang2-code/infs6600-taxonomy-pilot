@@ -1,0 +1,380 @@
+{
+  "year": 2026,
+  "policy": "prefer_s2",
+  "source_batch": 3,
+  "collected_at": "2026-09-11",
+  "responses": [
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS1000",
+      "final_url": "https://www.sydney.edu.au/units/INFS1000",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/b4cca1a0c33beac3dcce4ae4b1d7202d38fcc2dbb4844d136791067ff9f66585.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS1000/2026-S1C-ND-CC",
+      "final_url": "https://www.sydney.edu.au/units/INFS1000/2026-S1C-ND-CC",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/94061e27f2049415ffdb8660873e89a1dca858c2d6bf7dceacf56f5a43fe06b1.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS1000/2026-S2C-ND-CC",
+      "final_url": "https://www.sydney.edu.au/units/INFS1000/2026-S2C-ND-CC",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/a8453d0c3b2b60e5164c4892ba9fc409771b3e5b3e2b93d9c26b9068a3bce085.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS1020",
+      "final_url": "https://www.sydney.edu.au/units/INFS1020",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/e844af1ba59a3f5b92d7c26a55c8d87fdc5f60eb336295d2285812affe8865e9.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS1020/2026-S1C-ND-CC",
+      "final_url": "https://www.sydney.edu.au/units/INFS1020/2026-S1C-ND-CC",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/d7d88e1b2a5787c56fa1a3ee2e3e1151c5c6349413972d4515001e5583d10aab.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS1020/2026-S2C-ND-CC",
+      "final_url": "https://www.sydney.edu.au/units/INFS1020/2026-S2C-ND-CC",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/6d347edaa1dec30b9df137740194eb6e52c90e84933aba449374aad974458c0d.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS2010",
+      "final_url": "https://www.sydney.edu.au/units/INFS2010",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/34bb46e508ce4f1b661c966c88f72d8f939184f51a460c2cbeb86c9fea21401b.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS2010/2026-S2C-ND-CC",
+      "final_url": "https://www.sydney.edu.au/units/INFS2010/2026-S2C-ND-CC",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/0d1ddd81a8314aec9fa4663e457025acba63dd006ce402c67559140d042addad.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS2030",
+      "final_url": "https://www.sydney.edu.au/units/INFS2030",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/d5897b222d18e16a22b954db46df3359376b34ef30d9ce58edad33a24f6c80fa.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS2030/2026-S1C-ND-CC",
+      "final_url": "https://www.sydney.edu.au/units/INFS2030/2026-S1C-ND-CC",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/99dbc79691108979908d43dff3878ffb96fa6e4c0203f3967ef251105d4065d7.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS2040",
+      "final_url": "https://www.sydney.edu.au/units/INFS2040",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/c8e16c82dba975cd22dfb5192fd729fd1a3bc72f3e909460c16a0c20b0e02b1d.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS2040/2026-S2C-ND-CC",
+      "final_url": "https://www.sydney.edu.au/units/INFS2040/2026-S2C-ND-CC",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/3ffc896b3674027f6cbcfe1091ba1bc4ebd2fc6de8af476119c636f78593ab48.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS2050",
+      "final_url": "https://www.sydney.edu.au/units/INFS2050",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/efff0a528d62f1f1a0b1e876f6fde6de68146f89d769cf679b65b97cce8c3785.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS2050/2026-S1C-ND-CC",
+      "final_url": "https://www.sydney.edu.au/units/INFS2050/2026-S1C-ND-CC",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/fa7ba0f1ecaadb4767eff9ce310bbb433fed65bf5d71fecb47197f7676d470da.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS3040",
+      "final_url": "https://www.sydney.edu.au/units/INFS3040",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/5050c5e97a0019f3df3fadc0bf7312e7847be8c666d6e8bff17513f14b7182bd.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS3040/2026-S2C-ND-CC",
+      "final_url": "https://www.sydney.edu.au/units/INFS3040/2026-S2C-ND-CC",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/ad04a1d9338280fd3de0926128b1eea28992ca74782add737936edf8d0b984ec.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS3050",
+      "final_url": "https://www.sydney.edu.au/units/INFS3050",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/b6087ac6ca6b073749a0489bcbf41a8db6d22766ec2fcd78508a824488c1dff2.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS3050/2026-S1C-ND-CC",
+      "final_url": "https://www.sydney.edu.au/units/INFS3050/2026-S1C-ND-CC",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/62e51c15a6943bfbe537fa5f9eac23d683eb9e1cbdbe4ad4bce0a92164f62a01.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS3080",
+      "final_url": "https://www.sydney.edu.au/units/INFS3080",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/92e64f244cf42ae6414aea8a592f2179bd20a5de061f3229f092e5b8d0245e49.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS3120",
+      "final_url": "https://www.sydney.edu.au/units/INFS3120",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/f03fe85013373fec1546f5c4a0fc1a3ca4d6f19060372e9e1266a538e05d3554.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS3120/2026-S1C-ND-CC",
+      "final_url": "https://www.sydney.edu.au/units/INFS3120/2026-S1C-ND-CC",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/07527e3807f21d26ce34293750191aab35f9b48c3fee65e5c26510362f8d7fda.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS3400",
+      "final_url": "https://www.sydney.edu.au/units/INFS3400",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/3079cc0bd40d7ece4e06dc7de423c88b8605d836ae47eda3bfa377c91732a65a.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS3400/2026-S1C-ND-CC",
+      "final_url": "https://www.sydney.edu.au/units/INFS3400/2026-S1C-ND-CC",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/530bb69371e9443cf932408698b61786950534a1ed8de4e89541f4ca8abc8f74.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS3400/2026-S1CIFE-BM-CC",
+      "final_url": "https://www.sydney.edu.au/units/INFS3400/2026-S1CIFE-BM-CC",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/7e9655829601cb0eca06b74aab37d3c4bf3a2e8f45914bd873c8f2f1bbfb9329.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS3400/2026-S2C-ND-CC",
+      "final_url": "https://www.sydney.edu.au/units/INFS3400/2026-S2C-ND-CC",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/4e3615e9779f574ce45d2022bcff53115eb86ed16ce7a3e126b48bc15fbc8332.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS3400/2026-S2CIJL-BM-CC",
+      "final_url": "https://www.sydney.edu.au/units/INFS3400/2026-S2CIJL-BM-CC",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/fbb972ade71bb10f4f2249bd1faf041e886df94ebd61ae497fe1babba1ca8b3d.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS3600",
+      "final_url": "https://www.sydney.edu.au/units/INFS3600",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/b36532c53b9dbf25406065fa0679db0edeb5feb811cb001bd3dacfa9ff34384a.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS3600/2026-S1C-ND-CC",
+      "final_url": "https://www.sydney.edu.au/units/INFS3600/2026-S1C-ND-CC",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/da4a0c0e9216a47ce176de61e44109fec131e1449117ff289b5cd95200d92589.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS3600/2026-S2C-ND-CC",
+      "final_url": "https://www.sydney.edu.au/units/INFS3600/2026-S2C-ND-CC",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/4d5912a4bf3bd852827967ff23524573cc222c28a2d618573e11a7a67249e4a4.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS5002",
+      "final_url": "https://www.sydney.edu.au/units/INFS5002",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/58376e32056898d4d1305ecce567f5b0e2b491fc9f5cfe1a53ad5d665cba0901.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS5002/2026-S1C-ND-CC",
+      "final_url": "https://www.sydney.edu.au/units/INFS5002/2026-S1C-ND-CC",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/b80d84b37ecfb875c2f27af5c2d3bdd86a7aae675a39281ba571429e571492d2.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS5002/2026-S2C-ND-CC",
+      "final_url": "https://www.sydney.edu.au/units/INFS5002/2026-S2C-ND-CC",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/ee10c23c08d261ccd12e08fbd6d2f5fb32c0124d9ef47a6516432197ede0f518.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS6002",
+      "final_url": "https://www.sydney.edu.au/units/INFS6002",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/759f174bcd51885e1c68b8e492dfc6da6484b34049f1a6c842201a5c0c91c7f9.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS6002/2026-S2C-ND-CC",
+      "final_url": "https://www.sydney.edu.au/units/INFS6002/2026-S2C-ND-CC",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/5c8f8fcf8e96378a088dcf08c02f05a6fca29e839c058a1f38cdb93363f82147.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS6004",
+      "final_url": "https://www.sydney.edu.au/units/INFS6004",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/9bd0949de21a7257b9499027a78ea188942ff4fba814a9482154c64809c17410.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS6004/2026-S1C-NE-CC",
+      "final_url": "https://www.sydney.edu.au/units/INFS6004/2026-S1C-NE-CC",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/1c0b76a1052166e6722097eaa1470589a0db910176030ebfc67673609a06f2ed.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS6012",
+      "final_url": "https://www.sydney.edu.au/units/INFS6012",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/4a850218c7ed590bdcf4b39a48e48829904828a80ced24075baddff05bf7be2e.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS6012/2026-S1C-ND-CC",
+      "final_url": "https://www.sydney.edu.au/units/INFS6012/2026-S1C-ND-CC",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/b974fa4f05b89977f2abb82a717edbb80183a6e53784b6c1366492397ff0eaee.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS6015",
+      "final_url": "https://www.sydney.edu.au/units/INFS6015",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/da0b11f04888d8d8a523a2ce2350233b6eb71bcc3a76deb9daa2e25b7a5d8f5d.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS6015/2026-S2C-NE-CC",
+      "final_url": "https://www.sydney.edu.au/units/INFS6015/2026-S2C-NE-CC",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/667b708a58aee47798266f5a59b06f18bffcdf834da46cb89c82ac5743dd31f4.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS6016",
+      "final_url": "https://www.sydney.edu.au/units/INFS6016",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/0543a588b5c9b855964bbaf1a69d43305b26438babc84662aa0971a5e6732e33.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS6016/2026-S1C-ND-CC",
+      "final_url": "https://www.sydney.edu.au/units/INFS6016/2026-S1C-ND-CC",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/5827e4026dc9e22ae45fdcdb262a90e060cac6f8b2195e747aca7361729c43a1.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS6018",
+      "final_url": "https://www.sydney.edu.au/units/INFS6018",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/5c76e335a1269c79451d1a531dc25140ecabe776b5c9d88d778b2749aa48e852.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS6018/2026-S1C-ND-CC",
+      "final_url": "https://www.sydney.edu.au/units/INFS6018/2026-S1C-ND-CC",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/17f600ecdf0066eff6d8fb9ed8dd258022b081293f9831f7ea4d33c0afc432da.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS6023",
+      "final_url": "https://www.sydney.edu.au/units/INFS6023",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/470c89492b5d7615c8696996c5a207c1bc06504fcfa9b7b18ab63fc8cce7e8aa.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS6023/2026-S2C-ND-CC",
+      "final_url": "https://www.sydney.edu.au/units/INFS6023/2026-S2C-ND-CC",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/2605b37108d57b5bfa83f8db7715d6b25d420bb2f5abc44d7f36abaff96916bc.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS6024",
+      "final_url": "https://www.sydney.edu.au/units/INFS6024",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/8036335a3dcf9b0dc3b9b84434eb63c29bbd1aee4ccc423a1ee2bc8ca9073443.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS6024/2026-S1C-NE-CC",
+      "final_url": "https://www.sydney.edu.au/units/INFS6024/2026-S1C-NE-CC",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/990659d4de1e683f7ea2cd8135dfc50118e886664e87508f924f2091509158df.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS6026",
+      "final_url": "https://www.sydney.edu.au/units/INFS6026",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/55bc24a9cdac5e30c878604caea83c2864abfe83a4a09740611335e270957056.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS6026/2026-S2C-ND-CC",
+      "final_url": "https://www.sydney.edu.au/units/INFS6026/2026-S2C-ND-CC",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/b6a18eebed3115814520bc7ef38575254d87c32c30b4ebbd87120a9ac7204e9f.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS6032",
+      "final_url": "https://www.sydney.edu.au/units/INFS6032",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/0b7a078c8c3b187d171a4b49cea97cceda288e1f3971716d90a372d1755e8356.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS6032/2026-S1C-ND-CC",
+      "final_url": "https://www.sydney.edu.au/units/INFS6032/2026-S1C-ND-CC",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/00e52f0583465a261462044fe186e7d6a7c99bfdf6f153d248013275e4d08688.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS6066",
+      "final_url": "https://www.sydney.edu.au/units/INFS6066",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/bf83009f7e7285a11854f90d7144c48faeeea47dc45354857d5e439d3b033aa9.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS6066/2026-S2C-ND-CC",
+      "final_url": "https://www.sydney.edu.au/units/INFS6066/2026-S2C-ND-CC",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/b2d6473d71dacb602e172cce00f0bb8dddd6c02d9ca5e0e607dfdfa3ab7c103a.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS6071",
+      "final_url": "https://www.sydney.edu.au/units/INFS6071",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/861da508b19e4b560a3a36dd8bdf0d05dd469d9d5ba81b6e235342c0da125535.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS6071/2026-S1C-ND-CC",
+      "final_url": "https://www.sydney.edu.au/units/INFS6071/2026-S1C-ND-CC",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/d6af42b94c5adf333d620845dd14104589cf7bd0017cbf8c62d7349a1fda77d1.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS6071/2026-S2C-ND-CC",
+      "final_url": "https://www.sydney.edu.au/units/INFS6071/2026-S2C-ND-CC",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/d5cf531a41f7342b35e240141c4cfe89f3559da77b484240b557a5a3d5d806d3.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS6077",
+      "final_url": "https://www.sydney.edu.au/units/INFS6077",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/8075551b699e1bc5e9a7b12a129724b6705675ebfb253a844a462e07fc14da99.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS6077/2026-S2C-ND-CC",
+      "final_url": "https://www.sydney.edu.au/units/INFS6077/2026-S2C-ND-CC",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/0f0a643e371cc49eae2f82ab60a9dbd902478ae6f394eea15bef7a32e1ba6afa.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS6600",
+      "final_url": "https://www.sydney.edu.au/units/INFS6600",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/2d12da588664b9fbd843da2336477ddbc0cfc04bde03c72ed3ee184ab7076523.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS6600/2026-S1C-NE-CC",
+      "final_url": "https://www.sydney.edu.au/units/INFS6600/2026-S1C-NE-CC",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/da293ba8fdf5944a1273ed7a4c5aabd5ca133bd69a958118e336f4a2576ec033.html"
+    },
+    {
+      "requested_url": "https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC",
+      "final_url": "https://www.sydney.edu.au/units/INFS6600/2026-S2C-NE-CC",
+      "http_status": 200,
+      "response_storage_uri": "data/blobs/894f103b4a97d50d562198191cc074e709a983f9fb84c85533a344eadd5d66f0.html"
+    }
+  ]
+}

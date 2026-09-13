@@ -1,0 +1,17 @@
+services:
+  db:
+    image: mysql:8.4.11
+    environment:
+      MYSQL_ROOT_PASSWORD: ${CS44_PASSWORD:?Set CS44_PASSWORD first}
+      MYSQL_DATABASE: cs44
+    ports:
+      - "127.0.0.1:3307:3306"
+    volumes:
+      - mysql_data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "mysqladmin", "ping", "-h", "localhost"]
+      interval: 5s
+      timeout: 3s
+      retries: 30
+volumes:
+  mysql_data:

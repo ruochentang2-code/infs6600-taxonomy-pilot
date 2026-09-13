@@ -1,0 +1,2 @@
+﻿attempt_id,batch_id,kind,course_code,stage,status,http_status,error,requested_url
+28,2,archive,INFS3080,archive,archive_failure,,No public 2026 outline found for INFS3080,https://www.sydney.edu.au/units/INFS3080

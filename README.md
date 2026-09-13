@@ -6,6 +6,14 @@ pilot and the expanded 2026 INFS corpus workflow. Both use the same current
 eight-category scoring configuration and retain the source evidence, matched
 rules, scores, and official URLs required for review.
 
+## MySQL database integration
+
+The [database module](database/README.md) preserves course offerings, source evidence,
+versioned rules and scoring results in MySQL. It includes a 22-table schema,
+four analysis views, a restorable SQL dataset and an offline replay of the saved
+2026 capture. See its README for environment setup, restoration, rebuilding and
+UG/PG queries. The original corpus workflow below remains available.
+
 ## Current corpus workflow
 
 The expanded workflow covers the 12 undergraduate and 15 postgraduate INFS unit

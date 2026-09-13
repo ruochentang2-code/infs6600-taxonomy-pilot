@@ -1,0 +1,17 @@
+﻿batch_id,kind,target_year,policy,level,category_code,category,scope_courses,evaluated_courses,missing_courses,positive_courses,positive_items,review_items,positive_pct_evaluated
+3,live,2026,prefer_s2,UG,work_integrated_applied,Work-Integrated and Applied Learning,12,11,1,4,11,0,36.36
+3,live,2026,prefer_s2,UG,technology_mediated_learning,Technology-Mediated Learning,12,11,1,0,0,0,0.00
+3,live,2026,prefer_s2,UG,simulation,Simulation,12,11,1,0,0,0,0.00
+3,live,2026,prefer_s2,UG,project_problem_based,Project- and Problem-Based Learning,12,11,1,3,5,0,27.27
+3,live,2026,prefer_s2,UG,hybrid_learning,Hybrid Learning,12,11,1,0,0,0,0.00
+3,live,2026,prefer_s2,UG,entrepreneurial_learning,Entrepreneurial Learning,12,11,1,0,0,1,0.00
+3,live,2026,prefer_s2,UG,community_learning,Community Learning,12,11,1,0,0,0,0.00
+3,live,2026,prefer_s2,UG,case_based,Case-Based Learning,12,11,1,2,2,6,18.18
+3,live,2026,prefer_s2,PG,work_integrated_applied,Work-Integrated and Applied Learning,15,15,0,9,24,4,60.00
+3,live,2026,prefer_s2,PG,technology_mediated_learning,Technology-Mediated Learning,15,15,0,0,0,0,0.00
+3,live,2026,prefer_s2,PG,simulation,Simulation,15,15,0,0,0,0,0.00
+3,live,2026,prefer_s2,PG,project_problem_based,Project- and Problem-Based Learning,15,15,0,6,17,7,40.00
+3,live,2026,prefer_s2,PG,hybrid_learning,Hybrid Learning,15,15,0,0,0,0,0.00
+3,live,2026,prefer_s2,PG,entrepreneurial_learning,Entrepreneurial Learning,15,15,0,1,1,2,6.67
+3,live,2026,prefer_s2,PG,community_learning,Community Learning,15,15,0,0,0,0,0.00
+3,live,2026,prefer_s2,PG,case_based,Case-Based Learning,15,15,0,3,3,13,20.00
