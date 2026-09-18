@@ -1,0 +1,13 @@
+[
+  {
+    "attempt_id": 48,
+    "batch_id": 3,
+    "kind": "live",
+    "course_code": "INFS3080",
+    "stage": "discovery",
+    "status": "unavailable",
+    "http_status": null,
+    "error": "No 2026 outline satisfying prefer_s2",
+    "requested_url": "https://www.sydney.edu.au/units/INFS3080"
+  }
+]

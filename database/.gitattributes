@@ -1,0 +1,8 @@
+# Preserve source bytes and hashes across operating systems.
+data/** -text
+data/blobs/** -diff -whitespace
+data/*.docx binary
+data/*.xlsx binary
+database.sql -text -whitespace
+# CSV output deliberately uses standard CRLF record endings.
+reports/**/*.csv -text -whitespace

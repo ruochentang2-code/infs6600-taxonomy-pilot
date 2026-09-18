@@ -1,0 +1,9 @@
+﻿batch_id,kind,target_year,policy,level,category_code,category,scope_courses,evaluated_courses,missing_courses,positive_courses,positive_items,review_items,positive_pct_evaluated
+1,baseline,2026,prefer_s2,PG,work_integrated_applied,Work-Integrated and Applied Learning,1,1,0,1,11,1,100.00
+1,baseline,2026,prefer_s2,PG,technology_mediated_learning,Technology-Mediated Learning,1,1,0,0,0,0,0.00
+1,baseline,2026,prefer_s2,PG,simulation,Simulation,1,1,0,0,0,0,0.00
+1,baseline,2026,prefer_s2,PG,project_problem_based,Project- and Problem-Based Learning,1,1,0,1,4,2,100.00
+1,baseline,2026,prefer_s2,PG,hybrid_learning,Hybrid Learning,1,1,0,0,0,0,0.00
+1,baseline,2026,prefer_s2,PG,entrepreneurial_learning,Entrepreneurial Learning,1,1,0,0,0,2,0.00
+1,baseline,2026,prefer_s2,PG,community_learning,Community Learning,1,1,0,0,0,0,0.00
+1,baseline,2026,prefer_s2,PG,case_based,Case-Based Learning,1,1,0,1,1,2,100.00

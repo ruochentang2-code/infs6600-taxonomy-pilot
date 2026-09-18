@@ -1,0 +1,31 @@
+{
+  "schema_version": 2,
+  "mysql": "8.4.11",
+  "data_collected": "2026-09-11",
+  "schema_verified": "2026-09-13",
+  "table_counts": {
+    "analysis_selection": 55,
+    "assessment_detail": 337,
+    "category": 8,
+    "course": 27,
+    "course_offering": 35,
+    "crawl_batch": 3,
+    "evidence_item": 2117,
+    "extraction_run": 62,
+    "fetch_attempt": 91,
+    "item_category_result": 16936,
+    "match_phrase": 297,
+    "review_decision": 0,
+    "rule_match": 285,
+    "rule_phrase": 133,
+    "ruleset_version": 1,
+    "schedule_detail": 945,
+    "schema_version": 2,
+    "scope_course": 81,
+    "scoring_rule": 43,
+    "scoring_run": 62,
+    "source_snapshot": 62,
+    "taxonomy_version": 1
+  },
+  "source_files": 89
+}

@@ -1,0 +1,2 @@
+﻿attempt_id,batch_id,kind,course_code,stage,status,http_status,error,requested_url
+48,3,live,INFS3080,discovery,unavailable,,No 2026 outline satisfying prefer_s2,https://www.sydney.edu.au/units/INFS3080

@@ -1,0 +1,890 @@
+{
+  "scope_sha256": "4838ba8bc0886f7082a17687dc61d0e05b57d8f24ece6190deb33489b0e82642",
+  "matrix_sha256": "6a21f4e4f20ca57f3a351d39777f3a57e13cddfb066e3464c4602ecf199e012d",
+  "courses": [
+    {
+      "code": "INFS1000",
+      "title": "Digital Business Innovation",
+      "level": "UG"
+    },
+    {
+      "code": "INFS1020",
+      "title": "Working in Digital Ecosystems",
+      "level": "UG"
+    },
+    {
+      "code": "INFS2010",
+      "title": "Digital Ethics and Compassionate Innovation",
+      "level": "UG"
+    },
+    {
+      "code": "INFS2030",
+      "title": "Digital Business Management",
+      "level": "UG"
+    },
+    {
+      "code": "INFS2040",
+      "title": "Working in High-Performing Project Teams",
+      "level": "UG"
+    },
+    {
+      "code": "INFS2050",
+      "title": "Data Governance and Technology Assurance",
+      "level": "UG"
+    },
+    {
+      "code": "INFS3040",
+      "title": "Enterprise Systems and Integrated Business",
+      "level": "UG"
+    },
+    {
+      "code": "INFS3050",
+      "title": "Business Intelligence for Managers",
+      "level": "UG"
+    },
+    {
+      "code": "INFS3080",
+      "title": "Implementing Agile Design",
+      "level": "UG"
+    },
+    {
+      "code": "INFS3120",
+      "title": "Business Process Analysis and Design",
+      "level": "UG"
+    },
+    {
+      "code": "INFS3400",
+      "title": "Industry and Community Project",
+      "level": "UG"
+    },
+    {
+      "code": "INFS3600",
+      "title": "Business Information Systems in Practice",
+      "level": "UG"
+    },
+    {
+      "code": "INFS5002",
+      "title": "Foundation in Business Information Systems",
+      "level": "PG"
+    },
+    {
+      "code": "INFS6002",
+      "title": "Strategic Information Systems Sourcing",
+      "level": "PG"
+    },
+    {
+      "code": "INFS6004",
+      "title": "Digital Business Transformation",
+      "level": "PG"
+    },
+    {
+      "code": "INFS6012",
+      "title": "Digital Information Infrastructures",
+      "level": "PG"
+    },
+    {
+      "code": "INFS6015",
+      "title": "Business Process Management",
+      "level": "PG"
+    },
+    {
+      "code": "INFS6016",
+      "title": "Digital Business Models",
+      "level": "PG"
+    },
+    {
+      "code": "INFS6018",
+      "title": "Managing with Information and Data",
+      "level": "PG"
+    },
+    {
+      "code": "INFS6023",
+      "title": "Data Visualisation for Managers",
+      "level": "PG"
+    },
+    {
+      "code": "INFS6024",
+      "title": "Managing Data at Scale",
+      "level": "PG"
+    },
+    {
+      "code": "INFS6026",
+      "title": "Cybersecurity and Risk Management",
+      "level": "PG"
+    },
+    {
+      "code": "INFS6032",
+      "title": "Agile Project Methods",
+      "level": "PG"
+    },
+    {
+      "code": "INFS6066",
+      "title": "Gadgets, Gods and Godzilla",
+      "level": "PG"
+    },
+    {
+      "code": "INFS6071",
+      "title": "Project Management in Business",
+      "level": "PG"
+    },
+    {
+      "code": "INFS6077",
+      "title": "Digital, Data and Decisions",
+      "level": "PG"
+    },
+    {
+      "code": "INFS6600",
+      "title": "Business Information Systems Capstone",
+      "level": "PG"
+    }
+  ],
+  "categories": [
+    {
+      "code": "work_integrated_applied",
+      "name": "Work-Integrated and Applied Learning",
+      "definition": "An educational approach that explicitly merges theory with real-world practice and embeds authentic industry, workplace, or community-relevant work and tasks into a unit of study."
+    },
+    {
+      "code": "simulation",
+      "name": "Simulation",
+      "definition": "An instructional method that recreates or mimics real-world scenarios, environments, or processes so learners can practise skills and make decisions safely."
+    },
+    {
+      "code": "case_based",
+      "name": "Case-Based Learning",
+      "definition": "An active teaching method in which students use real-world scenarios and case studies to build critical-thinking and problem-solving skills."
+    },
+    {
+      "code": "project_problem_based",
+      "name": "Project- and Problem-Based Learning",
+      "definition": "Learning focused on real-world problems and challenges using problem-solving, decision-making, investigative, and self-directed learning skills."
+    },
+    {
+      "code": "community_learning",
+      "name": "Community Learning",
+      "definition": "Learning undertaken together with or for communities, including service-learning, field studies, and professional communities of practice."
+    },
+    {
+      "code": "entrepreneurial_learning",
+      "name": "Entrepreneurial Learning",
+      "definition": "Learning that develops the knowledge, skills, and mindset to recognise opportunities, turn ideas into action, and manage new ventures under uncertainty."
+    },
+    {
+      "code": "technology_mediated_learning",
+      "name": "Technology-Mediated Learning",
+      "definition": "An instructional environment in which digital devices, networks, or specialised technologies mediate access to content and interaction during learning."
+    },
+    {
+      "code": "hybrid_learning",
+      "name": "Hybrid Learning",
+      "definition": "An education model that mixes face-to-face classroom teaching with online digital instruction."
+    }
+  ],
+  "rules": [
+    {
+      "code": "R001",
+      "category": "work_integrated_applied",
+      "label": "industry or business partner",
+      "phrases": [
+        "industry partner",
+        "business partner",
+        "partner briefing",
+        "pitch to partner",
+        "partner's business",
+        "partner business"
+      ],
+      "weight": "4",
+      "treatment": "Positive",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed taxonomy rule",
+      "implementation": "Active",
+      "source_row": 5
+    },
+    {
+      "code": "R002",
+      "category": "work_integrated_applied",
+      "label": "actual organisation or professional context",
+      "phrases": [
+        "actual business organisation",
+        "actual business problem",
+        "actual business professionals"
+      ],
+      "weight": "4",
+      "treatment": "Positive",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed taxonomy rule",
+      "implementation": "Active",
+      "source_row": 6
+    },
+    {
+      "code": "R003",
+      "category": "work_integrated_applied",
+      "label": "authentic practice",
+      "phrases": [
+        "authentic situations",
+        "authentic problem",
+        "authentic industry",
+        "workplace project",
+        "industry project",
+        "consulting project",
+        "work-integrated learning"
+      ],
+      "weight": "4",
+      "treatment": "Positive",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed taxonomy rule",
+      "implementation": "Active",
+      "source_row": 7
+    },
+    {
+      "code": "R004",
+      "category": "work_integrated_applied",
+      "label": "professional presentation",
+      "phrases": [
+        "boardroom presentation",
+        "project presentation"
+      ],
+      "weight": "3.5",
+      "treatment": "Positive",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed taxonomy rule",
+      "implementation": "Active",
+      "source_row": 8
+    },
+    {
+      "code": "R005",
+      "category": "work_integrated_applied",
+      "label": "theory-practice integration",
+      "phrases": [
+        "theory and practice",
+        "theory with real-world practice"
+      ],
+      "weight": "2",
+      "treatment": "Positive",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed taxonomy rule",
+      "implementation": "Active",
+      "source_row": 9
+    },
+    {
+      "code": "R006",
+      "category": "work_integrated_applied",
+      "label": "practical teamwork",
+      "phrases": [
+        "practical teamwork experience"
+      ],
+      "weight": "2.5",
+      "treatment": "Positive",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed taxonomy rule",
+      "implementation": "Active",
+      "source_row": 10
+    },
+    {
+      "code": "R007",
+      "category": "work_integrated_applied",
+      "label": "career readiness",
+      "phrases": [
+        "career-readiness",
+        "career readiness",
+        "professional skills"
+      ],
+      "weight": "2",
+      "treatment": "Positive",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed taxonomy rule",
+      "implementation": "Active",
+      "source_row": 11
+    },
+    {
+      "code": "R008",
+      "category": "work_integrated_applied",
+      "label": "project immersion",
+      "phrases": [
+        "project immersion"
+      ],
+      "weight": "2",
+      "treatment": "Positive",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed taxonomy rule",
+      "implementation": "Active",
+      "source_row": 12
+    },
+    {
+      "code": "R009",
+      "category": "simulation",
+      "label": "explicit simulation",
+      "phrases": [
+        "business simulation",
+        "lab-based simulation",
+        "virtual simulation",
+        "simulation-based learning",
+        "simulated environment",
+        "simulated process"
+      ],
+      "weight": "4",
+      "treatment": "Positive",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed taxonomy rule",
+      "implementation": "Active",
+      "source_row": 13
+    },
+    {
+      "code": "R010",
+      "category": "simulation",
+      "label": "explicit role play",
+      "phrases": [
+        "role-play",
+        "role play"
+      ],
+      "weight": "4",
+      "treatment": "Positive",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed taxonomy rule",
+      "implementation": "Active",
+      "source_row": 14
+    },
+    {
+      "code": "R011",
+      "category": "simulation",
+      "label": "scenario simulation",
+      "phrases": [
+        "simulation scenario",
+        "scenario simulation",
+        "simulated scenario"
+      ],
+      "weight": "3.5",
+      "treatment": "Positive",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed taxonomy rule",
+      "implementation": "Active",
+      "source_row": 15
+    },
+    {
+      "code": "R012",
+      "category": "case_based",
+      "label": "explicit case method",
+      "phrases": [
+        "case study analysis",
+        "case study practice",
+        "case-based learning",
+        "case based learning"
+      ],
+      "weight": "4",
+      "treatment": "Positive",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed taxonomy rule",
+      "implementation": "Active",
+      "source_row": 16
+    },
+    {
+      "code": "R013",
+      "category": "case_based",
+      "label": "case activity",
+      "phrases": [
+        "case-based exam",
+        "case based exam",
+        "case competition",
+        "case discussion"
+      ],
+      "weight": "4",
+      "treatment": "Positive",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed taxonomy rule",
+      "implementation": "Active",
+      "source_row": 17
+    },
+    {
+      "code": "R014",
+      "category": "case_based",
+      "label": "explicit scenario method",
+      "phrases": [
+        "open-ended business scenarios",
+        "real-world scenarios",
+        "case scenario"
+      ],
+      "weight": "4",
+      "treatment": "Positive",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed taxonomy rule",
+      "implementation": "Active",
+      "source_row": 18
+    },
+    {
+      "code": "R015",
+      "category": "case_based",
+      "label": "administrative case-studies label",
+      "phrases": [
+        "type: case studies"
+      ],
+      "weight": "2.5",
+      "treatment": "Review only",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed taxonomy rule",
+      "implementation": "Active",
+      "source_row": 19
+    },
+    {
+      "code": "R016",
+      "category": "project_problem_based",
+      "label": "explicit project or problem-based method",
+      "phrases": [
+        "project-based learning",
+        "project based learning",
+        "problem-based learning",
+        "problem based learning",
+        "challenge-based learning",
+        "challenge based learning"
+      ],
+      "weight": "4",
+      "treatment": "Positive",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed taxonomy rule",
+      "implementation": "Active",
+      "source_row": 20
+    },
+    {
+      "code": "R017",
+      "category": "project_problem_based",
+      "label": "authentic problem or challenge",
+      "phrases": [
+        "actual business problem",
+        "real-world problem",
+        "real world problem",
+        "complex challenge"
+      ],
+      "weight": "4",
+      "treatment": "Positive",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed taxonomy rule",
+      "implementation": "Active",
+      "source_row": 21
+    },
+    {
+      "code": "R018",
+      "category": "project_problem_based",
+      "label": "project immersion",
+      "phrases": [
+        "project immersion"
+      ],
+      "weight": "3.5",
+      "treatment": "Positive",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed taxonomy rule",
+      "implementation": "Active",
+      "source_row": 22
+    },
+    {
+      "code": "R019",
+      "category": "project_problem_based",
+      "label": "problem and opportunity scoping",
+      "phrases": [
+        "problem & opportunity scoping",
+        "problem and opportunity scoping",
+        "problem & opportunity",
+        "problem and opportunity"
+      ],
+      "weight": "3.5",
+      "treatment": "Positive",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed taxonomy rule",
+      "implementation": "Active",
+      "source_row": 23
+    },
+    {
+      "code": "R020",
+      "category": "project_problem_based",
+      "label": "design and prototype method",
+      "phrases": [
+        "design thinking",
+        "prototype validation",
+        "prototype",
+        "product development project"
+      ],
+      "weight": "3.5",
+      "treatment": "Positive",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed taxonomy rule",
+      "implementation": "Active",
+      "source_row": 24
+    },
+    {
+      "code": "R021",
+      "category": "project_problem_based",
+      "label": "generic project planning",
+      "phrases": [
+        "project planning",
+        "implementation planning"
+      ],
+      "weight": "2",
+      "treatment": "Review only",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed taxonomy rule",
+      "implementation": "Active",
+      "source_row": 25
+    },
+    {
+      "code": "R022",
+      "category": "community_learning",
+      "label": "service or community-engaged learning",
+      "phrases": [
+        "service-learning",
+        "service learning",
+        "community-engaged learning",
+        "community engaged learning"
+      ],
+      "weight": "4",
+      "treatment": "Positive",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed taxonomy rule",
+      "implementation": "Active",
+      "source_row": 26
+    },
+    {
+      "code": "R023",
+      "category": "community_learning",
+      "label": "community project or field study",
+      "phrases": [
+        "community project",
+        "social impact project",
+        "field study",
+        "field studies"
+      ],
+      "weight": "3.5",
+      "treatment": "Positive",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed taxonomy rule",
+      "implementation": "Active",
+      "source_row": 27
+    },
+    {
+      "code": "R024",
+      "category": "community_learning",
+      "label": "community of practice",
+      "phrases": [
+        "community of practice",
+        "communities of practice"
+      ],
+      "weight": "3.5",
+      "treatment": "Positive",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed taxonomy rule",
+      "implementation": "Active",
+      "source_row": 28
+    },
+    {
+      "code": "R025",
+      "category": "entrepreneurial_learning",
+      "label": "explicit entrepreneurship or startup",
+      "phrases": [
+        "entrepreneurial learning",
+        "entrepreneurship",
+        "start-up",
+        "startup"
+      ],
+      "weight": "4",
+      "treatment": "Positive",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed taxonomy rule",
+      "implementation": "Active",
+      "source_row": 29
+    },
+    {
+      "code": "R026",
+      "category": "entrepreneurial_learning",
+      "label": "new venture",
+      "phrases": [
+        "new venture",
+        "manage ventures",
+        "venture creation"
+      ],
+      "weight": "4",
+      "treatment": "Positive",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed taxonomy rule",
+      "implementation": "Active",
+      "source_row": 30
+    },
+    {
+      "code": "R027",
+      "category": "entrepreneurial_learning",
+      "label": "product development project",
+      "phrases": [
+        "product development project",
+        "startup pitch",
+        "start-up pitch",
+        "pitch competition"
+      ],
+      "weight": "3.5",
+      "treatment": "Positive",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed taxonomy rule",
+      "implementation": "Active",
+      "source_row": 31
+    },
+    {
+      "code": "R028",
+      "category": "entrepreneurial_learning",
+      "label": "generic ideation or prototyping",
+      "phrases": [
+        "ideation",
+        "prototyping"
+      ],
+      "weight": "3",
+      "treatment": "Review only",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed taxonomy rule",
+      "implementation": "Active",
+      "source_row": 32
+    },
+    {
+      "code": "R029",
+      "category": "technology_mediated_learning",
+      "label": "immersive or virtual learning",
+      "phrases": [
+        "vr-based experiential learning",
+        "vr based experiential learning",
+        "ar-based experiential learning",
+        "ar based experiential learning",
+        "virtual simulation"
+      ],
+      "weight": "4",
+      "treatment": "Positive",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed taxonomy rule",
+      "implementation": "Active",
+      "source_row": 33
+    },
+    {
+      "code": "R030",
+      "category": "technology_mediated_learning",
+      "label": "AI-mediated or digital twin",
+      "phrases": [
+        "ai-mediated role-play",
+        "ai mediated role play",
+        "digital twin exercise",
+        "digital twin exercises"
+      ],
+      "weight": "4",
+      "treatment": "Positive",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed taxonomy rule",
+      "implementation": "Active",
+      "source_row": 34
+    },
+    {
+      "code": "R031",
+      "category": "technology_mediated_learning",
+      "label": "gamification or serious games",
+      "phrases": [
+        "gamification",
+        "serious game",
+        "serious games"
+      ],
+      "weight": "4",
+      "treatment": "Positive",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed taxonomy rule",
+      "implementation": "Active",
+      "source_row": 35
+    },
+    {
+      "code": "R032",
+      "category": "technology_mediated_learning",
+      "label": "immersive scenario training",
+      "phrases": [
+        "immersive scenario training",
+        "technology-mediated learning",
+        "technology mediated learning"
+      ],
+      "weight": "3.5",
+      "treatment": "Positive",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed taxonomy rule",
+      "implementation": "Active",
+      "source_row": 36
+    },
+    {
+      "code": "R033",
+      "category": "hybrid_learning",
+      "label": "explicit hybrid or blended mode",
+      "phrases": [
+        "hybrid learning",
+        "blended learning",
+        "hyflex"
+      ],
+      "weight": "4",
+      "treatment": "Positive",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed taxonomy rule",
+      "implementation": "Active",
+      "source_row": 37
+    },
+    {
+      "code": "R034",
+      "category": "hybrid_learning",
+      "label": "flipped classroom",
+      "phrases": [
+        "flipped classroom",
+        "flipped learning"
+      ],
+      "weight": "4",
+      "treatment": "Positive",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed taxonomy rule",
+      "implementation": "Active",
+      "source_row": 38
+    },
+    {
+      "code": "R035",
+      "category": "hybrid_learning",
+      "label": "mixed face-to-face and online",
+      "phrases": [
+        "face-to-face and online",
+        "face to face and online",
+        "mixed-mode learning",
+        "mixed mode learning"
+      ],
+      "weight": "4",
+      "treatment": "Positive",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed taxonomy rule",
+      "implementation": "Active",
+      "source_row": 39
+    },
+    {
+      "code": "R036",
+      "category": "hybrid_learning",
+      "label": "self-paced online modules",
+      "phrases": [
+        "self-paced online module",
+        "self paced online module",
+        "self-paced modules"
+      ],
+      "weight": "3.5",
+      "treatment": "Positive",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed taxonomy rule",
+      "implementation": "Active",
+      "source_row": 40
+    },
+    {
+      "code": "R037",
+      "category": "work_integrated_applied",
+      "label": "placement or practicum",
+      "phrases": [
+        "internship",
+        "professional practicum",
+        "field placement"
+      ],
+      "weight": "4",
+      "treatment": "Positive",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed scope addition",
+      "implementation": "Proposed",
+      "source_row": 41
+    },
+    {
+      "code": "R038",
+      "category": "work_integrated_applied",
+      "label": "applied or civic project",
+      "phrases": [
+        "applied research project",
+        "civic engagement project",
+        "social impact project"
+      ],
+      "weight": "3.5",
+      "treatment": "Positive",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed scope addition",
+      "implementation": "Proposed",
+      "source_row": 42
+    },
+    {
+      "code": "R039",
+      "category": "work_integrated_applied",
+      "label": "generic creative solution",
+      "phrases": [
+        "creative solution"
+      ],
+      "weight": "2",
+      "treatment": "Review only",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed scope addition",
+      "implementation": "Proposed",
+      "source_row": 43
+    },
+    {
+      "code": "R040",
+      "category": "simulation",
+      "label": "scenario-based learning",
+      "phrases": [
+        "scenario-based learning",
+        "scenario based learning"
+      ],
+      "weight": "3.5",
+      "treatment": "Positive",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed scope addition",
+      "implementation": "Proposed",
+      "source_row": 44
+    },
+    {
+      "code": "R041",
+      "category": "project_problem_based",
+      "label": "interdisciplinary project",
+      "phrases": [
+        "interdisciplinary project"
+      ],
+      "weight": "3.5",
+      "treatment": "Positive",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed scope addition",
+      "implementation": "Proposed",
+      "source_row": 45
+    },
+    {
+      "code": "R042",
+      "category": "project_problem_based",
+      "label": "generic creative thinking",
+      "phrases": [
+        "creative thinking",
+        "creativity"
+      ],
+      "weight": "2",
+      "treatment": "Review only",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed scope addition",
+      "implementation": "Proposed",
+      "source_row": 46
+    },
+    {
+      "code": "R043",
+      "category": "entrepreneurial_learning",
+      "label": "generic pitch or competition",
+      "phrases": [
+        "pitch",
+        "competition"
+      ],
+      "weight": "2",
+      "treatment": "Review only",
+      "weight_status": "Current baseline",
+      "basis": "Reviewed scope addition",
+      "implementation": "Proposed",
+      "source_row": 47
+    }
+  ],
+  "thresholds": {
+    "positive": 3.0,
+    "high_confidence": 5.0,
+    "status": "provisional_pending_validation"
+  },
+  "policies": {
+    "multi_label": true,
+    "categories_mutually_exclusive": false,
+    "deduplication": "item-category",
+    "rule_alternatives_count_once": true,
+    "administrative_labels_require_review": true,
+    "unit_category_total": "Sum of item scores classified positive for the category; review scores are reported separately."
+  }
+}

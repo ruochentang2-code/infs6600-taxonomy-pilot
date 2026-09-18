@@ -1,0 +1,13 @@
+[
+  {
+    "attempt_id": 28,
+    "batch_id": 2,
+    "kind": "archive",
+    "course_code": "INFS3080",
+    "stage": "archive",
+    "status": "archive_failure",
+    "http_status": null,
+    "error": "No public 2026 outline found for INFS3080",
+    "requested_url": "https://www.sydney.edu.au/units/INFS3080"
+  }
+]
