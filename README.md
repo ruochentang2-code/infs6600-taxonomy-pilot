@@ -6,6 +6,12 @@ pilot and the expanded 2026 INFS corpus workflow. Both use the same current
 eight-category scoring configuration and retain the source evidence, matched
 rules, scores, and official URLs required for review.
 
+## Interactive dashboard
+
+Open the [public CS-44 BIS Evidence Dashboard](https://cs44-bis-evidence-dashboard.chenhomie0208.chatgpt.site/) without signing in. The [dashboard source and usage notes](dashboard/README.md) cover UG/PG filters, category comparisons, unit search, and outline links.
+
+This preliminary interface uses the saved batch-3 data snapshot; it does not connect to the live database or automatically refresh from GitHub. Results remain subject to human validation.
+
 ## MySQL database integration
 
 The [database module](database/README.md) preserves course offerings, source evidence,

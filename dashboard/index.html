@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<title>CS-44 · BIS Evidence Dashboard</title>
+<meta name="description" content="Explore preliminary teaching innovation evidence across 27 BIS units, compare undergraduate and postgraduate results, and inspect unit classifications.">
+<meta name="theme-color" content="#132b44">
+<link rel="icon" href="favicon.svg" type="image/svg+xml">
+<link rel="stylesheet" href="styles.css">
+<script defer src="data.js"></script><script defer src="app.js"></script>
+</head>
+<body>
+<a class="skip" href="#main">Skip to dashboard</a>
+<aside class="sidebar">
+  <a class="brand" href="#overview"><span class="brand-mark">44</span><span>CS-44<span class="brand-sub">RESEARCH DASHBOARD</span></span></a>
+  <div class="rail-label">WORKSPACE</div>
+  <nav aria-label="Dashboard sections">
+    <a class="nav-link active" href="#overview"><span aria-hidden="true">▦</span> Overview</a>
+    <a class="nav-link" href="#explorer"><span aria-hidden="true">☷</span> Unit explorer</a>
+    <a class="nav-link" href="#method"><span aria-hidden="true">ⓘ</span> About the data</a>
+  </nav>
+  <div class="rail-footer"><div class="rail-tag">BIS · 2026</div><p>Exploring pedagogical<br>innovations in business<br>education.</p><span>CS-44 project team</span></div>
+</aside>
+<main id="main">
+  <header class="topbar"><span>BUSINESS INFORMATION SYSTEMS</span><a href="https://github.com/ruochentang2-code/infs6600-taxonomy-pilot" target="_blank" rel="noopener noreferrer">Project repository <span aria-hidden="true">↗</span></a></header>
+  <section id="overview" aria-labelledby="page-title">
+    <div class="page-heading"><div><p class="eyebrow">TEACHING INNOVATION / UNIT OUTLINES</p><h1 id="page-title">BIS evidence overview</h1><p class="subtitle">Explore the teaching approaches identified in public unit outlines.</p></div><div class="snapshot"><span class="pill preliminary">Preliminary results</span><span>Snapshot · 11 Sep 2026</span></div></div>
+    <div class="filter-toolbar"><div class="segmented" role="group" aria-label="Study level"><button data-level="ALL" aria-pressed="true">All units</button><button data-level="UG" aria-pressed="false">Undergraduate</button><button data-level="PG" aria-pressed="false">Postgraduate</button></div><span class="filter-context" id="filter-context">Full BIS scope · 2026</span></div>
+    <div class="metrics" id="metrics" aria-live="polite"></div>
+    <div class="overview-grid">
+      <section class="panel distribution" aria-labelledby="distribution-title">
+        <div class="panel-head"><div><h2 id="distribution-title">Teaching category distribution</h2><p>Units with at least one positive evidence item</p></div><div class="segmented compact" role="group" aria-label="Chart measure"><button data-measure="count" aria-pressed="true">Units</button><button data-measure="rate" aria-pressed="false">%</button></div></div>
+        <div class="chart-meta"><span id="chart-cohort">All evaluated units</span><span>Click a category to filter units</span></div>
+        <div id="distribution" class="bar-chart"></div>
+        <p class="chart-foot">Categories can overlap. Zero means no positive match in the saved outline.</p>
+      </section>
+      <section class="panel comparison" aria-labelledby="comparison-title">
+        <div class="panel-head"><div><h2 id="comparison-title">UG / PG comparison</h2><p>Share of evaluated units</p></div></div>
+        <div class="legend"><span><i class="dot ug"></i> UG · 11 evaluated</span><span><i class="dot pg"></i> PG · 15 evaluated</span></div>
+        <div id="comparison" class="comparison-chart"></div>
+        <p class="chart-foot">Full-cohort comparison; independent of the study-level filter. All eight categories are retained.</p>
+      </section>
+    </div>
+  </section>
+  <section id="explorer" aria-labelledby="explorer-title">
+    <div class="section-heading"><div><p class="eyebrow">EXPLORE THE RESULTS</p><h2 id="explorer-title">Unit explorer</h2></div><span id="unit-count" class="muted" aria-live="polite"></span></div>
+    <div class="explorer-controls"><label class="search-field"><svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden="true"><circle cx="10" cy="10" r="6.5" stroke="currentColor" stroke-width="1.8"/><path d="m15 15 5 5" stroke="currentColor" stroke-width="1.8"/></svg><input id="search" type="search" aria-label="Search unit code or title" placeholder="Search unit code or title…" autocomplete="off"></label><label class="select-field"><span>Category</span><select id="category" aria-label="Filter units by positive category"><option value="ALL">All categories</option></select></label><button class="text-button" id="reset">Reset filters</button></div>
+    <p class="filter-note" id="filter-note" hidden></p>
+    <div class="explorer-grid">
+      <section class="panel unit-list-panel" aria-label="Unit results">
+        <div class="table-scroll"><table class="unit-table"><thead><tr><th scope="col">UNIT</th><th scope="col">LEVEL</th><th scope="col">POSITIVE<br>CATEGORIES</th><th scope="col">COVERAGE</th></tr></thead><tbody id="units"></tbody></table></div>
+        <div id="empty" class="empty" hidden><strong>No units match these filters</strong><p>Try another name or reset the filters.</p><button class="secondary-button" id="empty-reset">Reset filters</button></div>
+        <div class="list-foot">Select a unit to inspect its category results.</div>
+      </section>
+      <section class="panel detail-panel" id="unit-detail" aria-label="Selected unit details" aria-live="polite"></section>
+    </div>
+  </section>
+  <section class="panel methodology" id="method">
+    <details><summary><span><strong>About this dataset</strong><span class="summary-sub">Scope, scoring and interpretation</span></span><span class="plus" aria-hidden="true">+</span></summary>
+    <div class="method-grid"><div><h3>One consistent snapshot</h3><p>Batch 3, captured on 11 September 2026. Semester 2 is preferred, with other 2026 sessions allowed. The 2025 INFS3080 fallback and SIE units are not included in this snapshot.</p></div><div><h3>Automated evidence signals</h3><p>Eight categories, 36 active rules and 7 proposed rules. Proposed rules do not score. A positive unit has at least one positive evidence item. Review-only signals stay separate from positive results.</p></div><div><h3>Human review is pending</h3><p>These are rule-based findings from public text, not teaching-quality ratings. No completed human reviews are recorded. Missing outlines are excluded from percentage denominators; no match is not proof that a teaching method is absent.</p></div></div>
+    <div class="source-line">Rules: 2026-09-08-final-active-v1 · <a href="https://github.com/ruochentang2-code/infs6600-taxonomy-pilot/tree/a3475d9cce9b54d48329daadbf974e9f174cbc28/database/reports/batch-3" target="_blank" rel="noopener noreferrer">View source reports ↗</a></div></details>
+  </section>
+  <footer class="page-footer"><span>CS-44 · Exploring Pedagogical Innovations in Business Education</span><span>Initial dashboard · Saved snapshot</span></footer>
+  <noscript><p class="empty">Enable JavaScript to explore the dashboard.</p></noscript>
+</main>
+</body></html>
+
